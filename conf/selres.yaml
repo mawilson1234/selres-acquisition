@@ -7,9 +7,8 @@ create_plots: true # whether to create plots or skip them
 
 use_gpu: false # whether to use gpu
 
+num_args: 6 # generate the top num_args predictions per position when using check_args
+
 hydra:
   run:
-    dir: outputs/${model_name:${model.string_id}}/${data.name}-${data.which_args}
-  sweep:
-    dir: ${model}
-    subdir: outputs/${model_name:${model.string_id}}/${data.name}-${data.which_args}
+    dir: outputs/${model_name:${model.string_id}}/${data.name}-${which_args:${model.string_id},${data.which_args}}

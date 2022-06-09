@@ -35,39 +35,151 @@ verb_profiles:
   love: 5
   believe: 5
   
-which_args: group_1
+which_args: model
+
+multiberts_0:
+  wash:
+    active:
+      "[subj]": [wind, rain, water, sun, nurse, river]
+      "[obj]": [dishes, floor, place, boat, house, body]
+    passive:
+      "[obj]": [body, boat, house, building, water, car]
+      "[subj]": [storm, sea, tide, crew, police, river]
+  fix:
+    active:
+      "[subj]": [man, woman, judge, clerk, girl, guard]
+      "[obj]": [sign, window, door, line, problem, clock]
+    passive:
+      "[obj]": [date, position, distance, problem, number, line]
+      "[subj]": [board, law, court, judge, engineer, government]
+  surprise:
+    active:
+      "[subj]": [thought, idea, answer, word, truth, pain]
+      "[obj]": [girl, boy, man, others, world, woman]
+    passive:
+      "[obj]": [family, doctor, mayor, group, judge, captain]
+      "[subj]": [news, results, incident, accident, situation, change]
+  frighten:
+    active:
+      "[subj]": [noise, idea, fire, fear, smell, cold]
+      "[obj]": [children, people, animals, others, child, birds]
+    passive:
+      "[obj]": [family, girl, boy, woman, child, dog]
+      "[subj]": [news, noise, rain, weather, sun, fire]
+  discover:
+    active:
+      "[subj]": [team, police, crew, miners, researchers, scientists]
+      "[obj]": [tunnel, lake, body, fossils, book, bomb]
+    passive:
+      "[obj]": [asteroid, species, crater, wreck, genus, peak]
+      "[subj]": [french, discovery, observatory, russians, italians, japanese]
+  find:
+    active:
+      "[subj]": [first, larvae, party, species, pilot, second]
+      "[obj]": [sea, ground, light, body, right, dead]
+    passive:
+      "[obj]": [body, wreck, species, site, wreckage, egg]
+      "[subj]": [iucn, police, authorities, crew, family, collector]
+  spot:
+    active:
+      "[subj]": [guard, others, driver, crowd, guards, men]
+      "[obj]": [body, light, car, knife, boat, bird]
+    passive:
+      "[obj]": [car, boat, vehicle, helicopter, truck, ship]
+      "[subj]": [police, crowd, crew, cops, driver, pilot]
+  forget:
+    active:
+      "[subj]": [man, woman, world, boy, devil, king]
+      "[obj]": [words, name, word, truth, key, money]
+    passive:
+      "[obj]": [body, man, boy, girl, note, name]
+      "[subj]": [crowd, others, wind, moment, fire, waitress]
+  love:
+    active:
+      "[subj]": [lady, man, boy, family, player, devil]
+      "[obj]": [money, children, dog, child, truth, book]
+    passive:
+      "[obj]": [girl, boy, child, dog, baby, woman]
+      "[subj]": [people, villagers, audience, girls, children, others]
+  believe:
+    active:
+      "[subj]": [government, church, public, court, family, mayor]
+      "[obj]": [truth, same, book, gospel, law, lie]
+    passive:
+      "[obj]": [story, legend, name, event, error, myth]
+      "[subj]": [church, locals, public, community, villagers, government]
 
 group_1:
   wash:
-    '[subj]': [boy, girl]
-    '[obj]' : [car, dog]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [car, dog]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [car, dog]
   fix:
-    '[subj]': [boy, girl]
-    '[obj]' : [computer, car]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [computer, car]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [computer, car]
   surprise:
-    '[subj]': [noise, jolt]
-    '[obj]' : [boy, girl]
+    active:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
+    passive:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
   frighten:
-    '[subj]': [noise, jolt]
-    '[obj]' : [boy, girl]
+    active:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
+    passive:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
   discover:
-    '[subj]': [boy, girl]
-    '[obj]' : [secret, source]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]  
   find:
-    '[subj]': [boy, girl]
-    '[obj]' : [secret, source]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]
   spot:
-    '[subj]': [boy, girl]
-    '[obj]' : [ball, tree]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, tree]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, tree]
   forget:
-    '[subj]': [boy, girl]
-    '[obj]' : [ball, goal]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, goal]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, goal]
   love:
-    '[subj]': [boy, girl]
-    '[obj]' : [game, food]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [game, food]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [game, food]
   believe:
-    '[subj]': [boy, girl]
-    '[obj]' : [truth, lie]
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [truth, lie]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [truth, lie]
     
 data:
   - The [subj] washed the [obj].

@@ -11,6 +11,11 @@ OmegaConf.register_new_resolver(
 	lambda string_id: string_id.replace('google/', '').replace('-seed', '')
 )
 
+OmegaConf.register_new_resolver(
+	'which_args',
+	lambda string_id, which_args: which_args if not which_args == 'model' else string_id.replace('google/', '').replace('-seed', '')
+)
+
 @hydra.main(config_path='conf', config_name='selres')
 def evaluate(cfg: DictConfig) -> None:
 	'''

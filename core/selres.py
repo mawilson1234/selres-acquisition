@@ -44,10 +44,10 @@ class SelectionalRestrictionEvaluator:
 			returns:
 				a dict with sentences, inputs, masked_indices
 		'''
-		gf_regex = re.sub(r'(\[|\])', '\\ \\1', '|'.join(set([gf for verb in self.cfg.data.args for gf in self.cfg.data.args[verb]]))).replace(' ', '')
+		gf_regex = re.sub(r'(\[|\])', '\\ \\1', '|'.join(set([gf for verb in self.cfg.data.args for voice in self.cfg.data.args[verb] for gf in self.cfg.data.args[verb][voice]]))).replace(' ', '')
 		masked_args	= [re.findall(rf'({gf_regex})', sentence) for sentence in dataset]
 		for i, _ in enumerate(dataset):
-			for gf in set([gf for verb in self.cfg.data.args for gf in self.cfg.data.args[verb]]):
+			for gf in set([gf for verb in self.cfg.data.args for voice in self.cfg.data.args[verb] for gf in self.cfg.data.args[verb][voice]]):
 				dataset[i] = dataset[i].replace(gf, self.mask_token)
 		
 		# this is so we don't overwrite the original dataset as we do this
@@ -86,7 +86,7 @@ class SelectionalRestrictionEvaluator:
 		
 		df['string_id'] = self.cfg.model.string_id	
 		df['data'] = self.cfg.data.name
-		df['args_group'] = self.cfg.data.which_args
+		df['args_group'] = self.cfg.data.which_args if not self.cfg.data.which_args == 'model' else self.cfg.model.string_id.replace('google/', '').replace('-seed', '')
 		
 		return df
 	
@@ -131,8 +131,8 @@ class SelectionalRestrictionEvaluator:
 			voice = sentence_type.split()[1]
 			verb_profile = self.cfg.data.verb_profiles[verb]
 			
-			tokens_to_type_labels = {token: label for label in self.cfg.data.args[verb] for token in self.cfg.data.args[verb][label]}
-			if len(tokens_to_type_labels.keys()) < len(selres_utils.flatten(list(self.cfg.data.args[verb].values()))):
+			tokens_to_type_labels = {token: label for label in self.cfg.data.args[verb][voice] for token in self.cfg.data.args[verb][voice][label]}
+			if len(tokens_to_type_labels.keys()) < len(selres_utils.flatten(list(self.cfg.data.args[verb][voice].values()))):
 				raise ValueError('Tokens should only be used in a single eval group!')
 			
 			lin_positions 	= sorted(list(position_indices.keys()), key=lambda position: position_indices[position])
@@ -167,7 +167,7 @@ class SelectionalRestrictionEvaluator:
 						'probability'		: probs[position_indices[position],token_id],
 						'log probability'	: logprob,
 						'surprisal'			: surprisals[position_indices[position],token_id],
-						'args group'		: self.cfg.data.which_args,
+						'args group'		: self.cfg.data.which_args if not self.cfg.data.which_args == 'model' else self.cfg.model.string_id.replace('google/', '').replace('-seed', ''),
 						'entropy'			: entropy
 					}
 					
@@ -221,7 +221,7 @@ class SelectionalRestrictionEvaluator:
 			log.info(f'Using GPU: {torch.cuda.get_device_name(torch.cuda.current_device())}')
 		
 		with open_dict(self.cfg):
-			self.cfg.data.args = self.cfg.data[self.cfg.data.which_args]
+			self.cfg.data.args = self.cfg.data[self.cfg.data.which_args] if not self.cfg.data.which_args == 'model' else self.cfg.data[self.cfg.model.string_id.replace('google/', '').replace('-seed', '')]
 		
 		self.tokenizer = AutoTokenizer.from_pretrained(self.cfg.model.string_id, **self.cfg.model.tokenizer_kwargs)
 		self.mask_token	= self.tokenizer.mask_token
@@ -231,7 +231,7 @@ class SelectionalRestrictionEvaluator:
 		
 		self.data = self.load_data()
 		
-		all_args = set([arg for verb in self.cfg.data.args for gf in self.cfg.data.args[verb] for arg in self.cfg.data.args[verb][gf]])
+		all_args = set([arg for verb in self.cfg.data.args for voice in self.cfg.data.args[verb] for gf in self.cfg.data.args[verb][voice] for arg in self.cfg.data.args[verb][voice][gf]])
 		check_tokenizations(all_args)
 		
 		self.all_checkpoints = [f'{self.cfg.model.string_id}-step_{checkpoint}k' for checkpoint in ALL_CHECKPOINTS]
