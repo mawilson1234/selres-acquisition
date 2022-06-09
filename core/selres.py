@@ -317,7 +317,7 @@ class SelectionalRestrictionEvaluator:
 		with logging_redirect_tqdm():
 			for string_id in tqdm(self.all_checkpoints):
 				log.info(f'Initializing model checkpoint: {string_id}')
-				model 		= AutoModelForMaskedLM.from_pretrained(string_id, **self.cfg.model.model_kwargs)
+				model 		= AutoModelForMaskedLM.from_pretrained(string_id, **self.cfg.model.model_kwargs).to(self.device)
 				model.eval()
 				
 				log.info(f'Evaluating model on data')
