@@ -314,7 +314,6 @@ class SelectionalRestrictionEvaluator:
 		sentence_types			= selres_utils.flatten([[sentence_type] * num for sentence_type, num in zip(sentence_types, num_sentences)])
 		
 		summary 				= []
-		self.all_checkpoints = self.all_checkpoints[:2]
 		with logging_redirect_tqdm():
 			for string_id in tqdm(self.all_checkpoints):
 				log.info(f'Initializing model checkpoint: {string_id}')
