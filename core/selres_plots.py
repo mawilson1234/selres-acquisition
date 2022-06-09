@@ -69,6 +69,8 @@ def create_curve(summary: pd.DataFrame, val: str) -> sns.axisgrid.FacetGrid:
 		row_order=['active', 'passive'],
 	)
 	
+	grid.legend.set_title(grid.legend.get_title().replace('_', ' '))
+	
 	for text in grid.legend.get_texts():
 		text.set_text(text.get_text().replace('_', ' '))
 	
