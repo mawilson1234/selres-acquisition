@@ -13,7 +13,7 @@ s:
   mem: 8G
   gpus: v100:1
   partition: gpu
-  time: 00:40:00
+  time: 00:15:00
   mail-type: END,FAIL,INVALID_DEPEND
 
 sweep: ''
