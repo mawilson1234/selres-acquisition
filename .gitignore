@@ -4,6 +4,7 @@ outputs/
 notebooks/
 joblogs/
 scripts/*/
+outputs*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
