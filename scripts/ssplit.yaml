@@ -3,7 +3,7 @@ defaults:
 
 hydra_glob_dirname: conf
 
-name: salts
+name: selres
 
 s:
   jobname: ${name}
