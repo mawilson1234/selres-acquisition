@@ -20,7 +20,7 @@ sweep: ''
 
 runafter: false
 
-header: ['module load CUDA', 'module load cuDNN', 'module load miniconda', 'source activate selres']
+header: ['module load CUDA', 'module load cuDNN', 'module load miniconda', 'conda activate selres']
 command: python
 
 hydra:
