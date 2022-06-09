@@ -109,6 +109,294 @@ multiberts_0:
       "[obj]": [story, legend, name, event, error, myth]
       "[subj]": [church, locals, public, community, villagers, government]
 
+multiberts_1:
+  wash:
+    active:
+      "[subj]": [wind, rain, sun, breeze, tide, sea]
+      "[obj]": [air, room, windows, ground, floor, glass]
+    passive:
+      "[obj]": [bridge, boat, ship, island, wreck, beach]
+      "[subj]": [sea, storm, waves, tide, wind, tsunami]
+  fix:
+    active:
+      "[subj]": [man, captain, woman, boy, girl, voice]
+      "[obj]": [table, door, room, knife, fire, receiver]
+    passive:
+      "[obj]": [problem, building, situation, score, table, result]
+      "[subj]": [committee, government, referee, commission, author, council]
+  surprise:
+    active:
+      "[subj]": [story, name, situation, plan, attack, idea]
+      "[obj]": [player, team, audience, family, people, world]
+    passive:
+      "[obj]": [captain, player, group, professor, chief, doctor]
+      "[subj]": [situation, story, news, attack, visit, plan]
+  frighten:
+    active:
+      "[subj]": [song, smell, name, voice, music, sound]
+      "[obj]": [animals, child, children, young, man, girl]
+    passive:
+      "[obj]": [captain, player, dog, narrator, group, king]
+      "[subj]": [attack, situation, creature, demon, two, threat]
+  discover:
+    active:
+      "[subj]": [team, expedition, russians, researchers, latter, french]
+      "[obj]": [asteroid, planet, island, species, site, body]
+    passive:
+      "[obj]": [asteroid, species, crater, body, planet, island]
+      "[subj]": [expedition, team, us, u, french, discovery]
+  find:
+    active:
+      "[subj]": [larvae, males, former, type, male, moth]
+      "[obj]": [philippines, island, sea, area, territory, country]
+    passive:
+      "[obj]": [type, specimen, parasite, fossil, population, island]
+      "[subj]": [iucn, philippines, family, japanese, latter, author]
+  spot:
+    active:
+      "[subj]": [captain, guard, pilot, dog, voice, driver]
+      "[obj]": [door, light, car, noise, sound, body]
+    passive:
+      "[obj]": [car, aircraft, ship, dog, vehicle, plane]
+      "[subj]": [police, team, locals, media, villagers, group]
+  forget:
+    active:
+      "[subj]": [man, girl, woman, boy, kid, guy]
+      "[obj]": [gun, knife, question, name, phone, door]
+    passive:
+      "[obj]": [scene, noise, sound, room, man, conversation]
+      "[subj]": [crowd, others, police, group, wind, spectators]
+  love:
+    active:
+      "[subj]": [king, author, player, father, hero, devil]
+      "[obj]": [city, children, country, child, dead, book]
+    passive:
+      "[obj]": [man, dog, player, bird, princess, hero]
+      "[subj]": [children, mother, people, women, father, audience]
+  believe:
+    active:
+      "[subj]": [father, boy, girl, child, priest, mother]
+      "[obj]": [truth, god, devil, same, story, idea]
+    passive:
+      "[obj]": [story, site, shrine, tomb, legend, temple]
+      "[subj]": [locals, community, villagers, people, chinese, inhabitants]
+
+multiberts_2:
+  wash:
+    active:
+      "[subj]": [rain, wind, tide, storm, sun, river]
+      "[obj]": [dishes, room, floor, boat, body, scene]
+    passive:
+      "[obj]": [body, image, beach, boat, statue, land]
+      "[subj]": [tide, sea, storm, water, police, ocean]
+  fix:
+    active:
+      "[subj]": [man, captain, woman, guard, men, king]
+      "[obj]": [window, door, blade, table, angle, fire]
+    passive:
+      "[obj]": [position, seat, balance, term, election, vacancy]
+      "[subj]": [senate, government, council, parliament, pope, governor]
+  surprise:
+    active:
+      "[subj]": [news, story, movie, truth, book, film]
+      "[obj]": [audience, reader, family, kids, boys, girls]
+    passive:
+      "[obj]": [audience, family, narrator, king, mayor, doctor]
+      "[subj]": [news, situation, results, incident, weather, story]
+  frighten:
+    active:
+      "[subj]": [smell, story, noise, man, song, incident]
+      "[obj]": [children, people, villagers, audience, others, students]
+    passive:
+      "[obj]": [narrator, audience, boy, girl, protagonist, player]
+      "[subj]": [situation, story, news, man, song, noise]
+  discover:
+    active:
+      "[subj]": [expedition, scientists, japanese, germans, researchers, team]
+      "[obj]": [species, planet, asteroid, island, cave, plant]
+    passive:
+      "[obj]": [asteroid, species, planet, crater, cave, comet]
+      "[subj]": [french, british, observatory, expedition, university, japanese]
+  find:
+    active:
+      "[subj]": [team, larvae, police, expedition, workers, search]
+      "[obj]": [island, village, site, location, body, house]
+    passive:
+      "[obj]": [body, skeleton, skull, dna, specimen, corpse]
+      "[subj]": [police, authorities, team, government, fbi, public]
+  spot:
+    active:
+      "[subj]": [guard, guards, driver, others, men, captain]
+      "[obj]": [car, door, building, truck, house, woman]
+    passive:
+      "[obj]": [car, boat, group, vehicle, ship, plane]
+      "[subj]": [police, authorities, fbi, team, crew, army]
+  forget:
+    active:
+      "[subj]": [man, boy, world, girl, woman, kid]
+      "[obj]": [truth, rules, name, word, facts, time]
+    passive:
+      "[obj]": [song, film, story, book, novel, incident]
+      "[subj]": [public, audience, community, students, villagers, press]
+  love:
+    active:
+      "[subj]": [audience, king, devil, boy, master, father]
+      "[obj]": [other, dead, people, young, earth, truth]
+    passive:
+      "[obj]": [child, boy, player, dog, girl, son]
+      "[subj]": [people, children, audience, crowd, community, villagers]
+  believe:
+    active:
+      "[subj]": [government, church, author, public, court, audience]
+      "[obj]": [truth, bible, story, same, quran, book]
+    passive:
+      "[obj]": [story, temple, shrine, island, site, statue]
+      "[subj]": [community, public, locals, people, villagers, faithful]
+
+multiberts_3:
+  wash:
+    active:
+      "[subj]": [rain, wind, sun, tears, river, tide]
+      "[obj]": [face, blood, hair, skin, air, leaves]
+    passive:
+      "[obj]": [body, boat, ground, sand, ship, beach]
+      "[subj]": [tide, sea, wind, waves, storm, flood]
+  fix:
+    active:
+      "[subj]": [man, judge, captain, king, lady, woman]
+      "[obj]": [line, position, distance, date, point, match]
+    passive:
+      "[obj]": [date, score, number, position, record, limit]
+      "[subj]": [government, court, state, courts, commonwealth, ioc]
+  surprise:
+    active:
+      "[subj]": [woman, first, baby, song, second, one]
+      "[obj]": [other, audience, others, children, mother, child]
+    passive:
+      "[obj]": [family, emperor, captain, king, audience, governor]
+      "[subj]": [news, results, discovery, revelation, story, incident]
+  frighten:
+    active:
+      "[subj]": [song, story, idea, music, name, noise]
+      "[obj]": [children, audience, others, child, people, men]
+    passive:
+      "[obj]": [boy, girl, emperor, king, captain, woman]
+      "[subj]": [noise, people, villagers, soldiers, men, animals]
+  discover:
+    active:
+      "[subj]": [russians, team, expedition, germans, scientists, soviets]
+      "[obj]": [crater, wreck, island, planet, site, asteroid]
+    passive:
+      "[obj]": [crater, island, asteroid, species, station, star]
+      "[subj]": [expedition, netherlands, team, french, sts, german]
+  find:
+    active:
+      "[subj]": [police, team, germans, people, researchers, japanese]
+      "[obj]": [eggs, runway, wood, body, wreckage, egg]
+    passive:
+      "[obj]": [body, skull, wreckage, wreck, specimen, corpse]
+      "[subj]": [police, team, authorities, military, army, fbi]
+  spot:
+    active:
+      "[subj]": [boy, woman, guard, girl, captain, driver]
+      "[obj]": [car, map, door, other, others, house]
+    passive:
+      "[obj]": [car, boat, vehicle, truck, ship, aircraft]
+      "[subj]": [police, locals, crew, media, authorities, guards]
+  forget:
+    active:
+      "[subj]": [boy, girl, woman, child, demon, world]
+      "[obj]": [name, danger, words, word, pain, answer]
+    passive:
+      "[obj]": [name, question, story, incident, threat, pain]
+      "[subj]": [others, crowd, police, end, time, group]
+  love:
+    active:
+      "[subj]": [mother, father, lady, family, queen, wife]
+      "[obj]": [dog, other, city, fish, sea, baby]
+    passive:
+      "[obj]": [girl, boy, child, woman, dog, song]
+      "[subj]": [family, children, people, father, villagers, women]
+  believe:
+    active:
+      "[subj]": [public, audience, victim, president, party, mayor]
+      "[obj]": [truth, same, story, other, facts, law]
+    passive:
+      "[obj]": [tomb, wreck, death, story, shrine, murder]
+      "[subj]": [locals, romans, christians, tribe, taliban, british]
+
+multiberts_4:
+  wash:
+    active:
+      "[subj]": [rain, sun, wind, tide, heat, breeze]
+      "[obj]": [room, skin, body, face, surface, hair]
+    passive:
+      "[obj]": [boat, water, ship, body, beach, sand]
+      "[subj]": [waves, wind, tide, sun, ocean, rain]
+  fix:
+    active:
+      "[subj]": [king, governor, police, captain, judge, president]
+      "[obj]": [clock, alarm, time, window, deadline, problem]
+    passive:
+      "[obj]": [bridge, lock, flag, mast, balance, problem]
+      "[subj]": [king, governor, government, sea, municipality, authorities]
+  surprise:
+    active:
+      "[subj]": [news, revelation, incident, story, action, performance]
+      "[obj]": [audience, team, family, group, player, crew]
+    passive:
+      "[obj]": [team, player, captain, group, crew, pilot]
+      "[subj]": [move, attack, action, noise, news, police]
+  frighten:
+    active:
+      "[subj]": [sound, noise, music, song, sight, pain]
+      "[obj]": [beast, audience, crowd, children, man, girl]
+    passive:
+      "[obj]": [girl, boy, princess, woman, dog, child]
+      "[subj]": [noise, idea, attack, action, music, plan]
+  discover:
+    active:
+      "[subj]": [team, scientists, students, two, researchers, japanese]
+      "[obj]": [book, fossils, body, asteroid, manuscript, building]
+    passive:
+      "[obj]": [asteroid, species, crater, mine, fossil, site]
+      "[subj]": [rev, british, netherlands, french, germans, dutch]
+  find:
+    active:
+      "[subj]": [larvae, team, authors, japanese, researchers, pair]
+      "[obj]": [species, same, butterfly, song, seeds, following]
+    passive:
+      "[obj]": [species, specimen, fossil, type, body, butterfly]
+      "[subj]": [japanese, iucn, government, author, larvae, authorities]
+  spot:
+    active:
+      "[subj]": [pilot, men, others, soldier, crowd, soldiers]
+      "[obj]": [body, gun, car, vampire, corpse, kid]
+    passive:
+      "[obj]": [car, ship, truck, vehicle, boat, body]
+      "[subj]": [police, team, crowd, guards, crew, authorities]
+  forget:
+    active:
+      "[subj]": [man, boy, world, girl, woman, men]
+      "[obj]": [pain, words, smell, fear, kiss, truth]
+    passive:
+      "[obj]": [song, man, game, music, girl, boy]
+      "[subj]": [crowd, others, world, people, group, crowds]
+  love:
+    active:
+      "[subj]": [player, audience, lady, reader, child, king]
+      "[obj]": [sun, world, other, sea, game, air]
+    passive:
+      "[obj]": [girl, child, boy, woman, baby, heroine]
+      "[subj]": [children, audience, family, people, students, villagers]
+  believe:
+    active:
+      "[subj]": [boy, family, captain, group, doctor, team]
+      "[obj]": [story, lie, plan, idea, truth, case]
+    passive:
+      "[obj]": [temple, shrine, tomb, village, legend, deity]
+      "[subj]": [devil, locals, gods, people, almighty, priests]
+
 group_1:
   wash:
     active:
