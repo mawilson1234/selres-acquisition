@@ -27,7 +27,7 @@ from . import selres_utils
 
 log = logging.getLogger(__name__)
 
-ALL_CHECKPOINTS = list(range(0,201,20)) + list(range(200,2001,100))
+ALL_CHECKPOINTS = list(range(0,200,20)) + list(range(200,2001,100))
 
 class SelectionalRestrictionEvaluator:
 	
