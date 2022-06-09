@@ -178,14 +178,7 @@ def get_file_prefix(summary: pd.DataFrame) -> str:
 		returns:
 			file_prefix (str)		: a string containing the dataset and epoch information to prefix to saved files
 	'''
-	dataset_name = summary.eval_data.unique()[0]
-	epoch_label = multiplator(summary.epoch_criteria, multstr = '-')
-	if summary.model_id.unique().size == 1 and not summary.model_id.unique()[0] == 'multiple':
-		epoch_label = '-' + epoch_label
-		magnitude = len(str(summary.total_epochs.unique()[0]))
-		epoch_label = f'{str(summary.eval_epoch.unique()[0]).zfill(magnitude)}{epoch_label}'
-		
-	file_prefix = f'{dataset_name}-{epoch_label}'
+	file_prefix = summary.data.unique()[0]
 	
 	return file_prefix
 
