@@ -355,8 +355,8 @@ class SelectionalRestrictionEvaluator:
 							'gf ratio conf'
 						] = float(group_conf)
 		
-		summary['verb'] 		= [st.split()[0] for st in summary.sentence_type]
-		summary['voice'] 		= [st.split()[1] for st in summary.sentence_type]
+		summary['verb'] 		= [st.split()[0] for st in summary['sentence type']]
+		summary['voice'] 		= [st.split()[1] for st in summary['sentence type']]
 		summary['verb profile'] = [self.cfg.data.verb_profiles[v] for v in summary.verb]
 		
 		# reorder and rename the columns for display and ease of use
