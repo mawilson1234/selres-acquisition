@@ -2,18 +2,91 @@ name: active_passive
 description: Active-Passive pairs
 
 sentence_types:
+  - wash active
+  - wash passive
+  - fix active
+  - fix passive
+  - surprise active
+  - surprise passive
+  - frighten active
+  - frighten passive
+  - discover active
+  - discover passive
+  - find active
+  - find passive
   - spot active
   - spot passive
+  - forget active
+  - forget passive
+  - love active
+  - love passive
+  - believe active
+  - believe passive
   
 verb_profiles:
+  wash: 1
+  fix: 1
+  surprise: 2
+  frighten: 2
+  discover: 3
+  find: 3
   spot: 4
+  forget: 4
+  love: 5
+  believe: 5
   
-which_args: animate_inanimate
+which_args: group_1
 
-animate_inanimate:
-  '[subj]': [boy, girl]
-  '[obj]' : [ball, tree]
+group_1:
+  wash:
+    '[subj]': [boy, girl]
+    '[obj]' : [car, dog]
+  fix:
+    '[subj]': [boy, girl]
+    '[obj]' : [computer, car]
+  surprise:
+    '[subj]': [noise, jolt]
+    '[obj]' : [boy, girl]
+  frighten:
+    '[subj]': [noise, jolt]
+    '[obj]' : [boy, girl]
+  discover:
+    '[subj]': [boy, girl]
+    '[obj]' : [secret, source]
+  find:
+    '[subj]': [boy, girl]
+    '[obj]' : [secret, source]
+  spot:
+    '[subj]': [boy, girl]
+    '[obj]' : [ball, tree]
+  forget:
+    '[subj]': [boy, girl]
+    '[obj]' : [ball, goal]
+  love:
+    '[subj]': [boy, girl]
+    '[obj]' : [game, food]
+  believe:
+    '[subj]': [boy, girl]
+    '[obj]' : [truth, lie]
     
 data:
+  - The [subj] washed the [obj].
+  - The [obj] was washed by the [subj].
+  - The [subj] fixed the [obj].
+  - The [obj] was fixed by the [subj].
+  - The [subj] surprises the [obj].
+  - The [obj] is surprised by the [subj].
+  - The [subj] frightens the [obj].
+  - The [obj] is frightened by the [subj].
+  - The [subj] discovered the [obj].
+  - The [obj] was discovered by the [subj].
+  - The [subj] found the [obj].
+  - The [obj] was found by the [subj].
   - The [subj] spotted the [obj].
   - The [obj] was spotted by the [subj].
+  - The [subj] forgot the [obj].
+  - The [obj] was forgotten by the [subj].
+  - The [subj] loves the [obj].
+  - The [obj] is loved by the [subj].
+  - The [subj] believes the [obj].
+  - The [obj] is believed by the [subj].

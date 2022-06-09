@@ -9,7 +9,7 @@ use_gpu: false # whether to use gpu
 
 hydra:
   run:
-    dir: outputs/${model_name:${model.string_id}}/${data.name}
+    dir: outputs/${model_name:${model.string_id}}/${data.name}-${data.which_args}
   sweep:
     dir: ${model}
-    subdir: outputs/${model_name:${model.string_id}}/${data.name}
+    subdir: outputs/${model_name:${model.string_id}}/${data.name}-${data.which_args}
