@@ -1,0 +1,4 @@
+string_id: google/multiberts-seed_3
+
+model_kwargs: {}
+tokenizer_kwargs: {}

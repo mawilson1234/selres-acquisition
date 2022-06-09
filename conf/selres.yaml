@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - data: active_passive
+  - model: multiberts_0
+            
+create_plots: true # whether to create plots or skip them
+
+use_gpu: false # whether to use gpu
+
+hydra:
+  run:
+    dir: outputs/${model_name:${model.string_id}}/${data.name}
+  sweep:
+    dir: ${model}
+    subdir: outputs/${model_name:${model.string_id}}/${data.name}

@@ -1,0 +1,5 @@
+thought: use tuner methodology of evaluating relative probability of different tokens
+to get aconf scores for passives of different verbs for intermediate multibert checkpoints
+to see whether they replicate the developmental path of children in Nguyen & Pearl 2021.
+
+should be fairly straightforward to adapt the previous code

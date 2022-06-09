@@ -1,0 +1,28 @@
+defaults:
+  - _self_
+
+hydra_glob_dirname: conf
+
+name: salts
+
+s:
+  jobname: ${name}
+  output: joblogs/%x_%j.txt
+  ntasks: 1
+  cpus-per-task: 1
+  mem: 8G
+  gpus: v100:1
+  partition: gpu
+  time: 00:40:00
+  mail-type: END,FAIL,INVALID_DEPEND
+
+sweep: ''
+
+runafter: false
+
+header: ['module load CUDA', 'module load cuDNN', 'module load miniconda', 'source activate salts']
+command: python
+
+hydra:
+  run:
+    dir: scripts/${name}

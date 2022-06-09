@@ -1,0 +1,19 @@
+name: active_passive
+description: Active-Passive pairs
+
+sentence_types:
+  - spot active
+  - spot passive
+  
+verb_profiles:
+  spot: 4
+  
+which_args: animate_inanimate
+
+animate_inanimate:
+  '[subj]': [boy, girl]
+  '[obj]' : [ball, tree]
+    
+data:
+  - The [subj] spotted the [obj].
+  - The [obj] was spotted by the [subj].
