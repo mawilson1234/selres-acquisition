@@ -116,11 +116,14 @@ def load_data(cfg: DictConfig) -> Tuple[List[str]]:
 		if 'multibert' in cfg.model.string_id:
 			args = cfg.model.string_id.replace('google/', '').replace('-seed', '')
 		else:
-			args = cfg.model.string_id.replace('nyu-mll/', '').replace('-base', '-base-1B')
+			args = cfg.model.string_id.replace('nyu-mll/', '').replace('-base', '_')
 	
 	gfs = set([gf for verb in cfg.data[args] for voice in cfg.data[args][verb] for gf in cfg.data[args][verb][voice]])
 	
-	mask_token = AutoTokenizer.from_pretrained(cfg.model.string_id, **cfg.model.tokenizer_kwargs).mask_token
+	if 'multibert' in cfg.model.string_id:
+		mask_token = AutoTokenizer.from_pretrained(cfg.model.string_id, **cfg.model.tokenizer_kwargs).mask_token
+	else:
+		mask_token = AutoTokenizer.from_pretrained(cfg.model.string_id.replace('-base', '-base-1B'), **cfg.model.tokenizer_kwargs).mask_token
 	
 	masked_data = []
 	for l in lines:
