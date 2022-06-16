@@ -19,7 +19,7 @@ lg.set_verbosity_error()
 
 OmegaConf.register_new_resolver(
 	'model_name', 
-	lambda string_id: string_id.replace('google/', '').replace('-seed', '')
+	lambda string_id: string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base-', '_')
 )
 
 OmegaConf.register_new_resolver(
