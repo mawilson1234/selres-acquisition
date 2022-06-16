@@ -139,7 +139,7 @@ def load_data(cfg: DictConfig) -> Tuple[List[str]]:
 	return lines, masked_data
 
 def save_predictions(predictions: List[Dict]):
-	file = f'{predictions.model.unique()[0]}:\n'
+	file = f'{predictions.model.unique()[0].replace("roberta", "miniberta")}:\n'
 	for verb, df in predictions.groupby('verb', sort=False):
 		file += f'  {verb}:\n'
 		for voice, df2 in df.groupby('voice', sort=False):

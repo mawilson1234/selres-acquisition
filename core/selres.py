@@ -243,9 +243,11 @@ class SelectionalRestrictionEvaluator:
 		
 		self.data = self.load_data()
 		
+		breakpoint()
+
 		all_args = set([arg for verb in self.cfg.data.args for voice in self.cfg.data.args[verb] for gf in self.cfg.data.args[verb][voice] for arg in self.cfg.data.args[verb][voice][gf]])
-		check_tokenizations(all_args)
-		
+		check_tokenizations(all_args)		
+
 		self.all_checkpoints = [f'{self.cfg.model.string_id}-step_{checkpoint}k' for checkpoint in ALL_CHECKPOINTS[self.model_base]] \
 			if self.model_base == 'multiberts' \
 			else [self.cfg.model.string_id.replace('base', checkpoint) for checkpoint in ALL_CHECKPOINTS[self.model_base]]
