@@ -24,7 +24,9 @@ OmegaConf.register_new_resolver(
 
 OmegaConf.register_new_resolver(
 	'which_args',
-	lambda string_id, which_args: which_args if not which_args == 'model' else string_id.replace('google/', '').replace('-seed', '')
+	lambda string_id, which_args: which_args \
+		if not which_args == 'model' \
+		else string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base-', '_').replace('roberta', 'miniberta')
 )
 
 @hydra.main(config_path='conf', config_name='selres')

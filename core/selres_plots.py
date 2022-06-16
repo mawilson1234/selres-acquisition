@@ -58,7 +58,7 @@ def create_curve(summary: pd.DataFrame, val: str) -> sns.axisgrid.FacetGrid:
 	summary = summary.copy(deep=True)
 	summary = summary.assign(verb_profile = summary.verb_profile.astype(str))
 	col = 'gf_ratio_name'
-	if val in ['gf_ratio_conf', 'gf_accuracy', 'entropy']:
+	if val in ['gf_ratio_conf', 'grammatical_function_accuracy', 'entropy']:
 		summary = summary.drop(['odds_ratio', 'token_id', 'token'], axis=1).drop_duplicates(ignore_index=True).reset_index(drop=True)
 		if val in ['entropy']:
 			summary = summary.drop(['gf_ratio_name', 'linear_ratio_name', 'gf_ratio_conf'], axis=1).drop_duplicates(ignore_index=True).reset_index(drop=True)
@@ -93,15 +93,15 @@ def create_curve(summary: pd.DataFrame, val: str) -> sns.axisgrid.FacetGrid:
 				title = f'Confidence of {re.findall("(.*),", title)[0]} arguments in {re.findall("(.*)/", title)[0]} position, {re.findall(", (.*)", title)[0]}'
 			elif val == 'entropy':
 				title = f'Entropy of {re.findall("(.*),", title)[0]} position, {re.findall(", (.*)", title)[0]}'
-			elif val == 'or_accuracy':
+			elif val == 'token_accuracy':
 				title = f'Accuracy of {re.findall("(.*)/", title)[0]} arguments in {re.findall("(.*),", title)[0]} position, {re.findall(", (.*)", title)[0]}'
-			elif val == 'gf_accuracy':
+			elif val == 'grammatical_function_accuracy':
 				title = f'Accuracy of {re.findall("(.*),", title)[0]} arguments in {re.findall("(.*)/", title)[0]} position, {re.findall(", (.*)", title)[0]}'
 			
 			axes[r][c].set_title(title, fontsize=10)
 			axes[r][c].set_xlabel(axes[r][c].get_xlabel().replace('_', ' '))
 			axes[r][c].set_ylabel(axes[r][c].get_ylabel().replace('_', ' '))
-			if val not in ['entropy', 'or_accuracy', 'gf_accuracy']:
+			if val not in ['entropy', 'token_accuracy', 'grammatical_function_accuracy']:
 				axes[r][c].plot(axes[r][c].get_xlim(), (0,0), linestyle='--', color='k', scalex=False, alpha=0.3, zorder=0)
 			
 			axes[r][c].set_xticks([t for t in axes[r][c].get_xticks() if int(t) in summary.checkpoint.unique()])

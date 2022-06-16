@@ -96,7 +96,11 @@ class SelectionalRestrictionEvaluator:
 		df['data'] = self.cfg.data.name
 		df['args_group'] = self.cfg.data.which_args \
 							if not self.cfg.data.which_args == 'model' \
-							else self.cfg.model.string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base', '_')
+							else self.cfg.model.string_id.replace('google/', '') \
+								.replace('-seed', '') \
+								.replace('nyu-mll/', '') \
+								.replace('-base-', '_') \
+								.replace('roberta', 'miniberta')
 		
 		return df
 	
