@@ -349,6 +349,7 @@ class SelectionalRestrictionEvaluator:
 				summary.extend(checkpoint_results)
 		
 		summary 		= pd.DataFrame(summary)
+		summary['token accuracy'] = summary['odds ratio'] > 0
 		
 		# get confidence scores for each group for each checkpoint
 		if 'gf ratio name' in summary.columns:
@@ -369,7 +370,9 @@ class SelectionalRestrictionEvaluator:
 									(summary['gf ratio name'] == ratio_name),
 									'gf ratio conf'
 								] = float(group_conf)
-		
+			
+			summary['grammatical function accuracy'] = summary['gf ratio conf'] > 0
+				
 		# we only needed the rows with probabilities for e.g. objects in subject position temporarily to get the confidence score
 		# now we can drop the rows for which there is no confidence score to get just what we want
 		summary 		= summary.dropna().reset_index(drop=True)

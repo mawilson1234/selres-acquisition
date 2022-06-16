@@ -34,9 +34,14 @@ def get_plot_title(
 def plot_learning_curves(summary: pd.DataFrame) -> None:
 	'''Wrapper to create various plots from a single call when a summary df is passed.'''
 	with PdfPages(f'{selres_utils.get_file_prefix(summary)}-curves.pdf') as pdf:
-		for val in ['odds_ratio', 'gf_ratio_conf', 'entropy']:
+		for val in ['odds_ratio', 'gf_ratio_conf', 'entropy', 'token_accuracy', 'grammatical_function_accuracy']:
 			if val in summary.columns:
 				grid = create_curve(summary=summary, val=val)
+				pdf.savefig(bbox_inches='tight')
+				plt.close('all')
+				del grid
+				
+				grid = create_curve(summary=summary[summary.checkpoint <= 200], val=val)
 				pdf.savefig(bbox_inches='tight')
 				plt.close('all')
 				del grid
@@ -52,7 +57,7 @@ def create_curve(summary: pd.DataFrame, val: str) -> sns.axisgrid.FacetGrid:
 	summary = summary.copy(deep=True)
 	summary = summary.assign(verb_profile = summary.verb_profile.astype(str))
 	col = 'gf_ratio_name'
-	if val in ['gf_ratio_conf', 'entropy']:
+	if val in ['gf_ratio_conf', 'gf_accuracy', 'entropy']:
 		summary = summary.drop(['odds_ratio', 'token_id', 'token'], axis=1).drop_duplicates(ignore_index=True).reset_index(drop=True)
 		if val in ['entropy']:
 			summary = summary.drop(['gf_ratio_name', 'linear_ratio_name', 'gf_ratio_conf'], axis=1).drop_duplicates(ignore_index=True).reset_index(drop=True)
@@ -87,11 +92,15 @@ def create_curve(summary: pd.DataFrame, val: str) -> sns.axisgrid.FacetGrid:
 				title = f'Confidence of {re.findall("(.*),", title)[0]} arguments in {re.findall("(.*)/", title)[0]} position, {re.findall(", (.*)", title)[0]}'
 			elif val == 'entropy':
 				title = f'Entropy of {re.findall("(.*),", title)[0]} position, {re.findall(", (.*)", title)[0]}'
+			elif val == 'or_accuracy':
+				title = f'Accuracy of {re.findall("(.*)/", title)[0]} arguments in {re.findall("(.*),", title)[0]} position, {re.findall(", (.*)", title)[0]}'
+			elif val == 'gf_accuracy':
+				title = f'Accuracy of {re.findall("(.*),", title)[0]} arguments in {re.findall("(.*)/", title)[0]} position, {re.findall(", (.*)", title)[0]}'
 			
 			axes[r][c].set_title(title, fontsize=10)
 			axes[r][c].set_xlabel(axes[r][c].get_xlabel().replace('_', ' '))
 			axes[r][c].set_ylabel(axes[r][c].get_ylabel().replace('_', ' '))
-			if val != 'entropy':
+			if val not in ['entropy', 'or_accuracy', 'gf_accuracy']:
 				axes[r][c].plot(axes[r][c].get_xlim(), (0,0), linestyle='--', color='k', scalex=False, alpha=0.3, zorder=0)
 			
 			axes[r][c].set_xticks([t for t in axes[r][c].get_xticks() if int(t) in summary.checkpoint.unique()])

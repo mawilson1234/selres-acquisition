@@ -468,7 +468,7 @@ group_1:
     passive:
       '[subj]': [boy, girl]
       '[obj]' : [truth, lie]
-    
+
 data:
   - The [subj] washed the [obj].
   - The [obj] was washed by the [subj].
