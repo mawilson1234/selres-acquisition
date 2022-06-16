@@ -41,10 +41,11 @@ def plot_learning_curves(summary: pd.DataFrame) -> None:
 				plt.close('all')
 				del grid
 				
-				grid = create_curve(summary=summary[summary.checkpoint <= 200], val=val)
-				pdf.savefig(bbox_inches='tight')
-				plt.close('all')
-				del grid
+				if summary.model_base.unique()[0] == 'multiberts':
+					grid = create_curve(summary=summary[summary.checkpoint <= 200], val=val)
+					pdf.savefig(bbox_inches='tight')
+					plt.close('all')
+					del grid
 
 def create_curve(summary: pd.DataFrame, val: str) -> sns.axisgrid.FacetGrid:
 	'''

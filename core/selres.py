@@ -60,7 +60,7 @@ class SelectionalRestrictionEvaluator:
 		
 		# this is so we don't overwrite the original dataset as we do this
 		dataset = deepcopy(dataset)
-		inputs = selres_utils.format_data_for_tokenizer(dataset, mask_token=self.mask_token, lower=lower[self.model_base])
+		inputs = selres_utils.format_data_for_tokenizer(dataset, mask_token=self.mask_token, lower=LOWER[self.model_base])
 		inputs = self.tokenizer(inputs, return_tensors='pt', padding=True).to(self.device)
 		
 		masked_indices = [(sentence == self.mask_token_id).nonzero(as_tuple=True)[0].tolist() for sentence in inputs['input_ids']]
@@ -218,7 +218,7 @@ class SelectionalRestrictionEvaluator:
 				use_gpu	(bool)	: used during evaluation. useful when loading a model trained on cpu on gpu, or vice versa
 		'''
 		def check_tokenizations(tokens: Set[str]):
-			tokenized = [self.tokenizer.tokenize(token) for token in tokens]
+			tokenized = [self.tokenizer.tokenize(token.replace(chr(288), ' ')) for token in tokens]
 			if any(tokens[0] == self.unk_token or len(tokens) > 1 for tokens in tokenized):
 				raise ValueError(f'Some arguments were not tokenized as a single token!: {[token for token, tokenized_token in zip(tokens, tokenized) if tokenized_token[0] == self.unk_token or len(tokenized_token) > 1]}')
 		
@@ -231,11 +231,17 @@ class SelectionalRestrictionEvaluator:
 			log.info(f'Using GPU: {torch.cuda.get_device_name(torch.cuda.current_device())}')
 		
 		with open_dict(self.cfg):
-			self.cfg.data.args = self.cfg.data[self.cfg.data.which_args] if not self.cfg.data.which_args == 'model' else self.cfg.data[self.cfg.model.string_id.replace('google/', '').replace('-seed', '')]
+			if not self.cfg.data.which_args == 'model':
+				self.cfg.data.args = self.cfg.data[self.cfg.data.which_args] 
+			else:
+				if 'multibert' in self.cfg.model.string_id:
+					self.cfg.data.args = self.cfg.data[self.cfg.model.string_id.replace('google/', '').replace('-seed', '')]
+				else:
+					self.cfg.data.args = self.cfg.data[self.cfg.model.string_id.replace('nyu-mll/', '').replace('-base-', '_').replace('roberta', 'miniberta')]
 		
 		self.model_base = 'multiberts' if 'multibert' in self.cfg.model.string_id else 'miniberta'
 		
-		self.tokenizer = AutoTokenizer.from_pretrained(self.cfg.model.string_id, **self.cfg.model.tokenizer_kwargs)
+		self.tokenizer = AutoTokenizer.from_pretrained(self.cfg.model.string_id.replace('-base', '-base-1B'), **self.cfg.model.tokenizer_kwargs)
 		self.mask_token	= self.tokenizer.mask_token
 		self.mask_token_id = self.tokenizer.convert_tokens_to_ids(self.mask_token)
 		self.unk_token = self.tokenizer.unk_token
@@ -243,8 +249,6 @@ class SelectionalRestrictionEvaluator:
 		
 		self.data = self.load_data()
 		
-		breakpoint()
-
 		all_args = set([arg for verb in self.cfg.data.args for voice in self.cfg.data.args[verb] for gf in self.cfg.data.args[verb][voice] for arg in self.cfg.data.args[verb][voice][gf]])
 		check_tokenizations(all_args)		
 
@@ -273,7 +277,7 @@ class SelectionalRestrictionEvaluator:
 		lines					= [line.strip() for line in self.cfg.data.data]
 		
 		sentences 				= [[s.strip() for s in r.split(' , ')] for r in lines]
-		sentences 				= selres_utils.format_data_for_tokenizer(sentences, mask_token=self.mask_token, lower=lower[self.model_base])
+		sentences 				= selres_utils.format_data_for_tokenizer(sentences, mask_token=self.mask_token, lower=LOWER[self.model_base])
 		sentence_types 			= self.cfg.data.sentence_types
 		
 		lens 					= [len(sentence_group) for sentence_group in sentences]
