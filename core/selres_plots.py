@@ -104,10 +104,11 @@ def create_curve(summary: pd.DataFrame, val: str) -> sns.axisgrid.FacetGrid:
 			if val not in ['entropy', 'token_accuracy', 'grammatical_function_accuracy']:
 				axes[r][c].plot(axes[r][c].get_xlim(), (0,0), linestyle='--', color='k', scalex=False, alpha=0.3, zorder=0)
 			
-			axes[r][c].set_xticks([t for t in axes[r][c].get_xticks() if int(t) in summary.checkpoint.unique()])
+			if all([isinstance(cp,int) for cp in summary.checkpoint.unique()]):
+				axes[r][c].set_xticks([t for t in axes[r][c].get_xticks() if int(t) in summary.checkpoint.unique()])
 	
 	plt.gcf().suptitle(
-		summary.string_id.unique()[0].replace('google/', '').replace('-seed_', ' ').replace('nyu-mll/', '').replace('-base', '').replace('-med-small', '') + 
+		summary.string_id.unique()[0].replace('google/', '').replace('-seed_', ' ').replace('nyu-mll/', '').replace('-base-', '_').replace('roberta', 'miniberta').re + 
 		', data: ' +
 		summary.data.unique()[0].replace('_', ' ') +
 		', args: ' +
