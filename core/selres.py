@@ -27,7 +27,15 @@ from . import selres_utils
 
 log = logging.getLogger(__name__)
 
-ALL_CHECKPOINTS = list(range(0,200,20)) + list(range(200,2001,100))
+ALL_CHECKPOINTS = {
+	'multiberts': list(range(0,200,20)) + list(range(200,2001,100)),
+	'miniberta': ['med-small-1M', 'base-10M', 'base-100M', 'base-1B']
+}
+
+LOWER = {
+	'multiberts': True,
+	'miniberta': False,
+}
 
 class SelectionalRestrictionEvaluator:
 	
@@ -52,7 +60,7 @@ class SelectionalRestrictionEvaluator:
 		
 		# this is so we don't overwrite the original dataset as we do this
 		dataset = deepcopy(dataset)
-		inputs = selres_utils.format_data_for_tokenizer(dataset, mask_token=self.mask_token)
+		inputs = selres_utils.format_data_for_tokenizer(dataset, mask_token=self.mask_token, lower=lower[self.model_base])
 		inputs = self.tokenizer(inputs, return_tensors='pt', padding=True).to(self.device)
 		
 		masked_indices = [(sentence == self.mask_token_id).nonzero(as_tuple=True)[0].tolist() for sentence in inputs['input_ids']]
@@ -86,7 +94,9 @@ class SelectionalRestrictionEvaluator:
 		
 		df['string_id'] = self.cfg.model.string_id	
 		df['data'] = self.cfg.data.name
-		df['args_group'] = self.cfg.data.which_args if not self.cfg.data.which_args == 'model' else self.cfg.model.string_id.replace('google/', '').replace('-seed', '')
+		df['args_group'] = self.cfg.data.which_args \
+							if not self.cfg.data.which_args == 'model' \
+							else self.cfg.model.string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base', '_')
 		
 		return df
 	
@@ -223,6 +233,8 @@ class SelectionalRestrictionEvaluator:
 		with open_dict(self.cfg):
 			self.cfg.data.args = self.cfg.data[self.cfg.data.which_args] if not self.cfg.data.which_args == 'model' else self.cfg.data[self.cfg.model.string_id.replace('google/', '').replace('-seed', '')]
 		
+		self.model_base = 'multiberts' if 'multibert' in self.cfg.model.string_id else 'miniberta'
+		
 		self.tokenizer = AutoTokenizer.from_pretrained(self.cfg.model.string_id, **self.cfg.model.tokenizer_kwargs)
 		self.mask_token	= self.tokenizer.mask_token
 		self.mask_token_id = self.tokenizer.convert_tokens_to_ids(self.mask_token)
@@ -234,7 +246,9 @@ class SelectionalRestrictionEvaluator:
 		all_args = set([arg for verb in self.cfg.data.args for voice in self.cfg.data.args[verb] for gf in self.cfg.data.args[verb][voice] for arg in self.cfg.data.args[verb][voice][gf]])
 		check_tokenizations(all_args)
 		
-		self.all_checkpoints = [f'{self.cfg.model.string_id}-step_{checkpoint}k' for checkpoint in ALL_CHECKPOINTS]
+		self.all_checkpoints = [f'{self.cfg.model.string_id}-step_{checkpoint}k' for checkpoint in ALL_CHECKPOINTS[self.model_base]] \
+			if self.model_base == 'multiberts' \
+			else [self.cfg.model.string_id.replace('base', checkpoint) for checkpoint in ALL_CHECKPOINTS[self.model_base]]
 	
 	def __repr__(self) -> str:
 		'''Return a string that eval() can be called on to create an identical selres object'''
@@ -257,7 +271,7 @@ class SelectionalRestrictionEvaluator:
 		lines					= [line.strip() for line in self.cfg.data.data]
 		
 		sentences 				= [[s.strip() for s in r.split(' , ')] for r in lines]
-		sentences 				= selres_utils.format_data_for_tokenizer(sentences, mask_token=self.mask_token)
+		sentences 				= selres_utils.format_data_for_tokenizer(sentences, mask_token=self.mask_token, lower=lower[self.model_base])
 		sentence_types 			= self.cfg.data.sentence_types
 		
 		lens 					= [len(sentence_group) for sentence_group in sentences]

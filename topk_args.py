@@ -37,7 +37,10 @@ def topk_args(cfg: DictConfig) -> None:
 	'''
 	print(OmegaConf.to_yaml(cfg, resolve=True))
 	
-	tokenizer = AutoTokenizer.from_pretrained(cfg.model.string_id, **cfg.model.tokenizer_kwargs)
+	if 'multibert' in cfg.model.string_id:
+		tokenizer = AutoTokenizer.from_pretrained(cfg.model.string_id, **cfg.model.tokenizer_kwargs)
+	else:
+		tokenizer = AutoTokenizer.from_pretrained(cfg.model.string_id.replace('-base', '-base-1B'), **cfg.model.tokenizer_kwargs)
 	mask_token = tokenizer.mask_token
 	
 	data, masked_data = load_data(cfg)
@@ -51,7 +54,14 @@ def get_topk_predictions(
 	masked_data: List[str],
 	tokenizer: 'PreTrainedTokenizer',
 ) -> pd.DataFrame:
-	args = cfg.data.which_args if not cfg.data.which_args == 'model' else cfg.model.string_id.replace('google/', '').replace('-seed', '')
+	if not cfg.data.which_args == 'model':
+		args = cfg.data.which_args 
+	else:
+		if 'multibert' in cfg.model.string_id:
+			args = cfg.model.string_id.replace('google/', '').replace('-seed', '')
+		else:
+			args = cfg.model.string_id.replace('nyu-mll/', '').replace('-base', '-base-1B')
+	
 	gfs = set([gf for verb in cfg.data[args] for voice in cfg.data[args][verb] for gf in cfg.data[args][verb][voice]])
 	inputs = tokenizer(masked_data, return_tensors='pt', padding=True)
 	
@@ -86,7 +96,7 @@ def get_topk_predictions(
 				topk = [k for k in tokenizer.convert_ids_to_tokens(torch.topk(prob[index], k=cfg.num_args+more, sorted=True).indices) if not k in to_filter][:cfg.num_args]
 			
 			predictions.append({
-				'model': cfg.model.string_id.replace('google/', '').replace('-seed', ''),
+				'model': cfg.model.string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base-', '_'),
 				'sentence': sentence,
 				'verb': sentence_type.split()[0],
 				'voice': sentence_type.split()[1],
@@ -100,7 +110,14 @@ def load_data(cfg: DictConfig) -> Tuple[List[str]]:
 	lines = [line.strip() for line in cfg.data.data]
 	lines = [l.lower() for l in lines]
 	
-	args = cfg.data.which_args if not cfg.data.which_args == 'model' else cfg.model.string_id.replace('google/', '').replace('-seed', '')
+	if not cfg.data.which_args == 'model':
+		args = cfg.data.which_args 
+	else:
+		if 'multibert' in cfg.model.string_id:
+			args = cfg.model.string_id.replace('google/', '').replace('-seed', '')
+		else:
+			args = cfg.model.string_id.replace('nyu-mll/', '').replace('-base', '-base-1B')
+	
 	gfs = set([gf for verb in cfg.data[args] for voice in cfg.data[args][verb] for gf in cfg.data[args][verb][voice]])
 	
 	mask_token = AutoTokenizer.from_pretrained(cfg.model.string_id, **cfg.model.tokenizer_kwargs).mask_token

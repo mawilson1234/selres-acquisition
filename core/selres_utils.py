@@ -161,7 +161,7 @@ def move_cols(
     return(df[seg1 + seg2 + seg3])
 
 @crawler(str)
-def format_data_for_tokenizer(data: str, mask_token: str) -> str:
+def format_data_for_tokenizer(data: str, mask_token: str, lower: bool) -> str:
 	'''
 	Format a string for use with a tokenizer
 	Recursor means that this applies recursively to any nested data structure, formatting all tokens,
@@ -174,9 +174,20 @@ def format_data_for_tokenizer(data: str, mask_token: str) -> str:
 		returns:
 			the data formatted for use with the tokenizer in string_id
 	'''
-	return data.lower().replace(mask_token.lower(), mask_token)
+	return data.lower().replace(mask_token.lower(), mask_token) if lower else data
 
 def format_checkpoint(s: str) -> str:
-	'''Formats a string with a multiBERTs checkpoint for plotting/display.'''
-	s = int(re.findall('-step_(.*)k', s)[0])
+	'''Formats a string with acheckpoint for plotting/display.'''
+	if 'step' in s:
+		s = int(re.findall('-step_(.*)k', s)[0])
+	else:
+		if '1M' in s:
+			s = '1,000,000'
+		elif '10M' in s:
+			s = '10,000,000'
+		elif '100M' in s:
+			s = '100,000,000'
+		elif '1B' in s:
+			s = '1,000,000,000'
+	
 	return s
