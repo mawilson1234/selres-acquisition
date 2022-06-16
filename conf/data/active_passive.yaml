@@ -400,218 +400,218 @@ multiberts_4:
 miniberta_1:
   wash:
     active:
-      "[subj]": [wind, rain, water, sun, nurse, river]
-      "[obj]": [dishes, floor, place, boat, house, body]
+      "[subj]": [Ġwind, Ġstorm, Ġrain, Ġmen, Ġpolice, Ġfire]
+      "[obj]": [Ġmud, Ġground, Ġsand, Ġhouse, Ġbody, Ġbodies]
     passive:
-      "[obj]": [body, boat, house, building, water, car]
-      "[subj]": [storm, sea, tide, crew, police, river]
+      "[obj]": [Ġbody, Ġsand, Ġboat, Ġhouse, Ġground, Ġbeach]
+      "[subj]": [Ġsea, Ġstorm, Ġtide, Ġrain, Ġlocals, Ġflood]
   fix:
     active:
-      "[subj]": [man, woman, judge, clerk, girl, guard]
-      "[obj]": [sign, window, door, line, problem, clock]
+      "[subj]": [Ġman, Ġdoctor, Ġmaster, Ġcaptain, ĠCaptain, ĠMaster]
+      "[obj]": [Ġproblem, Ġalarm, Ġdoor, Ġgate, Ġfire, Ġsituation]
     passive:
-      "[obj]": [date, position, distance, problem, number, line]
-      "[subj]": [board, law, court, judge, engineer, government]
+      "[obj]": [Ġproblem, Ġtable, Ġceiling, Ġhole, Ġfloor, Ġfire]
+      "[subj]": [Ġking, ĠMaster, Ġdoctor, Ġmaster, ĠCaptain, Ġact]
   surprise:
     active:
-      "[subj]": [thought, idea, answer, word, truth, pain]
-      "[obj]": [girl, boy, man, others, world, woman]
+      "[subj]": [Ġend, Ġstory, Ġnight, Ġhero, Ġaction, Ġwind]
+      "[obj]": [Ġworld, Ġreader, Ġmost, Ġday, Ġheart, Ġviewer]
     passive:
-      "[obj]": [family, doctor, mayor, group, judge, captain]
-      "[subj]": [news, results, incident, accident, situation, change]
+      "[obj]": [Ġaudience, Ġcrowd, Ġmayor, ĠKing, ĠQueen, Ġboy]
+      "[subj]": [Ġnews, Ġscene, Ġresults, Ġdisplay, Ġsight, Ġreception]
   frighten:
     active:
-      "[subj]": [noise, idea, fire, fear, smell, cold]
-      "[obj]": [children, people, animals, others, child, birds]
+      "[subj]": [Ġwind, Ġdarkness, Ġsun, Ġstorm, Ġfire, Ġnight]
+      "[obj]": [Ġchildren, Ġchild, Ġworld, Ġmind, Ġsoul, Ġheart]
     passive:
-      "[obj]": [family, girl, boy, woman, child, dog]
-      "[subj]": [news, noise, rain, weather, sun, fire]
+      "[obj]": [Ġgirl, Ġboy, Ġchild, Ġaudience, Ġchildren, Ġman]
+      "[subj]": [Ġnoise, Ġnews, Ġstorm, Ġdanger, Ġsight, Ġaction]
   discover:
     active:
-      "[subj]": [team, police, crew, miners, researchers, scientists]
-      "[obj]": [tunnel, lake, body, fossils, book, bomb]
+      "[subj]": [Ġscientists, Ġteam, Ġresearchers, Ġboy, Ġman, Ġscientist]
+      "[obj]": [Ġsecret, Ġtruth, Ġcave, Ġtreasure, Ġcrystal, Ġgold]
     passive:
-      "[obj]": [asteroid, species, crater, wreck, genus, peak]
-      "[subj]": [french, discovery, observatory, russians, italians, japanese]
+      "[obj]": [Ġbody, Ġcave, Ġtomb, Ġship, Ġtreasure, Ġring]
+      "[subj]": [Ġscientists, Ġarchaeologists, Ġexpedition, Ġlocals, ĠRussians, Ġpolice]
   find:
     active:
-      "[subj]": [first, larvae, party, species, pilot, second]
-      "[obj]": [sea, ground, light, body, right, dead]
+      "[subj]": [Ġpolice, Ġteam, Ġmen, Ġhunters, Ġparty, Ġthieves]
+      "[obj]": [Ġbody, Ġkey, Ġmap, Ġbodies, Ġboat, Ġgirl]
     passive:
-      "[obj]": [body, wreck, species, site, wreckage, egg]
-      "[subj]": [iucn, police, authorities, crew, family, collector]
+      "[obj]": [Ġbody, Ġcorpse, Ġmap, Ġtreasure, Ġring, Ġkey]
+      "[subj]": [Ġpolice, Ġhunters, Ġteam, Ġauthorities, Ġvillagers, Ġmen]
   spot:
     active:
-      "[subj]": [guard, others, driver, crowd, guards, men]
-      "[obj]": [body, light, car, knife, boat, bird]
+      "[subj]": [Ġpolice, Ġscouts, Ġguards, Ġmen, Ġguard, Ġboys]
+      "[obj]": [Ġgirl, Ġman, Ġcar, Ġbody, Ġship, Ġgirls]
     passive:
-      "[obj]": [car, boat, vehicle, helicopter, truck, ship]
-      "[subj]": [police, crowd, crew, cops, driver, pilot]
+      "[obj]": [Ġcar, Ġhelicopter, Ġvehicle, Ġboat, Ġship, Ġplane]
+      "[subj]": [Ġpolice, Ġcamera, Ġneighbours, Ġlocals, Ġauthorities, Ġscouts]
   forget:
     active:
-      "[subj]": [man, woman, world, boy, devil, king]
-      "[obj]": [words, name, word, truth, key, money]
+      "[subj]": [Ġman, Ġboy, Ġgirl, Ġteacher, Ġpriest, Ġwoman]
+      "[obj]": [Ġrest, Ġtruth, Ġmessage, Ġbook, Ġletter, Ġtime]
     passive:
-      "[obj]": [body, man, boy, girl, note, name]
-      "[subj]": [crowd, others, wind, moment, fire, waitress]
+      "[obj]": [Ġbook, Ġstory, Ġmanuscript, Ġtreasure, Ġbody, Ġmemory]
+      "[subj]": [Ġvillagers, Ġinhabitants, Ġpeople, Ġlocals, Ġauthorities, Ġworld]
   love:
     active:
-      "[subj]": [lady, man, boy, family, player, devil]
-      "[obj]": [money, children, dog, child, truth, book]
+      "[subj]": [Ġhero, Ġboy, Ġone, ĠLord, Ġking, ĠKing]
+      "[obj]": [Ġchildren, Ġbest, Ġsea, Ġwomen, Ġland, Ġpeople]
     passive:
-      "[obj]": [girl, boy, child, dog, baby, woman]
-      "[subj]": [people, villagers, audience, girls, children, others]
+      "[obj]": [Ġgirl, Ġhero, Ġman, Ġchild, Ġboy, Ġwoman]
+      "[subj]": [ĠLord, Ġworld, Ġfaithful, Ġpeople, Ġgods, Ġsaints]
   believe:
     active:
-      "[subj]": [government, church, public, court, family, mayor]
-      "[obj]": [truth, same, book, gospel, law, lie]
+      "[subj]": [Ġpriest, Ġman, Ġone, Ġking, ĠKing, Ġreader]
+      "[obj]": [Ġtruth, Ġsame, Ġprophecy, ĠBible, Ġlie, Ġcontrary]
     passive:
-      "[obj]": [story, legend, name, event, error, myth]
-      "[subj]": [church, locals, public, community, villagers, government]
+      "[obj]": [Ġstory, Ġtruth, Ġevent, Ġplot, Ġprophecy, Ġsecret]
+      "[subj]": [Ġpeople, Ġbelievers, Ġinhabitants, ĠChurch, Ġlocals, Ġvillagers]
 
 miniberta_2:
   wash:
     active:
-      "[subj]": [wind, rain, water, sun, nurse, river]
-      "[obj]": [dishes, floor, place, boat, house, body]
+      "[subj]": [Ġsun, Ġwind, Ġrain, Ġfire, Ġdoctor, Ġnurse]
+      "[obj]": [Ġhouse, Ġdishes, Ġfloor, Ġpaper, Ġground, Ġroom]
     passive:
-      "[obj]": [body, boat, house, building, water, car]
-      "[subj]": [storm, sea, tide, crew, police, river]
+      "[obj]": [Ġhouse, Ġship, Ġbeach, Ġbed, Ġcar, Ġbody]
+      "[subj]": [Ġsea, Ġwater, Ġriver, Ġflood, Ġstorm, Ġrain]
   fix:
     active:
-      "[subj]": [man, woman, judge, clerk, girl, guard]
-      "[obj]": [sign, window, door, line, problem, clock]
+      "[subj]": [Ġman, Ġdoctor, Ġking, ĠLord, Ġmirror, Ġmachine]
+      "[obj]": [Ġtable, Ġproblem, Ġdoor, Ġsituation, Ġscene, Ġwheel]
     passive:
-      "[obj]": [date, position, distance, problem, number, line]
-      "[subj]": [board, law, court, judge, engineer, government]
+      "[obj]": [Ġdate, Ġcalendar, Ġorder, Ġhouse, Ġday, Ġsituation]
+      "[subj]": [Ġhand, Ġfire, ĠLord, Ġcontract, Ġcouncil, ĠCouncil]
   surprise:
     active:
-      "[subj]": [thought, idea, answer, word, truth, pain]
-      "[obj]": [girl, boy, man, others, world, woman]
+      "[subj]": [Ġstory, Ġbook, Ġparty, Ġnews, Ġsong, Ġnovel]
+      "[obj]": [Ġworld, Ġaudience, Ġkids, Ġcrew, Ġfamily, Ġcrowd]
     passive:
-      "[obj]": [family, doctor, mayor, group, judge, captain]
-      "[subj]": [news, results, incident, accident, situation, change]
+      "[obj]": [Ġman, Ġaudience, Ġboy, Ġgirl, Ġgroup, Ġhe]
+      "[subj]": [Ġnews, Ġrevelation, Ġcomment, Ġinterruption, Ġincident, Ġsituation]
   frighten:
     active:
-      "[subj]": [noise, idea, fire, fear, smell, cold]
-      "[obj]": [children, people, animals, others, child, birds]
+      "[subj]": [Ġdarkness, Ġfear, Ġsun, Ġlight, Ġwind, Ġcurse]
+      "[obj]": [Ġworld, Ġchildren, Ġchild, Ġman, Ġboy, Ġsoul]
     passive:
-      "[obj]": [family, girl, boy, woman, child, dog]
-      "[subj]": [news, noise, rain, weather, sun, fire]
+      "[obj]": [Ġman, Ġchild, Ġboy, Ġgirl, Ġmind, Ġdog]
+      "[subj]": [Ġnoise, Ġnews, Ġdanger, Ġsituation, Ġtruth, Ġdarkness]
   discover:
     active:
-      "[subj]": [team, police, crew, miners, researchers, scientists]
-      "[obj]": [tunnel, lake, body, fossils, book, bomb]
+      "[subj]": [Ġteam, Ġscientists, Ġcrew, Ġgroup, Ġman, Ġmen]
+      "[obj]": [Ġbody, Ġtruth, Ġcave, Ġhouse, Ġbook, Ġship]
     passive:
-      "[obj]": [asteroid, species, crater, wreck, genus, peak]
-      "[subj]": [french, discovery, observatory, russians, italians, japanese]
+      "[obj]": [Ġbody, Ġship, Ġhouse, Ġvillage, Ġcave, Ġplanet]
+      "[subj]": [Ġpolice, Ġsea, Ġscientists, Ġparty, Ġteam, Ġcrew]
   find:
     active:
-      "[subj]": [first, larvae, party, species, pilot, second]
-      "[obj]": [sea, ground, light, body, right, dead]
+      "[subj]": [Ġteam, Ġman, Ġmen, Ġthey, Ġothers, Ġcrew]
+      "[obj]": [Ġbody, Ġhouse, Ġcar, Ġbook, Ġbox, Ġgun]
     passive:
-      "[obj]": [body, wreck, species, site, wreckage, egg]
-      "[subj]": [iucn, police, authorities, crew, family, collector]
+      "[obj]": [Ġbody, Ġhouse, Ġcorpse, Ġcar, Ġchild, Ġship]
+      "[subj]": [Ġsea, Ġpolice, Ġriver, Ġfire, Ġroad, Ġlake]
   spot:
     active:
-      "[subj]": [guard, others, driver, crowd, guards, men]
-      "[obj]": [body, light, car, knife, boat, bird]
+      "[subj]": [Ġdriver, Ġpilot, Ġboy, Ġmen, Ġdog, Ġguard]
+      "[obj]": [Ġcar, Ġlight, Ġhouse, Ġintruder, Ġgirl, Ġvan]
     passive:
-      "[obj]": [car, boat, vehicle, helicopter, truck, ship]
-      "[subj]": [police, crowd, crew, cops, driver, pilot]
+      "[obj]": [Ġdog, Ġship, Ġcar, Ġboy, Ġman, Ġgirl]
+      "[subj]": [Ġpolice, Ġguards, Ġwind, Ġroad, Ġhunters, Ġparty]
   forget:
     active:
-      "[subj]": [man, woman, world, boy, devil, king]
-      "[obj]": [words, name, word, truth, key, money]
+      "[subj]": [Ġworld, Ġman, Ġgirl, ĠI, Ġboy, Ġkids]
+      "[obj]": [Ġtruth, Ġbook, Ġcar, Ġwords, Ġstory, Ġphone]
     passive:
-      "[obj]": [body, man, boy, girl, note, name]
-      "[subj]": [crowd, others, wind, moment, fire, waitress]
+      "[obj]": [Ġbook, Ġhouse, Ġmemory, Ġname, Ġsong, Ġday]
+      "[subj]": [Ġend, Ġpeople, Ġtime, Ġfire, Ġauthorities, Ġcrowd]
   love:
     active:
-      "[subj]": [lady, man, boy, family, player, devil]
-      "[obj]": [money, children, dog, child, truth, book]
+      "[subj]": [Ġwoman, Ġone, Ġmother, Ġfather, Ġhe, ĠHe]
+      "[obj]": [Ġtruth, Ġheart, Ġchildren, Ġsoul, Ġbaby, Ġearth]
     passive:
-      "[obj]": [girl, boy, child, dog, baby, woman]
-      "[subj]": [people, villagers, audience, girls, children, others]
+      "[obj]": [Ġgirl, Ġboy, Ġwoman, Ġbeloved, ĠQueen, Ġson]
+      "[subj]": [Ġgods, Ġchildren, Ġpeople, ĠGods, Ġfamily, ĠAlmighty]
   believe:
     active:
-      "[subj]": [government, church, public, court, family, mayor]
-      "[obj]": [truth, same, book, gospel, law, lie]
+      "[subj]": [Ġworld, Ġfamily, Ġman, Ġenemy, Ġchild, Ġgroup]
+      "[obj]": [Ġtruth, Ġstory, Ġlaw, Ġprophecy, Ġothers, Ġattack]
     passive:
-      "[obj]": [story, legend, name, event, error, myth]
-      "[subj]": [church, locals, public, community, villagers, government]
+      "[obj]": [Ġtruth, Ġstory, Ġbook, Ġname, Ġtale, Ġking]
+      "[subj]": [ĠChurch, Ġpeople, ĠSun, ĠBible, ĠQuran, ĠDevil]
 
 miniberta_3:
   wash:
     active:
-      "[subj]": [wind, rain, water, sun, nurse, river]
-      "[obj]": [dishes, floor, place, boat, house, body]
+      "[subj]": [Ġsun, Ġrain, Ġwind, Ġmaid, Ġdoctor, Ġwoman]
+      "[obj]": [Ġfloor, Ġground, Ġdishes, Ġhouse, Ġroom, Ġsnow]
     passive:
-      "[obj]": [body, boat, house, building, water, car]
-      "[subj]": [storm, sea, tide, crew, police, river]
+      "[obj]": [Ġbody, Ġground, Ġhouse, Ġpond, Ġfloor, Ġbeach]
+      "[subj]": [Ġboat, Ġsea, Ġsun, Ġfire, Ġship, Ġshore]
   fix:
     active:
-      "[subj]": [man, woman, judge, clerk, girl, guard]
-      "[obj]": [sign, window, door, line, problem, clock]
+      "[subj]": [Ġking, Ġgoddess, Ġangel, Ġwoman, Ġman, Ġsun]
+      "[obj]": [Ġtable, Ġdoor, Ġfloor, Ġwall, Ġhouse, Ġroom]
     passive:
-      "[obj]": [date, position, distance, problem, number, line]
-      "[subj]": [board, law, court, judge, engineer, government]
+      "[obj]": [Ġfloor, Ġtable, Ġclock, Ġceiling, Ġroom, Ġgrid]
+      "[subj]": [Ġking, Ġcouncil, Ġowner, Ġsun, Ġwall, Ġhand]
   surprise:
     active:
-      "[subj]": [thought, idea, answer, word, truth, pain]
-      "[obj]": [girl, boy, man, others, world, woman]
+      "[subj]": [Ġstory, Ġdream, Ġfuture, Ġplace, Ġbook, Ġevent]
+      "[obj]": [Ġreader, Ġgirls, Ġfamily, Ġboys, Ġgirl, Ġcrowd]
     passive:
-      "[obj]": [family, doctor, mayor, group, judge, captain]
-      "[subj]": [news, results, incident, accident, situation, change]
+      "[obj]": [Ġgirl, Ġboy, Ġreader, Ġking, Ġdoctor, Ġman]
+      "[subj]": [Ġbeauty, Ġsight, Ġnews, Ġsound, Ġnoise, Ġappearance]
   frighten:
     active:
-      "[subj]": [noise, idea, fire, fear, smell, cold]
-      "[obj]": [children, people, animals, others, child, birds]
+      "[subj]": [Ġdream, Ġdarkness, Ġdevil, Ġword, Ġfear, Ġthought]
+      "[obj]": [Ġchildren, Ġchild, Ġboy, Ġgirls, Ġreader, Ġworld]
     passive:
-      "[obj]": [family, girl, boy, woman, child, dog]
-      "[subj]": [news, noise, rain, weather, sun, fire]
+      "[obj]": [Ġgirl, Ġboy, Ġwoman, Ġchild, Ġman, Ġqueen]
+      "[subj]": [Ġnoise, Ġwind, Ġdarkness, Ġsound, Ġrain, Ġheat]
   discover:
     active:
-      "[subj]": [team, police, crew, miners, researchers, scientists]
-      "[obj]": [tunnel, lake, body, fossils, book, bomb]
+      "[subj]": [Ġboy, Ġgirl, Ġman, Ġteam, Ġgroup, Ġpolice]
+      "[obj]": [Ġtruth, Ġtreasure, Ġhouse, Ġsecret, Ġcave, Ġbody]
     passive:
-      "[obj]": [asteroid, species, crater, wreck, genus, peak]
-      "[subj]": [french, discovery, observatory, russians, italians, japanese]
+      "[obj]": [Ġcave, Ġsite, Ġhouse, Ġbody, Ġvillage, Ġbuilding]
+      "[subj]": [Ġpolice, Ġlocals, Ġarchaeologists, Ġauthorities, ĠFBI, Ġvillagers]
   find:
     active:
-      "[subj]": [first, larvae, party, species, pilot, second]
-      "[obj]": [sea, ground, light, body, right, dead]
+      "[subj]": [Ġboy, Ġhunter, Ġboys, Ġman, Ġgroup, Ġteam]
+      "[obj]": [Ġbody, Ġhouse, Ġtreasure, Ġkey, Ġnote, Ġmap]
     passive:
-      "[obj]": [body, wreck, species, site, wreckage, egg]
-      "[subj]": [iucn, police, authorities, crew, family, collector]
+      "[obj]": [Ġcorpse, Ġhead, Ġletter, Ġskeleton, Ġbook, Ġboy]
+      "[subj]": [Ġpolice, Ġauthorities, Ġvillagers, Ġdoctor, Ġowner, Ġlocals]
   spot:
     active:
-      "[subj]": [guard, others, driver, crowd, guards, men]
-      "[obj]": [body, light, car, knife, boat, bird]
+      "[subj]": [Ġsun, Ġdriver, Ġguard, Ġboys, Ġdog, Ġgroup]
+      "[obj]": [Ġhouse, Ġcar, Ġmap, Ġhelicopter, Ġbird, Ġlight]
     passive:
-      "[obj]": [car, boat, vehicle, helicopter, truck, ship]
-      "[subj]": [police, crowd, crew, cops, driver, pilot]
+      "[obj]": [Ġdog, Ġcar, Ġgirl, Ġship, Ġboat, Ġboy]
+      "[subj]": [Ġpolice, Ġhelicopter, Ġguards, Ġvillagers, Ġdriver, Ġlocals]
   forget:
     active:
-      "[subj]": [man, woman, world, boy, devil, king]
-      "[obj]": [words, name, word, truth, key, money]
+      "[subj]": [Ġgirl, Ġboy, Ġgoddess, Ġwoman, Ġman, Ġdevil]
+      "[obj]": [Ġtime, Ġkiss, Ġbook, Ġtruth, Ġplace, Ġdream]
     passive:
-      "[obj]": [body, man, boy, girl, note, name]
-      "[subj]": [crowd, others, wind, moment, fire, waitress]
+      "[obj]": [Ġevent, Ġsong, Ġstory, Ġdream, Ġplace, Ġday]
+      "[subj]": [Ġchildren, Ġfamily, Ġvillagers, Ġpeople, Ġcrowd, Ġstudents]
   love:
     active:
-      "[subj]": [lady, man, boy, family, player, devil]
-      "[obj]": [money, children, dog, child, truth, book]
+      "[subj]": [Ġwoman, Ġdevil, Ġhero, Ġman, Ġboy, ĠLord]
+      "[obj]": [Ġworld, Ġmusic, Ġsea, Ġcity, Ġplace, Ġsong]
     passive:
-      "[obj]": [girl, boy, child, dog, baby, woman]
-      "[subj]": [people, villagers, audience, girls, children, others]
+      "[obj]": [Ġboy, Ġgirl, Ġchild, Ġman, Ġvillage, Ġplace]
+      "[subj]": [Ġchildren, Ġfamily, Ġvillagers, Ġpeople, ĠLord, Ġfaithful]
   believe:
     active:
-      "[subj]": [government, church, public, court, family, mayor]
-      "[obj]": [truth, same, book, gospel, law, lie]
+      "[subj]": [Ġdevil, Ġreader, Ġworld, Ġhero, Ġwoman, Ġgirl]
+      "[obj]": [Ġtruth, Ġstory, Ġprophecy, Ġdead, Ġgods, Ġman]
     passive:
-      "[obj]": [story, legend, name, event, error, myth]
-      "[subj]": [church, locals, public, community, villagers, government]
+      "[obj]": [Ġstory, Ġtruth, Ġlegend, Ġprophecy, Ġmyth, Ġsame]
+      "[subj]": [Ġgods, Ġpeople, ĠBuddha, Ġbelievers, Ġdead, ĠChurch]
 
 group_1:
   wash:
