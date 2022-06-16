@@ -19,7 +19,7 @@ lg.set_verbosity_error()
 
 OmegaConf.register_new_resolver(
 	'model_name', 
-	lambda string_id: string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base-', '_')
+	lambda string_id: string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base-', '_').replace('roberta', 'miniberta')
 )
 
 OmegaConf.register_new_resolver(
@@ -74,7 +74,11 @@ def get_topk_predictions(
 	sentence_gf_indices 	= [dict(zip(gf, index)) for gf, index in tuple(zip(gfs_in_order, masked_indices))]
 	
 	# Run the model on the masked inputs to get the predictions
-	model = AutoModelForMaskedLM.from_pretrained(cfg.model.string_id, **cfg.model.model_kwargs)
+	if 'multibert' in cfg.model.string_id:
+		model = AutoModelForMaskedLM.from_pretrained(cfg.model.string_id, **cfg.model.model_kwargs)
+	else:
+		model = AutoModelForMaskedLM.from_pretrained(cfg.model.string_id.replace('-base', '-base-1B'), **cfg.model.model_kwargs)
+	
 	model.eval()
 	with torch.no_grad():
 		outputs = model(**inputs)
