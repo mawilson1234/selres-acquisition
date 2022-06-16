@@ -182,12 +182,12 @@ def format_checkpoint(s: str) -> str:
 		s = int(re.findall('-step_(.*)k', s)[0])
 	else:
 		if '1M' in s:
-			s = '1,000,000'
+			s = '1M'
 		elif '10M' in s:
-			s = '10,000,000'
+			s = '10M'
 		elif '100M' in s:
-			s = '100,000,000'
+			s = '100M'
 		elif '1B' in s:
-			s = '1,000,000,000'
+			s = '1000M'
 	
 	return s
