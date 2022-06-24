@@ -382,11 +382,11 @@ class SelectionalRestrictionEvaluator:
 				for arg_type, df2 in df.groupby('arg type'):
 					df2 = df2[df2['gf ratio name'].str.startswith(arg_type)]
 					for ratio_name, df3 in df2.groupby('gf ratio name'):
-						mean_prob = df3.probability.sum()
+						sum_prob = df3.probability.sum()
 						other_arg_types = df[df['arg type'] != arg_type]['arg type'].unique()
 						for other_arg_type in other_arg_types:
-							other_mean_prob = df[(df['arg type'] == other_arg_type) & (df['gf ratio name'] == f'{arg_type}/{other_arg_type}')].probability.sum()
-							group_conf = np.log(mean_prob/other_mean_prob)
+							other_sum_prob = df[(df['arg type'] == other_arg_type) & (df['gf ratio name'] == f'{arg_type}/{other_arg_type}')].probability.sum()
+							group_conf = np.log(sum_prob/other_sum_prob)
 							summary.loc[
 									(summary.checkpoint == checkpoint) & 
 									(summary.sentence == sentence) & 
