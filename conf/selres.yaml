@@ -7,7 +7,7 @@ create_plots: true # whether to create plots or skip them
 
 use_gpu: false # whether to use gpu
 
-num_args: 6 # generate the top num_args predictions per position when using check_args
+num_args: 100 # generate the top num_args predictions per position when using check_args
 
 hydra:
   run:
