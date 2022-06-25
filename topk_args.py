@@ -149,7 +149,7 @@ def save_predictions(predictions: List[Dict]):
 			for gf, df3 in df2.groupby('gf', sort=False):
 				file += f'      "{gf}": [{df3.topk.unique()[0]}]\n'
 	
-	with open(f'{predictions.model.unique()[0].replace("roberta", "miniberta"}-args.yaml', 'wt') as out_file:
+	with open(f'{predictions.model.unique()[0].replace("roberta", "miniberta")}-args.yaml', 'wt') as out_file:
 		out_file.write(file)
 
 if __name__ == '__main__':
