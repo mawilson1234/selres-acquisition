@@ -648,7 +648,7 @@ group_1:
       '[obj]' : ['secret', 'source']
     passive:
       '[subj]': ['boy', 'girl']
-      '[obj]' : ['secret', 'source]  
+      '[obj]' : ['secret', 'source']  
   find:
     active:
       '[subj]': ['boy', 'girl']
