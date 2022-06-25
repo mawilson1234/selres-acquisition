@@ -106,7 +106,7 @@ def get_topk_predictions(
 			more = 0
 			while any(k in to_filter for k in topk) or not len(topk) == cfg.num_args:
 				more += 1
-				to_filter = set([x for _, other_index in other_gf_indices.items() for x in tokenizer.convert_ids_to_tokens(torch.topk(prob[other_index], k=cfg.num_args+more).indices)])
+				to_filter = to_filter.union(set([x for _, other_index in other_gf_indices.items() for x in tokenizer.convert_ids_to_tokens(torch.topk(prob[other_index], k=cfg.num_args+more).indices)]))
 				topk = [k for k in tokenizer.convert_ids_to_tokens(torch.topk(prob[index], k=cfg.num_args+more, sorted=True).indices) if not k in to_filter][:cfg.num_args]
 				
 				# filter out partial tokens
