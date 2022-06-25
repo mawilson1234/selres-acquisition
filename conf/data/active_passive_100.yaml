@@ -1,0 +1,708 @@
+name: active_passive
+description: Active-Passive pairs
+
+sentence_types:
+  - wash active
+  - wash passive
+  - fix active
+  - fix passive
+  - surprise active
+  - surprise passive
+  - frighten active
+  - frighten passive
+  - discover active
+  - discover passive
+  - find active
+  - find passive
+  - spot active
+  - spot passive
+  - forget active
+  - forget passive
+  - love active
+  - love passive
+  - believe active
+  - believe passive
+  
+verb_profiles:
+  wash: 1
+  fix: 1
+  surprise: 2
+  frighten: 2
+  discover: 3
+  find: 3
+  spot: 4
+  forget: 4
+  love: 5
+  believe: 5
+  
+which_args: model
+
+multiberts_0:
+  wash:
+    active:
+      "[subj]": [wind, rain, water, sun, nurse, river]
+      "[obj]": [dishes, floor, place, boat, house, body]
+    passive:
+      "[obj]": [body, boat, house, building, water, car]
+      "[subj]": [storm, sea, tide, crew, police, river]
+  fix:
+    active:
+      "[subj]": [man, woman, judge, clerk, girl, guard]
+      "[obj]": [sign, window, door, line, problem, clock]
+    passive:
+      "[obj]": [date, position, distance, problem, number, line]
+      "[subj]": [board, law, court, judge, engineer, government]
+  surprise:
+    active:
+      "[subj]": [thought, idea, answer, word, truth, pain]
+      "[obj]": [girl, boy, man, others, world, woman]
+    passive:
+      "[obj]": [family, doctor, mayor, group, judge, captain]
+      "[subj]": [news, results, incident, accident, situation, change]
+  frighten:
+    active:
+      "[subj]": [noise, idea, fire, fear, smell, cold]
+      "[obj]": [children, people, animals, others, child, birds]
+    passive:
+      "[obj]": [family, girl, boy, woman, child, dog]
+      "[subj]": [news, noise, rain, weather, sun, fire]
+  discover:
+    active:
+      "[subj]": [team, police, crew, miners, researchers, scientists]
+      "[obj]": [tunnel, lake, body, fossils, book, bomb]
+    passive:
+      "[obj]": [asteroid, species, crater, wreck, genus, peak]
+      "[subj]": [french, discovery, observatory, russians, italians, japanese]
+  find:
+    active:
+      "[subj]": [first, larvae, party, species, pilot, second]
+      "[obj]": [sea, ground, light, body, right, dead]
+    passive:
+      "[obj]": [body, wreck, species, site, wreckage, egg]
+      "[subj]": [iucn, police, authorities, crew, family, collector]
+  spot:
+    active:
+      "[subj]": [guard, others, driver, crowd, guards, men]
+      "[obj]": [body, light, car, knife, boat, bird]
+    passive:
+      "[obj]": [car, boat, vehicle, helicopter, truck, ship]
+      "[subj]": [police, crowd, crew, cops, driver, pilot]
+  forget:
+    active:
+      "[subj]": [man, woman, world, boy, devil, king]
+      "[obj]": [words, name, word, truth, key, money]
+    passive:
+      "[obj]": [body, man, boy, girl, note, name]
+      "[subj]": [crowd, others, wind, moment, fire, waitress]
+  love:
+    active:
+      "[subj]": [lady, man, boy, family, player, devil]
+      "[obj]": [money, children, dog, child, truth, book]
+    passive:
+      "[obj]": [girl, boy, child, dog, baby, woman]
+      "[subj]": [people, villagers, audience, girls, children, others]
+  believe:
+    active:
+      "[subj]": [government, church, public, court, family, mayor]
+      "[obj]": [truth, same, book, gospel, law, lie]
+    passive:
+      "[obj]": [story, legend, name, event, error, myth]
+      "[subj]": [church, locals, public, community, villagers, government]
+
+multiberts_1:
+  wash:
+    active:
+      "[subj]": [wind, rain, sun, breeze, tide, sea]
+      "[obj]": [air, room, windows, ground, floor, glass]
+    passive:
+      "[obj]": [bridge, boat, ship, island, wreck, beach]
+      "[subj]": [sea, storm, waves, tide, wind, tsunami]
+  fix:
+    active:
+      "[subj]": [man, captain, woman, boy, girl, voice]
+      "[obj]": [table, door, room, knife, fire, receiver]
+    passive:
+      "[obj]": [problem, building, situation, score, table, result]
+      "[subj]": [committee, government, referee, commission, author, council]
+  surprise:
+    active:
+      "[subj]": [story, name, situation, plan, attack, idea]
+      "[obj]": [player, team, audience, family, people, world]
+    passive:
+      "[obj]": [captain, player, group, professor, chief, doctor]
+      "[subj]": [situation, story, news, attack, visit, plan]
+  frighten:
+    active:
+      "[subj]": [song, smell, name, voice, music, sound]
+      "[obj]": [animals, child, children, young, man, girl]
+    passive:
+      "[obj]": [captain, player, dog, narrator, group, king]
+      "[subj]": [attack, situation, creature, demon, two, threat]
+  discover:
+    active:
+      "[subj]": [team, expedition, russians, researchers, latter, french]
+      "[obj]": [asteroid, planet, island, species, site, body]
+    passive:
+      "[obj]": [asteroid, species, crater, body, planet, island]
+      "[subj]": [expedition, team, us, u, french, discovery]
+  find:
+    active:
+      "[subj]": [larvae, males, former, type, male, moth]
+      "[obj]": [philippines, island, sea, area, territory, country]
+    passive:
+      "[obj]": [type, specimen, parasite, fossil, population, island]
+      "[subj]": [iucn, philippines, family, japanese, latter, author]
+  spot:
+    active:
+      "[subj]": [captain, guard, pilot, dog, voice, driver]
+      "[obj]": [door, light, car, noise, sound, body]
+    passive:
+      "[obj]": [car, aircraft, ship, dog, vehicle, plane]
+      "[subj]": [police, team, locals, media, villagers, group]
+  forget:
+    active:
+      "[subj]": [man, girl, woman, boy, kid, guy]
+      "[obj]": [gun, knife, question, name, phone, door]
+    passive:
+      "[obj]": [scene, noise, sound, room, man, conversation]
+      "[subj]": [crowd, others, police, group, wind, spectators]
+  love:
+    active:
+      "[subj]": [king, author, player, father, hero, devil]
+      "[obj]": [city, children, country, child, dead, book]
+    passive:
+      "[obj]": [man, dog, player, bird, princess, hero]
+      "[subj]": [children, mother, people, women, father, audience]
+  believe:
+    active:
+      "[subj]": [father, boy, girl, child, priest, mother]
+      "[obj]": [truth, god, devil, same, story, idea]
+    passive:
+      "[obj]": [story, site, shrine, tomb, legend, temple]
+      "[subj]": [locals, community, villagers, people, chinese, inhabitants]
+
+multiberts_2:
+  wash:
+    active:
+      "[subj]": [rain, wind, tide, storm, sun, river]
+      "[obj]": [dishes, room, floor, boat, body, scene]
+    passive:
+      "[obj]": [body, image, beach, boat, statue, land]
+      "[subj]": [tide, sea, storm, water, police, ocean]
+  fix:
+    active:
+      "[subj]": [man, captain, woman, guard, men, king]
+      "[obj]": [window, door, blade, table, angle, fire]
+    passive:
+      "[obj]": [position, seat, balance, term, election, vacancy]
+      "[subj]": [senate, government, council, parliament, pope, governor]
+  surprise:
+    active:
+      "[subj]": [news, story, movie, truth, book, film]
+      "[obj]": [audience, reader, family, kids, boys, girls]
+    passive:
+      "[obj]": [audience, family, narrator, king, mayor, doctor]
+      "[subj]": [news, situation, results, incident, weather, story]
+  frighten:
+    active:
+      "[subj]": [smell, story, noise, man, song, incident]
+      "[obj]": [children, people, villagers, audience, others, students]
+    passive:
+      "[obj]": [narrator, audience, boy, girl, protagonist, player]
+      "[subj]": [situation, story, news, man, song, noise]
+  discover:
+    active:
+      "[subj]": [expedition, scientists, japanese, germans, researchers, team]
+      "[obj]": [species, planet, asteroid, island, cave, plant]
+    passive:
+      "[obj]": [asteroid, species, planet, crater, cave, comet]
+      "[subj]": [french, british, observatory, expedition, university, japanese]
+  find:
+    active:
+      "[subj]": [team, larvae, police, expedition, workers, search]
+      "[obj]": [island, village, site, location, body, house]
+    passive:
+      "[obj]": [body, skeleton, skull, dna, specimen, corpse]
+      "[subj]": [police, authorities, team, government, fbi, public]
+  spot:
+    active:
+      "[subj]": [guard, guards, driver, others, men, captain]
+      "[obj]": [car, door, building, truck, house, woman]
+    passive:
+      "[obj]": [car, boat, group, vehicle, ship, plane]
+      "[subj]": [police, authorities, fbi, team, crew, army]
+  forget:
+    active:
+      "[subj]": [man, boy, world, girl, woman, kid]
+      "[obj]": [truth, rules, name, word, facts, time]
+    passive:
+      "[obj]": [song, film, story, book, novel, incident]
+      "[subj]": [public, audience, community, students, villagers, press]
+  love:
+    active:
+      "[subj]": [audience, king, devil, boy, master, father]
+      "[obj]": [other, dead, people, young, earth, truth]
+    passive:
+      "[obj]": [child, boy, player, dog, girl, son]
+      "[subj]": [people, children, audience, crowd, community, villagers]
+  believe:
+    active:
+      "[subj]": [government, church, author, public, court, audience]
+      "[obj]": [truth, bible, story, same, quran, book]
+    passive:
+      "[obj]": [story, temple, shrine, island, site, statue]
+      "[subj]": [community, public, locals, people, villagers, faithful]
+
+multiberts_3:
+  wash:
+    active:
+      "[subj]": [rain, wind, sun, tears, river, tide]
+      "[obj]": [face, blood, hair, skin, air, leaves]
+    passive:
+      "[obj]": [body, boat, ground, sand, ship, beach]
+      "[subj]": [tide, sea, wind, waves, storm, flood]
+  fix:
+    active:
+      "[subj]": [man, judge, captain, king, lady, woman]
+      "[obj]": [line, position, distance, date, point, match]
+    passive:
+      "[obj]": [date, score, number, position, record, limit]
+      "[subj]": [government, court, state, courts, commonwealth, ioc]
+  surprise:
+    active:
+      "[subj]": [woman, first, baby, song, second, one]
+      "[obj]": [other, audience, others, children, mother, child]
+    passive:
+      "[obj]": [family, emperor, captain, king, audience, governor]
+      "[subj]": [news, results, discovery, revelation, story, incident]
+  frighten:
+    active:
+      "[subj]": [song, story, idea, music, name, noise]
+      "[obj]": [children, audience, others, child, people, men]
+    passive:
+      "[obj]": [boy, girl, emperor, king, captain, woman]
+      "[subj]": [noise, people, villagers, soldiers, men, animals]
+  discover:
+    active:
+      "[subj]": [russians, team, expedition, germans, scientists, soviets]
+      "[obj]": [crater, wreck, island, planet, site, asteroid]
+    passive:
+      "[obj]": [crater, island, asteroid, species, station, star]
+      "[subj]": [expedition, netherlands, team, french, sts, german]
+  find:
+    active:
+      "[subj]": [police, team, germans, people, researchers, japanese]
+      "[obj]": [eggs, runway, wood, body, wreckage, egg]
+    passive:
+      "[obj]": [body, skull, wreckage, wreck, specimen, corpse]
+      "[subj]": [police, team, authorities, military, army, fbi]
+  spot:
+    active:
+      "[subj]": [boy, woman, guard, girl, captain, driver]
+      "[obj]": [car, map, door, other, others, house]
+    passive:
+      "[obj]": [car, boat, vehicle, truck, ship, aircraft]
+      "[subj]": [police, locals, crew, media, authorities, guards]
+  forget:
+    active:
+      "[subj]": [boy, girl, woman, child, demon, world]
+      "[obj]": [name, danger, words, word, pain, answer]
+    passive:
+      "[obj]": [name, question, story, incident, threat, pain]
+      "[subj]": [others, crowd, police, end, time, group]
+  love:
+    active:
+      "[subj]": [mother, father, lady, family, queen, wife]
+      "[obj]": [dog, other, city, fish, sea, baby]
+    passive:
+      "[obj]": [girl, boy, child, woman, dog, song]
+      "[subj]": [family, children, people, father, villagers, women]
+  believe:
+    active:
+      "[subj]": [public, audience, victim, president, party, mayor]
+      "[obj]": [truth, same, story, other, facts, law]
+    passive:
+      "[obj]": [tomb, wreck, death, story, shrine, murder]
+      "[subj]": [locals, romans, christians, tribe, taliban, british]
+
+multiberts_4:
+  wash:
+    active:
+      "[subj]": [rain, sun, wind, tide, heat, breeze]
+      "[obj]": [room, skin, body, face, surface, hair]
+    passive:
+      "[obj]": [boat, water, ship, body, beach, sand]
+      "[subj]": [waves, wind, tide, sun, ocean, rain]
+  fix:
+    active:
+      "[subj]": [king, governor, police, captain, judge, president]
+      "[obj]": [clock, alarm, time, window, deadline, problem]
+    passive:
+      "[obj]": [bridge, lock, flag, mast, balance, problem]
+      "[subj]": [king, governor, government, sea, municipality, authorities]
+  surprise:
+    active:
+      "[subj]": [news, revelation, incident, story, action, performance]
+      "[obj]": [audience, team, family, group, player, crew]
+    passive:
+      "[obj]": [team, player, captain, group, crew, pilot]
+      "[subj]": [move, attack, action, noise, news, police]
+  frighten:
+    active:
+      "[subj]": [sound, noise, music, song, sight, pain]
+      "[obj]": [beast, audience, crowd, children, man, girl]
+    passive:
+      "[obj]": [girl, boy, princess, woman, dog, child]
+      "[subj]": [noise, idea, attack, action, music, plan]
+  discover:
+    active:
+      "[subj]": [team, scientists, students, two, researchers, japanese]
+      "[obj]": [book, fossils, body, asteroid, manuscript, building]
+    passive:
+      "[obj]": [asteroid, species, crater, mine, fossil, site]
+      "[subj]": [rev, british, netherlands, french, germans, dutch]
+  find:
+    active:
+      "[subj]": [larvae, team, authors, japanese, researchers, pair]
+      "[obj]": [species, same, butterfly, song, seeds, following]
+    passive:
+      "[obj]": [species, specimen, fossil, type, body, butterfly]
+      "[subj]": [japanese, iucn, government, author, larvae, authorities]
+  spot:
+    active:
+      "[subj]": [pilot, men, others, soldier, crowd, soldiers]
+      "[obj]": [body, gun, car, vampire, corpse, kid]
+    passive:
+      "[obj]": [car, ship, truck, vehicle, boat, body]
+      "[subj]": [police, team, crowd, guards, crew, authorities]
+  forget:
+    active:
+      "[subj]": [man, boy, world, girl, woman, men]
+      "[obj]": [pain, words, smell, fear, kiss, truth]
+    passive:
+      "[obj]": [song, man, game, music, girl, boy]
+      "[subj]": [crowd, others, world, people, group, crowds]
+  love:
+    active:
+      "[subj]": [player, audience, lady, reader, child, king]
+      "[obj]": [sun, world, other, sea, game, air]
+    passive:
+      "[obj]": [girl, child, boy, woman, baby, heroine]
+      "[subj]": [children, audience, family, people, students, villagers]
+  believe:
+    active:
+      "[subj]": [boy, family, captain, group, doctor, team]
+      "[obj]": [story, lie, plan, idea, truth, case]
+    passive:
+      "[obj]": [temple, shrine, tomb, village, legend, deity]
+      "[subj]": [devil, locals, gods, people, almighty, priests]
+
+miniberta_1:
+  wash:
+    active:
+      "[subj]": [Ġwind, Ġstorm, Ġmen, Ġpolice, Ġflood, Ġsun, Ġsoldiers, Ġfishermen, Ġlocals, ĠIndians, Ġvillagers, Ġauthorities, Ġworkers, Ġpeople, Ġrains, Ġsailors, Ġman, Ġfisherman, Ġdoctor, Ġcrew, Ġmaid, Ġtide, Ġwaves, Ġservants, Ġteam, Ġcaptain, Ġnatives, Ġpriest, Ġwoman, ĠCaptain, Ġmaster, ĠMaster, Ġparty, Ġmonks, Ġcouncil, Ġgroup, Ġwomen, Ġofficers, Ġboys, Ġfloods, Ġresidents, Ġengineers, Ġheat, Ġinhabitants, Ġpriests, Ġfarmer, Ġguards, Ġwarriors, Ġspring, Ġthieves, Ġmagistrate, Ġfarmers, Ġbreeze, Ġdragon, Ġmill, Ġscientists, Ġstream, Ġboy, Ġmorning, Ġdam, Ġheroes, Ġexplosion, Ġwitch, Ġdivers, Ġjury, Ġelders, Ġmayor, Ġpirates, Ġdevil, ĠCouncil, Ġbuilders, Ġjudges, Ġwave, Ġmist, Ġinspector, Ġarmy, Ġlightning, Ġwinds, Ġgods, Ġcitizens, Ġflames, Ġcrowd, Ġpolicemen, Ġchief, Ġminers, Ġsettlers, Ġsergeant, Ġhero, Ġcops, Ġdoctors, Ġtwo, Ġforce, Ġking, Ġcook, Ġdeputies, Ġfirst, Ġsewer, ĠDoctor, Ġquake, Ġtides]
+      "[obj]": [Ġground, Ġhouse, Ġbody, Ġbodies, Ġfloor, Ġbeach, Ġdishes, Ġland, Ġplates, Ġplace, Ġrocks, Ġroom, Ġmess, Ġblood, Ġstreets, Ġsoil, Ġpool, Ġbottom, Ġbucket, Ġwash, Ġsurface, Ġscene, Ġstones, Ġcorpse, Ġclothes, Ġfields, Ġarea, Ġhands, Ġday, Ġtable, Ġhole, Ġashes, Ġdoor, Ġhead, Ġfield, Ġsky, Ġtown, Ġlaundry, Ġdust, Ġtoilet, Ġice, Ġhouses, Ġdirt, Ġmark, Ġbasin, Ġtoilets, Ġhair, Ġstone, Ġvoid, Ġcorpses, Ġbath, Ġfountain, Ġpaper, Ġsnow, Ġgirls, Ġtrash, Ġcloth, Ġshore, Ġcave, Ġproperty, Ġwindows, Ġresults, Ġplants, Ġclay, Ġfaces, Ġbaby, Ġbay, Ġlock, Ġgrounds, Ġpaint, Ġbuilding, Ġface, Ġcows, Ġplant, Ġstreet, Ġwaste, Ġnight, Ġmarks, Ġair, Ġbed, Ġbridge, Ġleaves, Ġisland, Ġrest, Ġpapers, Ġmirror, Ġglass, Ġway, Ġdeck, Ġsteps, Ġpart, Ġback, Ġwhole, Ġsheets, Ġwall, Ġdamage, Ġdebris, Ġtiles, Ġdog, ĠThames]
+    passive:
+      "[obj]": [Ġground, Ġfloor, Ġhead, Ġearth, Ġstone, Ġsoil, Ġcorpse, Ġblood, Ġland, Ġsurface, Ġgrave, Ġwreckage, Ġrubble, Ġcave, Ġwreck, Ġbed, Ġwood, Ġfield, Ġroom, Ġarea, Ġslate, Ġtomb, Ġgold, Ġcloth, Ġsite, Ġclay, Ġbasin, Ġplace, Ġtreasure, Ġbay, Ġscene, Ġcoffin, Ġhole, Ġchamber, Ġface, Ġdebris, Ġcup, Ġroof, Ġbuilding, Ġbowl, Ġsnow, Ġdirt, Ġwall, Ġtable, Ġchurch, Ġpainting, Ġchair, Ġpavement, Ġvessel, Ġpaint, Ġstatue, Ġskin, Ġpaper, Ġmarble, Ġgirl, Ġtop, ĠBay, Ġbog, Ġisland, Ġbridge, Ġoil, Ġsword, Ġlock, Ġmap, Ġclothes, Ġashes, Ġwaste, Ġpart, Ġlitter, Ġcanvas, Ġglass, Ġstones, Ġbarrel, Ġback, Ġink, Ġlaundry, Ġremains, Ġcliff, Ġsky, Ġcar, Ġbench, Ġplaster, Ġconcrete, Ġsewer, Ġclothing, Ġtoilet, Ġhull, Ġmirror, Ġproperty, Ġlead, Ġroad, Ġplate, Ġcopper, Ġevidence, Ġmound, Ġtemple, Ġdeck, Ġboard, Ġraft, Ġlandscape]
+      "[subj]": [Ġstorm, Ġtide, Ġlocals, Ġflood, Ġwind, Ġfishermen, Ġspring, Ġrains, Ġauthorities, Ġwaves, Ġresidents, Ġhorses, Ġwaters, Ġvillagers, Ġsailors, ĠIndians, Ġfisherman, Ġparty, Ġpolice, Ġcurrents, Ġfloods, Ġsoldiers, Ġcrew, Ġboats, Ġinhabitants, Ġelements, Ġmunicipality, Ġflooding, Ġpeople, Ġtides, Ġsurf, Ġprocess, Ġanimals, Ġmen, Ġmaster, Ġteam, Ġpress, Ġsoaking, Ġrivers, Ġheat, Ġworkers, ĠMaster, Ġaction, Ġrocks, Ġothers, Ġcouncil, Ġwave, Ġdivers, Ġcitizens, Ġsprings, Ġnatives, Ġengineers, Ġmill, Ġgroup, Ġmorning, Ġrainfall, Ġweather, Ġbreeze, Ġcommunity, Ġsteam, Ġtanks, Ġcolumn, Ġmonks, Ġstate, Ġmarsh, Ġpumps, Ġact, Ġships, ĠBritish, Ġfalls, Ġhands, Ġfarmers, ĠFlood, Ġvolunteers, Ġday, Ġboiling, Ġhand, Ġstewards, Ġmaid, Ġwinds, Ġcurrent, Ġanimal, Ġseas, Ġscientists, Ġquarry, Ġsettlers, Ġgovernment, Ġservants, Ġsalt, Ġfall, ĠChinese, ĠCaptain, Ġimmersion, ĠCrown, Ġofficers, Ġmouth, Ġarmy, Ġcrews, Ġexperts, Ġglacier]
+  fix:
+    active:
+      "[subj]": [Ġman, Ġdoctor, Ġmaster, Ġcaptain, ĠCaptain, ĠMaster, Ġpriest, Ġking, Ġdriver, Ġengineer, Ġcrew, Ġone, Ġboy, Ġboard, Ġmen, Ġcompany, Ġguard, Ġowner, Ġpeople, Ġteacher, Ġpolice, Ġcomputer, Ġwind, Ġworkers, Ġwoman, Ġoperator, ĠDoctor, Ġgods, Ġdevil, ĠKing, Ġteam, Ġinspector, Ġpriests, ĠLord, Ġinventor, Ġmechanic, Ġguards, Ġcouncil, Ġspeaker, Ġengineers, Ġlaw, Ġothers, Ġmechanics, Ġtwo, Ġkeeper, Ġmayor, Ġknight, Ġqueen, Ġbuilders, Ġmanager, Ġsupervisor, Ġtechnicians, ĠCouncil, Ġguy, Ġminister, Ġpilot, Ġmagician, Ġfirst, Ġbuilder, Ġgenerator, Ġmaker, Ġgirl, Ġlandlord, Ġdoctors, Ġfisherman, Ġfarmer, Ġchief, Ġhorse, Ġtechnician, Ġperson, Ġact, ĠDevil, Ġwho, Ġdirector, Ġgovernment, Ġprofessor, Ġtower, Ġauthorities, Ġclerk, Ġuser, Ġrepairs, Ġgroup, Ġgovernor, Ġparty, Ġlieutenant, Ġother, Ġboys, Ġfather, Ġsun, Ġlord, Ġtranslator, Ġstaff, Ġattendant, Ġrest, Ġworker, Ġwitch, Ġmonk, Ġbody, Ġold, Ġcommander]
+      "[obj]": [Ġalarm, Ġsituation, Ġtrap, Ġhole, Ġbolt, Ġtension, Ġplace, Ġtable, Ġlocks, Ġconnection, Ġlights, Ġdoors, Ġcurse, Ġchain, Ġwheel, Ġvalve, Ġpost, Ġline, Ġvoid, Ġspell, Ġissue, Ġposition, Ġproblems, Ġhouse, Ġscrew, Ġelectricity, Ġbar, Ġfault, Ġkeys, Ġgates, Ġfix, Ġcable, Ġlever, Ġseal, Ġalarms, Ġorder, Ġbells, Ġspark, Ġsilence, Ġwires, Ġbattery, Ġillusion, Ġroom, Ġchannel, Ġbreach, Ġfloor, Ġdamage, Ġlink, Ġscene, Ġmystery, Ġtie, Ġgears, Ġfuse, Ġcontract, Ġtrouble, Ġbreak, Ġbrakes, Ġstrings, Ġice, Ġbox, Ġwindow, Ġplates, Ġmess, Ġscrews, Ġswitch, Ġtask, Ġrope, Ġbarrier, Ġisland, Ġring, Ġcondition, Ġfence, Ġjob, Ġmoment, Ġthing, Ġshop, Ġcycle, Ġwork, Ġprice, Ġgrid, Ġcall, Ġrisk, Ġknot, Ġtrick, Ġceiling, Ġwheels, Ġbottle, Ġtransmission, Ġbolts, Ġidea, Ġpassword, Ġquestion, Ġholes, Ġwire, Ġgap, Ġlighthouse, Ġheat, Ġstation, Ġclocks, Ġstone]
+    passive:
+      "[obj]": [Ġproblem, Ġtable, Ġceiling, Ġhole, Ġfloor, Ġposition, Ġschedule, Ġgrid, Ġvoid, Ġplace, Ġsituation, Ġboundary, Ġline, Ġbar, Ġbody, Ġfixed, Ġspot, Ġroof, Ġsystem, Ġtension, Ġlock, Ġborder, Ġcondition, Ġdate, Ġbalance, Ġmast, Ġmechanism, Ġhead, Ġkey, Ġdoor, Ġpath, Ġspace, Ġprice, Ġground, Ġbed, Ġsquare, Ġissue, Ġcalendar, Ġwall, Ġwheel, Ġcost, Ġhouse, Ġfixing, Ġroad, Ġstructure, Ġanchor, Ġplate, Ġdistance, Ġfield, Ġearth, Ġcap, Ġbuilding, Ġland, Ġlimit, Ġchair, Ġlocation, Ġroute, Ġsite, Ġcycle, Ġtask, Ġstage, Ġlighting, Ġring, Ġbill, Ġcup, Ġmoney, Ġcover, Ġburden, Ġtelephone, Ġfault, Ġlighthouse, Ġmark, Ġseal, Ġjob, Ġcharge, Ġrest, Ġslot, Ġevent, Ġheat, Ġopening, Ġisland, Ġinterval, Ġfoundation, Ġdrum, Ġgap, Ġcase, Ġscrew, Ġpit, Ġmantle, Ġworld, Ġorder, Ġstone, Ġdisc, Ġfence, Ġtoll, Ġframe, Ġchannel, Ġsky, Ġload, Ġright]
+      "[subj]": [Ġking, ĠMaster, Ġdoctor, Ġmaster, ĠCaptain, Ġact, Ġpriest, ĠKing, ĠChurch, Ġcaptain, Ġgovernor, Ġstorm, ĠCrown, Ġlaw, Ġflood, Ġcouncil, Ġdriver, ĠGovernor, Ġowner, Ġrains, Ġpriests, Ġcrew, Ġbishop, Ġlightning, Ġearthquake, ĠDoctor, Ġman, Ġworkers, Ġlandlord, Ġcompany, Ġengineer, Ġauthor, Ġgovernment, Ġaccident, Ġhand, Ġrain, Ġcrown, Ġbuilders, Ġdoctors, ĠLord, Ġpilot, Ġengineers, Ġsea, Ġuser, Ġbuilder, ĠEmperor, ĠCouncil, Ġwind, Ġminister, ĠFlood, Ġhour, Ġsurgeon, Ġinscription, Ġaction, Ġdeceased, Ġyear, ĠOrder, Ġcontractor, Ġtrustees, Ġsovereign, Ġauthorities, Ġrider, Ġfisherman, ĠAlmighty, Ġpeople, Ġspring, Ġmonarch, Ġmunicipality, Ġceremony, Ġpress, Ġphysician, Ġquake, Ġwatch, Ġhorse, Ġruler, Ġmorning, Ġwill, Ġfarmer, Ġguard, Ġtower, Ġcharter, Ġknight, Ġcommittee, ĠLaw, ĠEngineer, Ġgods, Ġoperator, Ġteacher, Ġpatient, Ġconstruction, ĠCreator, Ġstate, ĠMinister, Ġmayor, Ġclergy, ĠBishop, Ġmen, Ġinventor, Ġqueen, Ġowners]
+  surprise:
+    active:
+      "[subj]": [Ġaction, Ġclimax, Ġfinale, Ġbook, Ġfire, Ġone, Ġending, Ġplay, Ġsecret, Ġdarkness, Ġtale, Ġfilm, Ġscene, Ġevent, Ġadventure, Ġepisode, Ġdream, Ġopening, Ġmusic, Ġlatter, Ġlast, Ġmoon, Ġsong, Ġnovel, Ġmovie, Ġstorm, Ġkey, Ġvillain, Ġlight, Ġsword, Ġsecond, Ġpart, Ġdragon, ĠDevil, Ġnarrator, Ġshow, Ġnews, Ġhour, Ġtime, Ġsunset, Ġauthor, Ġdark, Ġbattle, Ġmystery, Ġtitle, Ġwoman, Ġstar, Ġrain, Ġwater, Ġpast, Ġconclusion, Ġknight, Ġforest, Ġexcitement, Ġwinner, Ġidea, Ġsurprise, Ġfinal, Ġlightning, Ġcreature, Ġencounter, Ġrevelation, Ġball, Ġthree, ĠQueen, Ġwhich, Ġscreen, Ġmayor, Ġlegend, Ġsituation, Ġring, Ġmonster, Ġspark, Ġbeauty, Ġanswer, Ġbell, Ġatmosphere, Ġqueen, Ġattraction, ĠMayor, Ġlove, Ġjourney, Ġtheme, Ġresult, Ġfood, Ġplan, Ġfight, Ġdanger, Ġmain, ĠBeast, Ġpainting, Ġoutcome, Ġghost, Ġdrama, Ġplace, Ġspeaker, Ġteacher, Ġair, Ġprotagonist, Ġintroduction]
+      "[obj]": [Ġmost, Ġviewer, Ġchildren, Ġlistener, Ġviewers, Ġpeople, Ġsoul, Ġchild, Ġmind, Ġguests, Ġblind, Ġpublic, Ġspirits, Ġhearts, Ġyoung, Ġmasses, Ġyouth, Ġothers, Ġinnocent, Ġimagination, Ġfamily, Ġgroup, Ġfish, Ġvisitor, Ġyoungsters, Ġfaithful, Ġeye, Ġteam, Ġgods, Ġtown, Ġnovice, Ġplayers, Ġworst, Ġbirds, Ġmen, Ġwicked, Ġlisteners, Ġeyes, Ġvillage, Ġboys, Ġearth, Ġspectator, Ġreaders, Ġmore, Ġlovers, Ġcrew, Ġsouls, Ġobserver, Ġanimals, Ġgirls, Ġtable, Ġcharacters, Ġguard, Ġkids, Ġhouse, Ġrealm, Ġinside, Ġall, Ġspectators, Ġcore, Ġkingdom, Ġvillagers, Ġpopulace, Ġweak, Ġcontestants, Ġworlds, Ġgood, Ġstars, Ġsenses, Ġcity, Ġfarmer, Ġvisitors, Ġpoor, Ġrich, Ġcourt, Ġroom, Ġbird, Ġcurious, Ġhosts, Ġbetter, Ġlocals, Ġmaster, Ġpitcher, Ġcamp, Ġnation, Ġhungry, Ġworse, Ġvalley, Ġdoubt, Ġheroes, Ġhumans, Ġperson, Ġcompany, Ġbride, ĠAlmighty, Ġparticipants, ĠGods, Ġplanet, Ġwinter, Ġmajority]
+    passive:
+      "[obj]": [Ġaudience, Ġmayor, ĠKing, ĠQueen, Ġboy, Ġpublic, Ġpriest, Ġreader, Ġcaptain, Ġking, Ġhost, Ġman, Ġfamily, ĠCaptain, Ġdoctor, Ġvillage, Ġdriver, ĠMayor, Ġteam, Ġqueen, Ġinspector, Ġhero, Ġnarrator, Ġguard, Ġyouth, Ġviewer, ĠEmperor, Ġchildren, ĠMaster, Ġcrew, Ġchild, Ġtown, Ġteacher, ĠDoctor, ĠDuke, Ġwoman, Ġplayer, Ġspectator, Ġworld, Ġvillagers, Ġschool, Ġdog, Ġchief, Ġknight, Ġlatter, Ġstaff, Ġspeaker, Ġminister, Ġcast, Ġband, Ġprince, Ġcoach, Ġmanager, Ġspectators, Ġprofessor, Ġgang, Ġdirector, Ġemperor, Ġcouncil, Ġlistener, ĠBishop, Ġgovernor, Ġchurch, ĠPrince, Ġforest, Ġbride, Ġlion, Ġannouncer, Ġguest, Ġconductor, Ġbridge, ĠColonel, Ġhorse, Ġcook, ĠGovernor, ĠCouncil, Ġpilot, Ġsoldier, Ġboss, Ġlady, Ġgeneral, Ġprincipal, Ġship, Ġcity, Ġprotagonist, Ġcamp, Ġcat, ĠGuard, Ġdragon, Ġstudent, Ġowner, Ġobserver, Ġothers, ĠLord, ĠProfessor, Ġcolonel, Ġmaster, Ġambassador, Ġactor, Ġcourt]
+      "[subj]": [Ġnews, Ġscene, Ġresults, Ġdisplay, Ġsight, Ġreception, Ġperformance, Ġresult, Ġsituation, Ġspectacle, Ġprospect, Ġannouncement, Ġvisit, Ġstory, Ġoutcome, Ġmeeting, Ġrevelation, Ġinvitation, Ġgame, Ġaction, Ġdescription, Ġdiscovery, Ġview, Ġsurprise, Ġinformation, Ġarrival, Ġincident, Ġencounter, Ġplay, Ġmeal, Ġinterruption, Ġfact, Ġopportunity, Ġmoment, Ġremark, Ġreaction, Ġidea, Ġpresentation, Ġexcitement, Ġevent, Ġexperience, Ġsuccess, Ġintroduction, Ġvisitors, Ġcompliment, Ġfood, Ġoffer, Ġreport, Ġconversation, Ġvictory, Ġmessage, Ġexchange, Ġsilence, Ġnoise, Ġbeauty, Ġmove, Ġresemblance, Ġchange, Ġattack, Ġepisode, Ġorder, Ġshow, Ġappearance, Ġgesture, Ġsound, Ġflowers, Ġscenery, Ġdistraction, Ġreturn, Ġrescue, Ġdemonstration, Ġevening, Ġmusic, Ġtransformation, Ġmatch, Ġweather, Ġcall, Ġintrusion, Ġguests, Ġstatement, Ġspeech, Ġscore, Ġvision, Ġopening, Ġtime, Ġmood, Ġpicture, Ġanswer, Ġevents, Ġdinner, Ġgift, Ġsong, Ġpainting, Ġdecision, Ġpresence, Ġfilm, Ġresponse, Ġdance, Ġarrangement, Ġdiversion]
+  frighten:
+    active:
+      "[subj]": [Ġdarkness, Ġsun, Ġstorm, Ġrain, Ġaction, Ġterror, Ġdream, Ġscene, Ġhorror, Ġthought, Ġdark, Ġheat, Ġstory, Ġnightmare, Ġwater, Ġthunder, Ġmadness, Ġsight, Ġexplosion, Ġcurse, Ġlaughter, Ġfear, Ġblood, Ġbook, Ġsea, Ġsmoke, Ġriver, Ġsound, Ġclimax, Ġviolence, Ġsword, Ġkiss, Ġmoon, Ġnoise, Ġvision, Ġweather, ĠBeast, Ġvoice, Ġscream, Ġevent, Ġmonster, Ġdragon, Ġbreeze, Ġevil, Ġexperience, Ġsnow, Ġnovel, Ġsunset, Ġplay, Ġlightning, Ġmusic, Ġpoem, Ġpain, Ġattack, Ġnews, Ġghost, Ġdanger, Ġsong, Ġdevil, Ġbattle, Ġlight, Ġanguish, Ġincident, Ġencounter, Ġact, Ġjourney, Ġdeath, Ġsunlight, Ġmagic, Ġtale, Ġfall, Ġmist, Ġflood, Ġtragedy, Ġmemory, Ġrevelation, Ġfilm, Ġepisode, Ġpassion, Ġplague, Ġpast, Ġsilence, Ġwaterfall, Ġdemon, Ġpresent, Ġdespair, Ġsmell, Ġagony, Ġunknown, Ġaccident, Ġidea, Ġfog, Ġwinds, Ġbeauty, Ġhero, Ġatmosphere, Ġchill, Ġocean, Ġfight, Ġblast]
+      "[obj]": [Ġchildren, Ġmind, Ġsoul, Ġheart, Ġanimals, Ġeyes, Ġsenses, Ġyoung, Ġanimal, Ġhorses, Ġsouls, Ġspirits, Ġbody, Ġhouse, Ġpeople, Ġbaby, Ġblind, Ġhearts, Ġwhole, Ġbirds, Ġhuman, Ġcreatures, Ġreader, Ġeye, Ġgirls, Ġbear, Ġearth, Ġcat, Ġothers, Ġfamily, Ġlovers, Ġfish, Ġhumans, Ġlistener, Ġsleep, Ġdog, Ġyouth, Ġmost, Ġkitten, Ġimagination, Ġminds, Ġdreams, Ġuniverse, Ġpatient, Ġbabies, Ġboys, Ġship, Ġroom, Ġinside, Ġmood, Ġtrain, Ġhungry, Ġkids, Ġrest, Ġhost, Ġwomen, Ġmen, Ġcore, Ġbrain, Ġspectator, Ġaudience, Ġears, Ġdogs, Ġsheep, Ġperson, Ġflesh, Ġdeer, Ġwolf, Ġnerves, Ġskin, Ġinnocent, Ġspectators, Ġbeasts, Ġcattle, Ġvictims, Ġviewer, Ġinhabitants, Ġyoungsters, Ġother, Ġway, Ġgarden, Ġvillage, Ġmasses, Ġfuture, Ġherd, Ġwolves, Ġleaves, Ġcity, Ġtongue, Ġdeaf, Ġprey, Ġspine, Ġbones, Ġwicked, Ġweak, Ġvalley, Ġgroup, Ġbird, Ġwild, Ġguests]
+    passive:
+      "[obj]": [Ġboy, Ġaudience, Ġyouth, ĠQueen, Ġnarrator, ĠKing, Ġdog, Ġprotagonist, Ġfamily, Ġking, Ġvillage, Ġcat, Ġpriest, Ġhost, Ġhero, Ġvisitor, Ġqueen, Ġdriver, Ġlion, Ġhorse, Ġpatient, Ġspectator, Ġteacher, Ġreader, Ġguard, Ġlatter, Ġdoctor, Ġbaby, Ġmayor, Ġmother, Ġplayer, Ġprince, Ġhuman, Ġlady, Ġmaid, Ġprincess, Ġtown, Ġcharacter, ĠMaster, Ġpublic, Ġchief, Ġsoldier, Ġone, Ġprisoner, Ġviewer, Ġcaptain, Ġvictim, Ġheroine, Ġbride, Ġcourt, Ġteam, Ġspeaker, ĠEmperor, Ġfemale, Ġdemon, Ġcity, Ġservant, Ġfather, Ġbear, Ġrest, ĠBeast, ĠCaptain, Ġschool, ĠMayor, Ġchurch, Ġothers, Ġchoir, Ġmaster, Ġstudent, ĠDoctor, Ġlistener, Ġgarden, ĠDuke, Ġbird, Ġrider, Ġvillain, Ġperson, Ġdragon, Ġbody, Ġfox, Ġknight, Ġgeneral, Ġother, Ġcoach, Ġconductor, ĠPrincess, Ġminister, Ġlamb, ĠLord, Ġfirst, Ġfarmer, Ġsoul, Ġpreacher, Ġcook, Ġinspector, ĠBishop, ĠDevil, Ġwife, Ġbull, Ġleader]
+      "[subj]": [Ġnoise, Ġnews, Ġstorm, Ġdanger, Ġsight, Ġaction, Ġsituation, Ġattack, Ġvision, Ġfire, Ġviolence, Ġevents, Ġanimals, Ġscene, Ġsound, Ġidea, Ġrain, Ġguards, Ġintrusion, Ġvisions, Ġincident, Ġdarkness, Ġlight, Ġthreat, Ġmusic, Ġprospect, Ġpolice, Ġfear, Ġwarning, Ġpresence, Ġsoldiers, Ġwater, Ġnight, Ġcreatures, Ġchaos, Ġbattle, Ġsun, Ġpower, Ġmoment, Ġforce, Ġmen, Ġfight, Ġheat, Ġweather, Ġexplosion, Ġpalace, Ġstory, Ġdiscovery, Ġwolves, Ġcastle, Ġinvasion, Ġcar, Ġrevelation, Ġterror, Ġdisturbance, Ġboys, Ġcold, Ġhorses, Ġinterference, Ġcarriage, Ġmovement, Ġgame, Ġdogs, Ġbeauty, Ġriver, Ġencounter, Ġthought, Ġevent, Ġmeeting, Ġoutside, Ġsnow, Ġspectacle, Ġexperience, Ġvampires, Ġmove, Ġtime, Ġshooting, Ġvisitors, Ġtruth, Ġassault, Ġhorror, Ġflood, Ġshock, Ġaccident, Ġsmell, Ġwar, Ġmonsters, Ġair, Ġearthquake, Ġflowers, Ġwords, Ġdangers, Ġcircumstances, Ġmassacre, Ġarmy, Ġfact, Ġsunlight, Ġwinds, Ġelements, Ġmob]
+  discover:
+    active:
+      "[subj]": [Ġteam, Ġresearchers, Ġscientist, Ġmen, Ġpeople, Ġarchaeologists, Ġhunters, Ġminers, Ġworkers, Ġgroup, Ġthieves, Ġcrew, Ġexplorers, Ġauthorities, Ġpolice, Ġothers, Ġboys, Ġparty, Ġexpedition, Ġtwo, Ġastronomers, ĠRussians, Ġinhabitants, Ġhunter, Ġvillagers, Ġdivers, Ġinvestigators, Ġthief, Ġnatives, Ġpirates, Ġbrothers, Ġhumans, Ġaliens, Ġwho, Ġwitch, Ġexperts, Ġlocals, ĠCaptain, Ġunknown, Ġpriests, Ġmagician, ĠGreeks, Ġwoman, Ġfisherman, Ġfirst, Ġwizard, Ġrobbers, Ġbuilders, Ġpriest, ĠGermans, Ġrebels, Ġwolves, Ġstudents, Ġsoldiers, Ġone, ĠBrotherhood, Ġthree, ĠIndians, Ġcaptain, Ġkiller, Ġmonster, Ġdoctor, Ġchildren, Ġdevil, Ġwizards, ĠMaster, Ġstranger, Ġfather, Ġsailors, Ġresearcher, Ġsorcerer, ĠDiscovery, ĠDoctor, Ġengineers, Ġcreators, Ġexplorer, Ġauthor, ĠRomans, Ġenemy, ĠDirectorate, ĠBritish, Ġtrio, Ġgirls, Ġphysicists, Ġspies, Ġcompany, Ġresidents, Ġvisitors, ĠScientists, Ġprofessor, Ġguys, Ġheroes, Ġchemist, Ġfishermen, Ġwomen, Ġking, ĠEgyptians, Ġengineer, ĠCrown, Ġghost]
+      "[obj]": [Ġsecret, Ġtruth, Ġcave, Ġcrystal, Ġgold, Ġmap, Ġtrap, Ġcaves, Ġstone, Ġtunnel, Ġcrystals, Ġbook, Ġbody, Ġnecklace, Ġkey, Ġring, Ġartifact, Ġplace, Ġtunnels, Ġmystery, Ġgems, Ġartifacts, Ġseal, Ġjournal, Ġlocation, Ġportal, Ġdevice, Ġrock, Ġtrail, Ġdiamonds, Ġweapon, Ġmanuscript, Ġdiamond, Ġdeception, Ġformula, Ġisland, Ġcomet, Ġplan, Ġseeds, Ġexperiment, Ġhouse, Ġsecrets, Ġhole, Ġexplosives, Ġclue, Ġproblem, Ġruby, Ġtreasures, Ġrocks, Ġstars, Ġcoordinates, Ġroom, Ġfragment, Ġstory, Ġpieces, Ġsphere, Ġdisk, Ġletter, Ġsource, Ġmissing, Ġbodies, Ġvault, Ġanomaly, Ġjewel, Ġtree, Ġmachine, Ġtrace, Ġlight, Ġice, Ġplot, Ġdagger, Ġplanet, Ġquartz, Ġmineral, Ġdisc, Ġore, Ġruins, Ġinformation, Ġweapons, Ġmines, Ġpearl, Ġworm, Ġpassage, Ġskeleton, Ġkeys, Ġclues, Ġasteroid, Ġlake, Ġfind, Ġmagic, Ġwork, Ġfire, Ġdiary, Ġworld, ĠJournal, Ġcompound, Ġvirus, Ġpoison, Ġvessel, Ġconspiracy]
+    passive:
+      "[obj]": [Ġbody, Ġcave, Ġtomb, Ġtreasure, Ġring, Ġtunnel, Ġstone, Ġskeleton, Ġartifact, Ġmap, Ġcrystal, Ġsite, Ġsecret, Ġhouse, Ġlocation, Ġisland, Ġlake, Ġrock, Ġgrave, Ġgold, Ġskull, Ġfragment, Ġobject, Ġcomet, Ġasteroid, Ġnecklace, Ġwreck, Ġmosaic, Ġvessel, Ġbuilding, Ġchamber, Ġdiamond, ĠArk, Ġwreckage, Ġmoon, Ġmountain, Ġsubmarine, Ġweapon, Ġbook, Ġgirl, Ġcrater, Ġseal, Ġmanuscript, Ġplanet, Ġsphere, Ġdisc, Ġhole, Ġplane, Ġcorpse, Ġstructure, Ġtruth, Ġroom, Ġcastle, Ġsurface, Ġplace, Ġvault, Ġpyramid, Ġmineral, Ġbomb, Ġarea, Ġcrypt, Ġcache, Ġdisk, Ġtower, Ġsource, Ġland, Ġmeteor, Ġdiscovery, Ġdevice, Ġdragon, Ġpit, Ġruby, Ġbell, Ġhoard, Ġletter, Ġcell, Ġcar, Ġdagger, Ġfloor, Ġfortress, Ġsatellite, Ġpassage, Ġportal, Ġman, Ġcompound, Ġmonster, Ġtemple, Ġdeposit, Ġtree, Ġfire, Ġwall, Ġsword, Ġcavern, ĠCave, Ġoriginal, Ġmummy, Ġmystery, Ġspot, Ġegg, Ġpainting]
+      "[subj]": [Ġscientists, Ġarchaeologists, Ġexpedition, Ġlocals, ĠRussians, Ġpolice, Ġteam, Ġauthorities, Ġresearchers, Ġhunters, Ġexplorers, Ġnatives, Ġastronomers, Ġinhabitants, ĠBritish, Ġparty, Ġcrew, ĠSoviets, Ġdivers, Ġinvestigators, Ġminers, Ġvillagers, ĠDirectorate, Ġfishermen, Ġscientist, ĠGermans, Ġgroup, ĠFrench, Ġworkers, Ġgovernment, ĠSpanish, ĠGreeks, ĠCaptain, Ġpeople, ĠKGB, ĠRomans, ĠCrown, Ġmen, ĠEgyptians, Ġastronomer, Ġexperts, Ġmilitary, Ġexcavation, Ġothers, Ġresidents, ĠIndians, ĠChinese, ĠCIA, ĠScientists, Ġsoldiers, Ġhumans, Ġrebels, Ġarmy, ĠEuropeans, Ġsea, ĠItalians, Ġsearch, ĠJapanese, Ġrevolutionaries, Ġfisherman, Ġsailors, Ġaliens, Ġthieves, ĠPortuguese, ĠArabs, ĠFBI, ĠNavy, Ġunknown, ĠGPS, Ġglacier, Ġspies, Ġexplorer, Ġpriests, Ġpirates, Ġguards, Ġenemy, ĠNazis, Ġmuseum, Ġtourists, Ġresearcher, ĠRCMP, Ġtribe, Ġlaboratory, Ġhunter, Ġinvestigation, Ġmission, Ġengineers, Ġmissionaries, ĠInquisition, Ġvisitors, ĠDiscovery, Ġinspector, ĠSwiss, Ġunderground, Ġbiologists, ĠBureau, Ġagency, Ġpress, Ġpriest, ologists]
+  find:
+    active:
+      "[subj]": [Ġpolice, Ġteam, Ġhunters, Ġparty, Ġthieves, Ġvillagers, Ġgroup, Ġauthorities, Ġpeople, Ġscientists, Ġrobbers, Ġsoldiers, Ġdivers, Ġarchaeologists, Ġguards, Ġcrew, Ġhunter, Ġworkers, Ġinvestigators, Ġpriest, Ġminers, Ġlocals, ĠCaptain, Ġpriests, Ġtwo, Ġresearchers, Ġguard, Ġdetective, Ġinspector, Ġcaptain, Ġcops, Ġgang, Ġscouts, Ġfisherman, Ġwomen, Ġinhabitants, ĠPolice, Ġservants, Ġsearch, Ġpolicemen, Ġofficers, Ġpirates, Ġdetectives, Ġfishermen, Ġguys, Ġdeputies, Ġchildren, Ġarmy, Ġheroes, Ġdoctor, Ġtrio, Ġcoroner, Ġresidents, Ġmurderer, Ġrebels, Ġagents, Ġnatives, Ġbandits, Ġkids, Ġexpedition, Ġwarriors, Ġbrothers, Ġfarmer, Ġexperts, Ġtwins, Ġwolves, Ġdogs, Ġpair, Ġinvestigation, Ġfamily, Ġprisoners, Ġhelicopter, Ġghost, Ġwitch, Ġlieutenant, Ġthree, Ġenemy, Ġmaid, ĠRussians, Ġforest, Ġbastard, Ġbuilders, Ġwho, Ġstranger, Ġsergeant, Ġexplorers, Ġvampires, Ġvisitors, Ġunknown, Ġmonks, Ġdriver, Ġstaff, Ġcriminals, ĠGuardian, Ġguy, ĠDoctor, Ġlookout, Ġmagistrate, Ġfirst, Ġfather]
+      "[obj]": [Ġkey, Ġmap, Ġbodies, Ġkeys, Ġbox, Ġletter, Ġknife, Ġtreasure, Ġring, Ġnecklace, Ġbook, Ġcar, Ġnote, Ġdagger, Ġpackage, Ġstones, Ġgold, Ġhouse, Ġstone, Ġjournal, Ġsword, Ġphone, Ġtrail, Ġdoor, Ġcave, Ġdisk, Ġgun, Ġtruth, Ġtunnel, Ġweapon, Ġdiary, Ġcorpse, Ġweapons, Ġroom, Ġclue, Ġmoney, Ġcrystal, Ġmanuscript, Ġcache, Ġremains, Ġbell, Ġskeleton, Ġbottle, Ġlantern, Ġdocuments, Ġletters, Ġaxe, Ġtrap, Ġtree, Ġcoins, Ġtrace, Ġplace, Ġrock, Ġrifle, Ġtorch, Ġsafe, Ġcup, Ġhammer, Ġproof, Ġtools, Ġlocation, Ġitems, Ġdevice, Ġsource, Ġdiamonds, Ġcoordinates, Ġcat, Ġblood, Ġportal, Ġbracelet, Ġgrave, Ġmessage, Ġpicture, Ġcage, Ġcompass, Ġcontainer, Ġrope, Ġevidence, Ġlight, Ġbooks, Ġexplosives, Ġtrain, Ġtent, Ġlock, Ġcell, Ġhorses, Ġtreasures, Ġpapers, Ġbird, Ġseal, Ġjewels, Ġcart, Ġtracker, Ġdragon, Ġvault, Ġobject, Ġthing, Ġcottage, Ġartifact, Ġdiamond]
+    passive:
+      "[obj]": [Ġcorpse, Ġmap, Ġtreasure, Ġring, Ġkey, Ġskeleton, Ġletter, Ġstone, Ġbox, Ġgrave, Ġsword, Ġgold, Ġbook, Ġskull, Ġhead, Ġnecklace, Ġknife, Ġtomb, Ġgun, Ġweapon, Ġobject, Ġcoffin, Ġdagger, Ġbell, ĠBible, Ġmanuscript, Ġcave, Ġblood, Ġchild, Ġnote, Ġwreckage, Ġcup, Ġaxe, Ġchest, Ġstatue, Ġpicture, Ġphone, Ġcompass, Ġpackage, Ġrope, Ġmoney, Ġtunnel, Ġevidence, Ġcrystal, Ġdisk, Ġsecret, Ġtrunk, Ġtorch, Ġpainting, Ġhole, Ġtruth, Ġegg, Ġfragment, Ġremains, Ġrock, Ġdisc, Ġproof, Ġdocument, Ġmummy, Ġdiary, Ġidol, Ġbottle, Ġflag, Ġculprit, Ġbomb, Ġvictim, Ġlight, Ġheart, Ġspear, Ġfloor, Ġcache, Ġcell, Ġjournal, Ġseal, Ġmissing, Ġmask, Ġtablet, Ġsite, Ġball, Ġtree, Ġspirit, Ġhammer, Ġclue, Ġdiamond, Ġlantern, Ġwood, Ġtrace, Ġground, Ġoriginal, Ġtent, Ġcage, Ġartifact, Ġcross, Ġroom, Ġcontainer, Ġwater, Ġbaby, Ġlocation, Ġtrail, Ġblade]
+      "[subj]": [Ġpolice, Ġhunters, Ġteam, Ġauthorities, Ġvillagers, Ġmen, Ġlocals, Ġarchaeologists, Ġguards, Ġsoldiers, Ġparty, Ġothers, Ġgroup, Ġscientists, Ġguard, Ġpriest, Ġinhabitants, Ġdivers, Ġsearch, Ġfishermen, ĠCaptain, Ġexpedition, Ġquarry, Ġthieves, Ġservants, Ġpolicemen, Ġfisherman, Ġhunter, Ġarmy, Ġinvestigators, Ġresearchers, Ġwomen, Ġworkers, Ġpeople, Ġnatives, Ġpriests, Ġrobbers, Ġnuns, Ġinspector, Ġminers, Ġcrew, Ġdogs, Ġdriver, Ġcart, Ġvisitors, Ġenemy, Ġcoroner, Ġscouts, Ġforest, Ġcaptain, Ġhelicopter, Ġrebels, Ġdoctor, Ġresidents, ĠPolice, Ġchildren, ĠRussians, Ġthief, Ġofficers, Ġboys, Ġmaid, Ġtourists, Ġhorses, Ġdog, Ġstaff, Ġvisitor, Ġprisoners, Ġvillage, Ġcaravan, Ġgirls, Ġexcavation, Ġfarmer, Ġstorm, Ġshepherd, Ġfamily, Ġlookout, Ġchurch, Ġmonks, Ġvolunteers, Ġowner, Ġneighbours, Ġfirefighters, Ġmilitary, Ġanimals, ĠIndians, Ġgang, ĠGermans, Ġbandits, Ġpatrol, Ġmagistrate, ĠDefenders, Ġexplorers, Ġtracker, ĠInspector, Ġkiller, Ġhumans, Ġdetectives, Ġwolves, Ġghost, ĠDoctor]
+  spot:
+    active:
+      "[subj]": [Ġscouts, Ġsoldiers, Ġvillagers, Ġlookout, Ġcrew, Ġpolicemen, ĠCaptain, Ġinspector, Ġauthorities, Ġlocals, Ġpoliceman, Ġpeople, Ġmayor, Ġspectators, Ġworkers, Ġyouth, Ġphotographer, Ġofficer, Ġpatrol, Ġhunter, Ġforest, Ġofficers, ĠPolice, Ġsoldier, Ġherald, Ġinhabitants, Ġfishermen, Ġcops, Ġnatives, Ġriders, Ġreporter, Ġvisitors, Ġstudents, Ġmob, Ġkids, Ġscientists, Ġarmy, Ġneighbours, Ġwind, Ġrobbers, Ġshepherd, Ġmedia, Ġsergeant, Ġrebels, Ġknights, Ġwarriors, Ġlieutenant, Ġagents, Ġservants, Ġdetective, Ġresidents, Ġvisitor, Ġtourists, Ġpirates, ĠGuardian, Ġaudience, Ġphotographers, Ġstaff, Ġdogs, ĠGuard, Ġfirefighters, Ġcameras, Ġsquad, Ġcavalry, Ġheroes, Ġdarkness, Ġfighters, ĠMayor, Ġtroopers, Ġchief, Ġfarmer, Ġdivers, Ġaliens, Ġpriests, Ġobserver, ĠGermans, Ġviewer, Ġdeputies, Ġtower, Ġspies, Ġwitnesses, Ġpilots, Ġneighbors, Ġmessenger, Ġlion, Ġguys, Ġmaid, Ġfield, Ġattendant, Ġthugs, Ġminers, Ġengineer, Ġmilitary, Ġdetectives, Ġrover, Ġnuns, Ġdefenders, Ġguide, Ġstranger, ĠLieutenant]
+      "[obj]": [Ġbody, Ġconvoy, Ġhouse, Ġbus, Ġvehicle, Ġplane, Ġintruder, Ġcarriage, Ġcaravan, Ġquarry, Ġletter, Ġbodies, Ġmap, Ġbuilding, Ġculprit, Ġdoor, Ġphone, Ġgun, Ġring, Ġfight, Ġsign, Ġthief, Ġchild, Ġnote, Ġtruck, Ġhorse, Ġbell, Ġambulance, Ġclub, Ġbeast, Ġtree, Ġcat, Ġtaxi, Ġduo, Ġone, Ġmurderer, Ġradio, Ġfemale, Ġpackage, Ġball, Ġanimal, Ġtarget, Ġtent, Ġperpetrator, Ġweapon, Ġflag, Ġpicture, Ġghost, Ġattacker, Ġwolf, Ġpainting, Ġthree, Ġsubmarine, Ġstorm, Ġspy, Ġother, Ġmale, Ġlantern, Ġdanger, Ġkey, Ġleader, Ġrifle, Ġbull, Ġgate, Ġvideo, Ġcriminal, Ġtunnel, Ġgame, Ġwagon, Ġthing, Ġassassin, Ġmonster, Ġsheep, Ġmessage, Ġvampire, Ġbike, Ġshooter, Ġstruggle, Ġsound, Ġflight, Ġbomb, Ġbaby, Ġsuspect, Ġfire, Ġaircraft, Ġlights, Ġfighter, Ġopportunity, Ġdragon, Ġplan, Ġsong, Ġwitch, Ġcastle, Ġroad, Ġfilm, Ġclock, Ġmovement, Ġplace, Ġphoto, Ġbeacon]
+    passive:
+      "[obj]": [Ġbody, Ġbus, Ġtruck, Ġbuilding, Ġhouse, Ġman, Ġcarriage, Ġgun, Ġgirl, Ġboy, Ġcreature, Ġhorse, Ġfilm, Ġanimal, Ġbird, Ġyacht, Ġphone, ĠUFO, Ġbomb, Ġghost, Ġbull, ĠSUV, Ġairplane, Ġbike, Ġwoman, Ġflag, Ġmotorcycle, Ġflight, Ġsatellite, Ġball, Ġcriminal, Ġring, ĠRover, Ġmap, Ġvideo, Ġdeer, Ġclub, Ġyouth, Ġmonster, Ġstatue, Ġkiller, Ġcat, Ġcannon, Ġtank, Ġfigure, Ġgunman, Ġcouple, Ġsun, Ġphoto, Ġbeast, Ġattacker, Ġcraft, Ġwreck, Ġpainting, Ġperpetrator, Ġarea, Ġwreckage, Ġferry, Ġsculpture, Ġchild, Ġtree, Ġmachine, Ġsign, Ġobject, Ġbridge, Ġelephant, Ġsled, Ġfox, Ġtransport, Ġvessel, Ġrifle, Ġwolf, Ġrover, Ġdrone, Ġtent, Ġmurderer, Ġweapon, Ġbicycle, Ġintruder, Ġpicture, Ġshotgun, Ġmoon, Ġlatter, Ġlantern, Ġspy, Ġletter, Ġmansion, Ġspaceship, Ġculprit, Ġspacecraft, Ġtower, Ġrobot, Ġbomber, Ġtrio, Ġcorpse, Ġtunnel, Ġcastle, Ġvictim, Ġtiger, Ġengine]
+      "[subj]": [Ġneighbours, Ġlocals, Ġauthorities, Ġscouts, Ġguards, Ġhunters, Ġmedia, Ġpolicemen, Ġvillagers, Ġenemy, Ġsoldiers, Ġmilitary, ĠPolice, Ġfishermen, Ġphotographers, Ġarmy, Ġneighbors, ĠBBC, Ġcameras, Ġbirds, ĠGermans, Ġpoliceman, Ġcavalry, Ġothers, Ġcrew, Ġmen, Ġguard, Ġpatrol, Ġbushes, Ġradar, Ġforest, Ġrebels, Ġcops, Ġpublic, Ġnatives, Ġtourists, Ġmayor, Ġwind, Ġstation, ĠFBI, Ġoutside, Ġpress, Ġneighbour, Ġfirefighters, Ġpirates, Ġresidents, Ġdogs, Ġfield, Ġdivers, Ġreporter, ĠCaptain, ĠRangers, Ġinspector, Ġinhabitants, Ġsniper, Ġjournalists, ĠRussians, Ġofficers, Ġtroopers, Ġspectators, ĠGPS, Ġboys, ĠDutch, Ġcaptain, Ġagents, Ġtown, Ġsecurity, Ġvisitors, ĠCCTV, Ġanimals, Ġhunter, Ġcity, Ġmonitor, Ġreporters, Ġmilitia, Ġpark, Ġchildren, Ġrobbers, ĠVC, Ġairport, Ġreconnaissance, Ġsheriff, Ġwoods, Ġterrorists, ĠIndians, Ġsky, Ġfighters, Ġrailway, Ġgovernment, Ġfleet, Ġsea, Ġdarkness, Ġhelicopters, Ġhighway, ĠArmy, Ġherald, Ġfoliage, Ġwildlife, ĠRCMP, Ġvehicles]
+  forget:
+    active:
+      "[subj]": [Ġteacher, Ġpriest, Ġmaster, Ġpeople, ĠMaster, Ġking, Ġhero, Ġservants, Ġreader, ĠLord, Ġthief, Ġdoctor, Ġmen, Ġlady, Ġaudience, ĠCaptain, Ġmaid, Ġprince, ĠKing, Ġgroup, Ġdog, Ġqueen, Ġworld, Ġdevil, Ġcat, Ġauthor, Ġcaptain, Ġdriver, Ġtwo, Ġservant, ĠDoctor, Ġkids, Ġmonk, Ġyouth, Ġdragon, ĠQueen, Ġvillagers, Ġminister, Ġchief, Ġguard, Ġgods, Ġcrew, Ġprofessor, Ġknight, Ġvillain, Ġhost, Ġold, Ġlatter, Ġhorse, Ġfather, Ġcook, Ġpolice, Ġcrowd, Ġother, Ġartist, Ġwho, Ġpoet, Ġmayor, Ġsoul, Ġwind, Ġwomen, Ġfool, Ġspirit, Ġguests, Ġpriests, Ġghost, Ġfamily, Ġwriter, Ġnarrator, Ġidiot, Ġlad, Ġspeaker, Ġsoldiers, Ġinspector, Ġthieves, ĠEmperor, Ġenemy, Ġguards, ĠDuke, Ġstudents, Ġmother, Ġcreature, Ġteam, Ġsoldier, Ġbeast, Ġsun, Ġfarmer, Ġkid, Ġangel, Ġstudent, Ġstorm, Ġvisitor, Ġdemon, ĠDevil, Ġcoach, Ġperson, Ġgiant, Ġfirst, Ġtwins, Ġkeeper]
+      "[obj]": [Ġtruth, Ġmessage, Ġbook, Ġletter, Ġtime, Ġbell, Ġstory, Ġnote, Ġkey, Ġdoor, Ġmoney, Ġproblem, Ġquestion, Ġplan, Ġnews, Ġplace, Ġroom, Ġclock, Ġball, Ġnight, Ġkeys, Ġwords, Ġmemory, Ġhouse, Ġfood, Ġorder, Ġcurse, Ġgame, Ġcup, Ġdetails, Ġlesson, Ġmess, Ġinformation, Ġidea, Ġflowers, Ġsituation, Ġthing, Ġboat, Ġcar, Ġdream, Ġscene, Ġmoment, Ġtrick, Ġmap, Ġcard, Ġrules, Ġgate, Ġpaper, Ġphone, Ġwork, Ġbox, Ġnecklace, Ġspell, Ġmission, Ġsong, Ġtask, Ġlist, Ġsecret, Ġwindow, Ġritual, Ġbaby, Ġbottle, Ġword, Ġpainting, Ġwater, Ġstones, Ġtext, Ġpassword, Ġtable, Ġaddress, Ġbooks, Ġmeeting, Ġinstructions, Ġship, Ġanswer, Ġcards, Ġmachine, Ġtreasure, Ġmessages, Ġplot, Ġlie, Ġthings, Ġring, Ġname, Ġlights, Ġtea, Ġceremony, Ġdiary, Ġletters, Ġfacts, Ġsword, Ġcall, Ġdeed, Ġplans, Ġpast, Ġpicture, Ġreason, Ġmeal, Ġpieces, Ġhammer]
+    passive:
+      "[obj]": [Ġbook, Ġstory, Ġmanuscript, Ġtreasure, Ġbody, Ġmemory, Ġmap, Ġsecret, Ġplot, Ġwork, Ġletter, Ġscene, Ġship, Ġpainting, Ġlegend, Ġplace, Ġevent, Ġtext, Ġpoem, Ġtale, Ġpast, Ġtomb, Ġboat, Ġincident, Ġinformation, Ġfilm, Ġjournal, ĠBook, Ġhouse, ĠBible, Ġcastle, Ġsong, Ġoriginal, Ġnovel, Ġpicture, Ġimage, Ġland, Ġtruth, Ġbattle, Ġsword, Ġdiary, Ġdream, Ġlibrary, Ġday, Ġplan, Ġinscription, Ġcup, Ġdocument, Ġname, Ġfestival, Ġsite, Ġspirit, Ġtemple, Ġbuilding, Ġcurse, Ġrelic, Ġdeed, Ġnews, Ġcave, Ġmessage, Ġfeast, Ġpaper, Ġgirl, Ġstone, Ġlocation, Ġgame, Ġcorpse, Ġsaga, Ġcollection, Ġprophecy, Ġriver, Ġjourney, Ġroom, Ġman, Ġceremony, Ġdragon, Ġscripture, Ġmatter, Ġgrave, Ġbell, Ġwhole, Ġmystery, Ġlake, Ġpiece, Ġpassage, Ġvision, Ġforest, Ġnarrative, Ġlast, Ġplay, Ġfortress, Ġpuzzle, Ġshrine, Ġpalace, Ġring, Ġgarden, Ġball, Ġwriting, Ġmeeting, Ġstatue]
+      "[subj]": [Ġvillagers, Ġinhabitants, Ġpeople, Ġlocals, Ġauthorities, ĠRomans, Ġmonks, Ġgods, ĠChurch, Ġrebels, Ġnatives, Ġsoldiers, Ġarmy, Ġenemy, ĠBritish, Ġpeasants, Ġresidents, Ġpolice, ĠChristians, ĠGermans, Ġfamily, Ġservants, Ġothers, ĠInquisition, Ġinvaders, Ġpriests, Ġhumans, Ġspirits, Ġcitizens, Ġmissionaries, ĠGreeks, Ġthieves, ĠTurks, Ġpopulace, Ġpublic, ĠArabs, ĠIndians, Ġdevil, Ġflood, Ġchildren, Ġcommunity, ĠFrench, ĠEmperor, Ġfaithful, Ġgovernment, ĠLord, Ġstorm, Ġnuns, Ġstars, Ġguards, Ġend, Ġangels, Ġking, Ġprisoners, Ġdefenders, Ġvisitors, Ġenemies, ĠRussians, ĠMuslims, Ġslaves, Ġwar, Ġcrew, Ġworkers, Ġtribe, Ġcrowd, Ġghosts, Ġdemons, Ġbelievers, Ġmasters, ĠNazis, Ġkingdom, Ġsurvivors, Ġpirates, Ġauthor, Ġmen, ĠAlmighty, ĠSoviets, Ġplague, Ġdarkness, Ġdead, Ġcouncil, Ġruins, Ġsaints, ĠEmpire, Ġtravelers, Ġheroes, Ġsettlers, ĠKing, Ġsun, ĠJews, Ġneighbors, ĠFlood, Ġbirds, Ġpress, Ġelders, ĠEnglish, Ġtroops, Ġstate, Ġrefugees, ĠCrown]
+  love:
+    active:
+      "[subj]": [Ġpoet, ĠFather, Ġmother, Ġmaster, ĠMaster, Ġfather, Ġpriest, Ġknight, Ġnarrator, Ġauthor, Ġwriter, Ġartist, Ġsaint, Ġteacher, ĠOne, Ġlatter, Ġwarrior, Ġprotagonist, Ġfarmer, Ġfaithful, Ġwho, Ġminister, ĠSaint, Ġlamb, Ġdoctor, ĠLady, ĠCaptain, Ġvillage, Ġpreacher, Ġchief, Ġsoldier, Ġhuman, ĠAlmighty, Ġstranger, Ġdragon, Ġlad, Ġlover, Ġmayor, ĠGod, ĠPrince, Ġfool, Ġmale, Ġgod, Ġson, Ġfox, Ġcaptain, Ġlord, ĠEmperor, Ġcreature, Ġtyrant, Ġbrother, Ġmonk, ĠGoddess, Ġcat, ĠDuke, Ġhusband, Ġshepherd, Ġchampion, Ġpainter, ĠDoctor, ĠPope, Ġangel, Ġthief, Ġgoddess, Ġsinger, Ġformer, Ġemperor, Ġelder, Ġeldest, ĠBeast, Ġpeasant, Ġstar, Ġfisherman, Ġfellow, Ġvillain, Ġpublic, Ġsage, Ġperson, ĠJew, Ġbishop, ĠLamb, Ġprofessor, ĠColonel, Ġmonster, ĠBishop, Ġaudience, Ġwolf, Ġmind, ĠMother, Ġimmortal, Ġleader, Ġguy, Ġjudge, Ġcourt, Ġcommander, Ġcharacter, Ġkid, ĠSpirit, ĠVirgin, Ġbear]
+      "[obj]": [Ġflowers, Ġair, Ġtruth, Ġanimals, Ġplace, Ġgirls, Ġfire, Ġsame, Ġoutdoors, Ġwar, Ġstars, Ġsunshine, Ġnight, Ġboys, Ġmusic, Ġwater, Ġlight, Ġpeace, Ġgame, Ġbirds, Ġday, Ġladies, Ġmountains, Ġcountryside, Ġkids, Ġflower, Ġhorses, Ġhouse, Ġsoil, Ġwork, Ġfreedom, Ġmoment, Ġbook, Ġtime, Ġwilderness, Ġword, Ġworst, Ġbetter, Ġwaters, Ġsand, Ġwest, Ġway, Ġseas, Ġsheep, Ġanimal, Ġdreams, Ġhills, Ġbooks, Ġocean, Ġcompany, Ġart, Ġmost, Ġgarden, Ġskies, Ġsong, Ġweather, Ġdream, Ġimpossible, Ġlife, Ġsouth, Ġfish, ĠSouth, Ġdesert, Ġadventure, Ġstory, Ġbeach, Ġcreatures, Ġtrees, Ġidea, Ġbeautiful, Ġlovers, Ġdogs, Ġarts, Ġgods, Ġmoney, Ġfly, ĠBible, Ġunknown, Ġdarkness, Ġisland, ĠEast, Ġroses, Ġgold, Ġsolitude, Ġquiet, ĠNorth, Ġcold, Ġthings, Ġrest, Ġhome, Ġroad, Ġsunset, Ġriver, Ġsilence, Ġfood, Ġothers, Ġmountain, Ġstreets, Ġopposite, Ġend]
+    passive:
+      "[obj]": [Ġstory, Ġprotagonist, Ġwho, Ġlady, Ġbook, Ġtale, Ġknight, Ġdaughter, Ġlamb, Ġwife, Ġhorse, Ġperson, Ġson, Ġsong, Ġnovel, Ġwriter, Ġsinger, Ġbaby, Ġnight, Ġteacher, Ġland, Ġplace, Ġpoem, Ġbeauty, Ġlife, Ġcreature, Ġhuman, ĠPrince, ĠBible, Ġlatter, Ġdog, Ġplay, Ġvirgin, Ġlad, Ġflower, Ġcharacter, ĠPrincess, Ġdream, Ġtreasure, Ġjourney, ĠLady, Ġanimal, ĠAuthor, Ġsoldier, Ġcity, Ġlion, Ġforest, Ġpreacher, Ġpatient, Ġyoungest, ĠHeart, Ġformer, Ġmartyr, Ġsubject, Ġsame, Ġpassion, Ġwinner, Ġstar, Ġangel, ĠEarth, ĠDuke, Ġdoctor, Ġwhich, Ġfemale, Ġhost, Ġhouse, ĠDoctor, Ġdragon, Ġway, Ġorphan, Ġsecret, Ġkingdom, ĠAngel, ĠCaptain, Ġpriest, Ġyear, Ġghost, Ġbear, Ġfreedom, Ġaction, Ġflesh, Ġdeceased, Ġbird, Ġand, Ġprisoner, Ġbabe, Ġwar, Ġsword, Ġbutterfly, Ġjoy, Ġtraveller, Ġresult, Ġbeast, Ġmusic, Ġpart, Ġlegend, Ġslave, Ġmonster, Ġhappiness, Ġpeace]
+      "[subj]": [Ġgods, Ġsaints, Ġstars, Ġangels, Ġmen, Ġothers, Ġrighteous, Ġheroes, ĠCreator, Ġanimals, ĠGods, Ġmasses, Ġspirits, Ġboys, Ġbirds, Ġgod, Ġother, Ġnation, Ġladies, Ġheavens, Ġcharacters, Ġbrothers, Ġbelievers, Ġdivine, Ġoppressed, Ġgirls, Ġsisters, Ġall, Ġflowers, Ġdying, Ġthousands, ĠDivine, Ġweak, Ġgood, Ġloved, Ġmortals, Ġsouls, Ġcreatures, ĠSpirit, Ġmost, Ġeternal, Ġeyes, Ġblind, Ġenemy, ĠLORD, ĠRomans, Ġbrave, Ġpoor, ĠGreeks, Ġhumans, Ġmountains, Ġhearts, Ġlocals, Ġsoldiers, Ġstrong, Ġmillions, Ġbetter, Ġnext, Ġparents, Ġancestors, Ġvillagers, Ġlions, Ġmajority, Ġdemons, Ġviewers, Ġcommunity, Ġlight, Ġghosts, Ġslaves, ĠChristians, Ġpublic, Ġfans, Ġwarriors, ĠMother, Ġtwo, Ġelders, Ġaudience, Ġpriests, Ġprinces, Ġpilgrims, Ġnobility, Ġoutside, Ġbabies, Ġsunshine, Ġdeparted, Ġmany, Ġcrowd, Ġhorses, Ġwild, Ġstranger, Ġfullest, Ġones, ĠAngels, Ġneedy, Ġfaith, Ġwhole, Ġwicked, Ġfriends, Ġinhabitants, Ġnuns]
+  believe:
+    active:
+      "[subj]": [Ġreader, Ġgirl, Ġboy, Ġteacher, Ġgroup, ĠMaster, Ġpeople, Ġparty, Ġdoctor, Ġnarrator, Ġcouncil, Ġchild, Ġmonk, Ġschool, Ġfamily, Ġteam, Ġhero, ĠQueen, Ġpublic, Ġchief, Ġvillage, Ġqueen, Ġauthor, Ġleader, Ġfather, ĠLord, ĠCouncil, Ġbody, Ġprofessor, Ġmayor, ĠEmperor, ĠBishop, Ġprotagonist, Ġcommunity, Ġforest, Ġbishop, ĠDoctor, Ġaudience, Ġgovernment, Ġdemon, Ġstudent, ĠGoddess, Ġmaster, Ġminister, Ġwriter, Ġvillagers, Ġyouth, Ġcourt, Ġprince, Ġchildren, Ġfarmer, Ġemperor, Ġdog, Ġspirit, Ġoutsider, Ġwind, Ġpolice, ĠCaptain, ĠGod, ĠFather, ĠChief, Ġpreacher, ĠGuardian, Ġtribe, Ġlion, Ġtemple, Ġfirst, ĠOne, Ġarmy, Ġcity, Ġsun, Ġdragon, Ġmother, Ġtown, Ġjudge, Ġphilosopher, ĠBrotherhood, Ġchampion, Ġcrowd, Ġvillain, Ġcardinal, Ġmedia, Ġcommander, Ġmale, Ġinspector, Ġwomen, Ġbeast, Ġprophet, Ġsage, Ġsoul, Ġscientist, Ġfemale, Ġmagician, Ġmonster, ĠSaint, ĠSun, Ġstranger, Ġpriests, Ġgod, Ġformer]
+      "[obj]": [Ġsame, Ġprophecy, ĠBible, Ġlie, Ġcontrary, Ġright, ĠGospel, Ġpossibility, Ġdead, Ġstory, Ġconspiracy, Ġopposite, Ġwrong, Ġidea, Ġgods, Ġfacts, ĠTrinity, ĠTruth, Ġrumours, Ġanswer, Ġworst, Ġhypothesis, Ġplot, Ġimpossible, Ġimpossibility, Ġtheory, Ġanswers, Ġfact, Ġdanger, Ġdeed, Ġword, Ġlaw, Ġlies, Ġbest, Ġclaim, Ġcause, Ġwill, Ġbelief, Ġtest, Ġnotion, ĠTorah, Ġplan, Ġmyth, Ġproof, Ġreason, Ġsupernatural, Ġstakes, Ġend, Ġdream, Ġmatter, Ġway, Ġrules, Ġgospel, Ġdoubts, Ġlegend, Ġfaith, Ġplace, Ġcross, Ġsacrifice, Ġsecret, Ġevidence, Ġfuture, Ġrace, Ġevil, Ġformula, Ġcharges, Ġobvious, ĠHigher, Ġquestion, Ġscriptures, Ġoath, Ġdoctrine, Ġrumors, Ġunthinkable, Ġtale, Ġwitches, Ġwar, ĠMessiah, Ġfollowing, Ġtree, Ġdeception, Ġrisks, Ġothers, Ġpower, Ġresults, Ġinnocent, Ġscience, Ġrumor, Ġreligion, Ġtime, ĠLaw, Ġdecision, Ġconsequences, Ġthing, Ġoccult, Ġuniverse, Ġritual, Ġcurse, Ġinevitable, Ġassumption]
+    passive:
+      "[obj]": [Ġstory, Ġevent, Ġplot, Ġsecret, Ġmystery, Ġmurder, Ġtale, Ġconspiracy, Ġfact, Ġaffair, Ġexistence, Ġrevelation, Ġaction, Ġlocation, Ġname, Ġmiracle, Ġmyth, Ġidea, Ġdiscovery, Ġresurrection, Ġbelief, Ġattack, Ġfollowing, Ġplace, Ġincident, Ġplan, Ġorigin, Ġbattle, Ġdream, ĠGospel, Ġsighting, Ġdeath, Ġtheory, Ġcreation, Ġkilling, Ġvision, Ġnews, Ġmatter, Ġnovel, Ġdeception, Ġevents, Ġcause, Ġcrime, Ġassassination, Ġbody, Ġsame, Ġsacrifice, Ġfire, Ġmeeting, Ġformula, ĠMessiah, Ġinformation, Ġdeed, Ġpossibility, Ġnight, Ġsearch, Ġghost, Ġprediction, Ġfeast, Ġunion, Ġclaim, Ġmassacre, Ġimpossibility, Ġritual, Ġprayer, Ġhypothesis, Ġlatter, Ġfuture, Ġdoctrine, Ġsource, Ġstruggle, Ġwhich, Ġlie, Ġtreasure, Ġwork, Ġvictory, Ġchild, Ġmessage, Ġdanger, Ġwill, Ġnarrative, Ġabduction, Ġrace, Ġday, Ġbirth, Ġspirit, Ġpower, Ġparanormal, Ġtheft, Ġdisappearance, Ġmarriage, Ġencounter, Ġtext, Ġoperation, ĠTruth, Ġmoon, Ġstatement, Ġflood, Ġevil, Ġmission]
+      "[subj]": [Ġpeople, Ġbelievers, Ġinhabitants, ĠChurch, Ġlocals, Ġvillagers, Ġgods, Ġpriests, Ġchurch, Ġnatives, ĠChristians, Ġfollowers, Ġangels, ĠMuslims, ĠDevil, Ġscriptures, Ġsaints, Ġmonks, Ġpolice, Ġelders, ĠWitnesses, Ġauthorities, Ġfaithful, Ġmedia, Ġnuns, Ġwomen, Ġmen, Ġdead, Ġmajority, Ġwitches, ĠHindus, ĠAlmighty, Ġchildren, Ġmissionaries, Ġdisciples, Ġothers, Ġclergy, Ġworld, Ġrebels, Ġresidents, Ġscientists, Ġpilgrims, Ġscripture, Ġtribe, Ġpopulace, ĠSun, Ġpublic, ĠIndians, Ġhunters, Ġcommunity, Ġastronomers, ĠGods, Ġfamily, ĠApostles, Ġauthor, Ġscholars, Ġwitnesses, Ġhumans, Ġparticipants, Ġnarrator, ĠGreeks, ĠFather, Ġspirits, Ġauthors, ĠInquisition, Ġsurvivors, Ġgroup, Ġpriest, Ġprophets, ĠJews, ĠRomans, ĠLord, Ġskeptics, Ġwriters, Ġprophet, Ġstudents, Ġexperts, Ġcrowd, ĠScriptures, Ġviewers, ĠKing, Ġdemons, Ġreader, Ġenemy, ĠWest, ĠBritish, Ġreaders, Ġunknown, ĠEgyptians, Ġvictims, Ġgovernment, Ġhistorians, ĠChinese, ĠPope, ĠCreator, ĠBuddha, ĠGoddess, ĠMaya, ĠArabs, Ġsect]
+
+miniberta_2:
+  wash:
+    active:
+      "[subj]": [Ġwind, Ġdoctor, Ġnurse, Ġdoctors, Ġstorm, Ġmother, Ġmen, Ġlight, Ġbreeze, Ġmaid, Ġsunlight, Ġdog, Ġdogs, Ġpolice, Ġflood, Ġwitch, Ġwomen, Ġheat, Ġwoman, Ġwash, Ġpeople, Ġwave, Ġcat, Ġservants, Ġand, Ġcats, Ġspray, Ġcops, Ġparamedics, ĠI, Ġhusband, ĠWater, Ġgirl, ĠDevil, Ġbirds, ĠSheriff, Ġnurses, Ġworkers, Ġcrew, Ġtug, Ġcows, Ġgirls, Ġboys, Ġfather, Ġrats, Ġsoldiers, ĠSun, Ġhad, Ġthey, Ġwinds, Ġclock, Ġbrush, Ġshe, Ġhorse, Ġband, Ġcleaners, Ġboy, Ġone, Ġgrandmother, ĠFire, Ġcamera, Ġcleaner, ĠShe, ,, Ġsmell, Ġrays, Ġbees, Ġkiller, Ġeyes, ĠRain, ĠThey, ĠLight, Ġflames, Ġdust, Ġmom, Ġsailors, ĠDoctor, Ġfarmer, Ġcook, Ġparty, Ġbullet, Ġvet, Ġbucket, Ġlady, Ġwaves, Ġothers, Ġneedle, Ġ, Ġhand, Ġsunshine, ĠLord, Ġhe, Ġparents, Ġdoc, ĠWind, Ġsheriff, ĠHe, Ġcow, Ġfisherman, Ġspring]
+      "[obj]": [Ġhouse, Ġdishes, Ġfloor, Ġpaper, Ġground, Ġroom, Ġwindows, Ġkitchen, Ġtoilet, Ġhair, Ġtable, Ġbeach, Ġplace, Ġsand, Ġface, Ġstreets, Ġdirt, Ġair, Ġglass, Ġsheets, Ġbed, Ġdoor, Ġearth, Ġplates, Ġmud, Ġcarpet, Ġstreet, Ġsink, Ġclothes, Ġmess, Ġgrass, Ġwalls, Ġroad, Ġback, Ġsnow, Ġpages, Ġcake, Ġday, Ġfaces, Ġbathroom, Ġscene, Ġlawn, Ġyard, Ġlaundry, Ġworld, Ġplate, Ġship, Ġbarn, Ġwindow, Ġshop, Ġflowers, Ġice, Ġshed, Ġtowels, Ġsky, Ġbottle, Ġfish, Ġocean, Ġgrounds, Ġtears, Ġstore, Ġbay, Ġdeck, Ġarea, Ġhome, Ġcanvas, Ġfarm, Ġlake, Ġfield, Ġshirt, Ġcity, Ġwall, Ġcar, Ġboard, Ġwaters, Ġhead, Ġhall, Ġhay, Ġbowl, Ġbodies, Ġlinen, Ġtiles, Ġnight, Ġpond, Ġhouses, Ġskin, Ġpavement, Ġrocks, Ġtoilets, Ġpapers, Ġpot, Ġland, Ġplants, Ġfloors, Ġteeth, Ġcurtains, Ġrag, Ġwine, Ġcandle, Ġdamage]
+    passive:
+      "[obj]": [Ġbed, Ġroom, Ġface, Ġfloor, Ġhome, Ġground, Ġsky, Ġdoor, Ġbridge, Ġroof, Ġtable, Ġbaby, Ġvan, Ġkitchen, Ġstreet, Ġbarn, Ġscene, Ġpaper, Ġvillage, Ġchurch, Ġfarm, Ġhead, Ġplace, Ġwall, Ġbus, Ġisland, Ġyard, Ġhall, Ġwindow, Ġback, Ġglass, Ġcarriage, Ġfield, Ġcoffin, Ġmap, Ġarea, Ġchair, Ġstone, Ġcart, Ġtent, Ġbottle, Ġbay, Ġland, Ġstage, Ġscreen, Ġhair, Ġlibrary, Ġearth, Ġbuilding, Ġtemple, Ġpath, Ġcorpse, Ġshop, Ġfront, Ġcarpet, Ġcastle, Ġclock, Ġcave, Ġgarden, Ġmoon, Ġbook, Ġcottage, Ġtown, Ġchild, Ġair, Ġbank, Ġtower, Ġhospital, Ġcity, Ġwood, Ġcake, Ġforest, Ġporch, Ġcase, Ġbox, Ġdog, Ġmirror, Ġboy, Ġbathroom, Ġmouth, Ġwagon, Ġplane, Ġworld, ĠHouse, Ġboard, Ġgrave, Ġvessel, Ġlawn, Ġchapel, Ġdeck, Ġchannel, Ġcabin, Ġstore, Ġphone, Ġarm, Ġshirt, Ġgate, Ġestate, Ġfort, Ġborder]
+      "[subj]": [Ġflood, Ġwind, Ġtide, Ġwaves, Ġocean, Ġrains, Ġfishermen, Ġhurricane, Ġpolice, Ġseas, Ġcreek, Ġsink, Ġcold, Ġhand, Ġwinds, Ġsurf, Ġdoctor, Ġstream, Ġshower, Ġmosquitoes, Ġtornado, Ġwinter, Ġfloods, Ġroadside, Ġelements, Ġshore, Ġboats, Ġsoldiers, Ġsailors, Ġpeople, Ġspring, Ġcrew, Ġhorses, Ġheat, Ġfisherman, Ġdoctors, Ġfish, ĠIndians, Ġauthorities, Ġmen, Ġhands, Ġwash, Ġice, Ġwaters, Ġbirds, Ġtsunami, Ġcanal, Ġweather, Ġprocess, Ġtime, Ġlightning, Ġvillagers, ĠFlood, Ġworkers, Ġlocals, Ġmaid, Ġservants, Ġfog, Ġearthquake, Ġdawn, Ġbreeze, Ġsummer, Ġnatives, Ġexplosion, ĠStorm, Ġswamp, Ġaccident, Ġmorning, Ġside, Ġwell, Ġarmy, Ġsharks, Ġimpact, Ġdogs, Ġbees, Ġman, Ġforce, Ġparty, Ġstorms, ĠChinese, Ġsailor, Ġsponge, Ġferry, Ġcows, Ġcurrents, Ġway, Ġmarsh, Ġvessels, Ġtrees, Ġmud, Ġdestroyer, Ġlight, Ġanimals, Ġflames, Ġfirefighters, Ġtug, Ġsunlight, Ġflu, ĠThames, Ġspray]
+  fix:
+    active:
+      "[subj]": [Ġdoctor, ĠLord, Ġcaptain, Ġpriest, Ġqueen, Ġcrew, Ġdriver, Ġmagician, ĠSun, ĠKing, Ġmen, Ġcouncil, Ġengineer, Ġjudge, Ġteam, Ġdragon, ĠDoctor, Ġmaster, Ġstar, Ġdoctors, Ġbell, Ġand, Ġcommand, ĠCaptain, Ġhand, ĠMaster, Ġforce, ĠCouncil, Ġpolice, Ġteacher, Ġstaff, Ġwoman, Ġrobot, Ġannouncer, Ġpilot, Ġdemon, ĠDevil, Ġeyes, Ġaccident, ĠEmperor, ĠQueen, Ġone, Ġruler, Ġwave, Ġgods, Ġmotion, Ġartist, Ġguards, Ġofficer, Ġexplosion, Ġlamp, Ġangels, Ġservant, ĠGod, Ġvoice, Ġspell, Ġstate, Ġgroup, Ġpeople, Ġjudges, Ġoperator, Ġsurgeon, Ġrain, Ġcurse, Ġenemy, Ġengineers, Ġboy, Ġmemory, Ġcompany, Ġevent, Ġchief, Ġpriests, Ġearthquake, Ġlightning, Ġlord, Ġfather, ĠI, Ġgod, Ġhands, Ġrider, Ġsoldier, Ġowner, Ġreferee, Ġhad, Ġchange, Ġjury, Ġdirector, Ġgiant, Ġact, Ġboss, Ġarmy, Ġangel, Ġsoldiers, ĠHe, Ġprince, Ġhusband, Ġarchitect, Ġdarkness, Ġgovernment, Ġphysician]
+      "[obj]": [Ġproblem, Ġsituation, Ġscene, Ġwindow, Ġissue, Ġdamage, Ġpoint, Ġwheels, Ġground, Ġroom, Ġfloor, Ġroad, Ġthing, Ġcase, Ġwindows, Ġdistance, Ġplanet, Ġplate, Ġcalendar, Ġsubject, Ġmap, Ġceiling, Ġbalance, Ġplates, Ġhole, Ġhead, Ġstation, Ġbuilding, Ġsquare, Ġcontract, Ġlock, Ġdice, Ġpicture, Ġearth, Ġtruth, ĠEarth, Ġalarm, Ġboat, Ġroof, Ġobject, Ġwork, Ġtask, Ġengine, Ġseal, Ġwatch, Ġpaper, Ġknot, Ġbook, Ġflag, Ġface, Ġdate, Ġmast, Ġchair, Ġcable, Ġwhole, Ġborder, Ġposition, Ġbar, Ġboundary, Ġletter, Ġclocks, Ġlink, Ġglass, Ġprice, Ġrules, Ġbreach, Ġfence, Ġgears, Ġpuzzle, Ġcoin, Ġstakes, Ġtables, Ġday, Ġwalls, Ġstick, Ġstage, Ġgrid, Ġcourse, Ġlines, Ġball, Ġmatter, Ġvessel, Ġscreen, Ġend, Ġillusion, Ġdeck, Ġanchor, Ġmess, Ġgun, Ġpainting, Ġload, Ġreceiver, Ġcastle, Ġequation, Ġmessage, Ġmark, Ġfacts, Ġmatch, Ġrest, Ġkeys]
+    passive:
+      "[obj]": [Ġsituation, Ġposition, Ġschedule, Ġcase, Ġline, Ġproblem, Ġlocation, Ġimage, Ġpoint, Ġsubject, Ġtask, Ġplace, Ġprice, Ġset, Ġscene, Ġstructure, Ġsky, Ġbalance, Ġperiod, Ġtown, Ġuniverse, Ġstory, Ġlist, Ġcity, Ġflag, Ġissue, Ġfigure, Ġfuture, Ġrelationship, Ġthrone, Ġnumber, Ġscore, Ġtimeline, Ġwork, Ġresult, Ġcover, Ġsetting, Ġgrid, Ġframe, Ġplanet, Ġmatch, Ġkingdom, Ġstation, Ġdistance, Ġchapter, Ġgame, Ġface, Ġoutcome, Ġsign, Ġmap, Ġboundary, Ġmonument, Ġstandard, Ġtruth, Ġsame, Ġmechanism, Ġmatter, Ġsolution, Ġname, Ġvalue, Ġcourse, Ġpicture, Ġplot, Ġtimer, Ġequation, Ġmast, Ġprocedure, Ġreference, Ġsentence, Ġprinciple, Ġdecision, Ġcondition, Ġbar, Ġangle, Ġtiming, Ġagreement, Ġvillage, Ġmarket, Ġcycle, Ġeffect, Ġfort, Ġdocument, Ġexecution, Ġkeep, Ġborder, Ġscale, Ġtemperature, Ġlimit, Ġcode, Ġalphabet, Ġoffice, Ġpunishment, Ġthing, Ġanswer, Ġkeeper, Ġpage, Ġview, Ġobjective, Ġpath, Ġlog]
+      "[subj]": [Ġhand, Ġcouncil, ĠCouncil, ĠLaw, Ġcross, Ġaccident, Ġrules, Ġact, Ġbull, Ġcrown, Ġwind, Ġqueen, ĠCrown, Ġstars, Ġdecree, Ġelements, Ġwill, ĠQueen, Ġtest, Ġboard, ĠAct, Ġbishop, Ġarchitect, Ġeye, ĠMaster, Ġmachine, Ġflood, Ġceremony, Ġhands, Ġcourt, Ġearthquake, Ġstorm, Ġdice, Ġsea, Ġeyes, Ġartist, Ġcomputer, Ġchain, Ġmirror, Ġcircumstances, Ġauthor, Ġtelescope, Ġfireplace, Ġjudge, Ġball, Ġhorse, Ġcharter, Ġdeed, Ġchange, Ġfeet, Ġoven, Ġvan, Ġprocess, ĠPope, Ġcommand, Ġcard, Ġgods, Ġprince, Ġfoot, ĠBible, Ġleft, Ġrain, Ġparty, Ġinstrument, Ġsecond, Ġjury, ĠDoctor, Ġmen, Ġbuilder, Ġpole, Ġmagician, Ġdragon, Ġcrew, Ġconstitution, Ġdome, ĠCreator, Ġpeople, Ġtemple, Ġsovereign, Ġsword, Ġelders, Ġlord, Ġstone, Ġassembly, Ġaction, ĠCourt, Ġlaws, Ġspring, Ġclause, Ġowner, ĠArk, Ġdoctor, ĠShah, Ġchief, Ġminister, Ġevents, Ġstate, Ġfall, Ġtreaty, Ġwater]
+  surprise:
+    active:
+      "[subj]": [Ġbook, Ġnews, Ġsong, Ġnovel, Ġevent, Ġmovie, Ġexperience, Ġadventure, Ġsmile, Ġgame, Ġepisode, Ġfilm, Ġperformance, Ġvisit, Ġrevelation, Ġmemory, Ġshow, Ġalbum, Ġaction, Ġride, Ġmusic, Ġkiss, Ġsuccess, Ġfinale, Ġtale, Ġscene, Ġconcert, Ġdiary, Ġtruth, Ġvoice, Ġdream, Ġincident, Ġtitle, Ġreunion, Ġvictory, Ġsecret, Ġencounter, Ġmessage, Ġletter, Ġdrama, Ġromance, Ġname, Ġjob, Ġfollowing, Ġwedding, Ġjourney, Ġtrip, Ġseries, Ġsun, Ġstar, Ġplay, Ġmission, Ġnote, Ġstorm, Ġending, Ġplot, Ġview, Ġpremiere, Ġcamera, Ġreturn, Ġvideo, Ġexplosion, Ġghost, Ġmeeting, Ġsight, Ġintroduction, Ġbutterfly, Ġreview, Ġclock, Ġpresence, Ġnecklace, Ġdistraction, Ġand, Ġphone, Ġpleasure, Ġrelease, Ġchallenge, Ġimage, Ġattack, Ġprospect, Ġcar, Ġhero, Ġcastle, Ġsituation, Ġidea, Ġtext, Ġpicture, Ġmirror, ĠTV, Ġlaugh, Ġradio, Ġcourse, Ġact, Ġopportunity, Ġring, Ġlibrary, Ġopera, Ġmagic, Ġblast, Ġspotlight]
+      "[obj]": [Ġaudience, Ġkids, Ġcrew, Ġfamily, Ġcrowd, Ġchildren, Ġguests, Ġteam, Ġothers, Ġreader, Ġlistener, Ġboys, Ġgirls, Ġyouth, Ġfans, Ġmost, Ġpack, Ġcommunity, Ġchild, Ġviewers, Ġladies, Ġvillage, Ġlad, Ġkid, Ġviewer, Ġstars, Ġtown, Ġstaff, Ġreaders, Ġcaptain, Ġpublic, Ġstudents, Ġpeople, Ġtwins, Ġyoungsters, Ġmen, Ġlisteners, Ġmood, Ġcouple, Ġplayer, Ġfriends, Ġgang, Ġclass, Ġvillagers, Ġrest, Ġcity, Ġhost, Ġguys, Ġplanet, Ġdog, Ġmorning, ĠDoctor, Ġeye, Ġchurch, Ġcore, ĠQueen, Ġking, Ġsoul, Ġpilot, Ġuniverse, Ġbaby, Ġdoctor, Ġelders, Ġpassengers, Ġcast, Ġguard, Ġsinger, Ġlovers, Ġplayers, Ġcamp, Ġowner, Ġheart, Ġduo, Ġvisitors, ĠLord, Ġdriver, Ġshop, Ġvisitor, Ġhosts, Ġmasses, Ġqueen, Ġbar, Ġbrothers, Ġrestaurant, Ġyoungster, Ġspirits, Ġlocals, Ġwomen, Ġhotel, Ġparents, Ġyoung, Ġmembers, Ġego, Ġall, Ġboard, Ġboss, Ġweather, Ġsquad, Ġresidents, Ġdirector]
+    passive:
+      "[obj]": [Ġaudience, Ġboy, Ġgroup, Ġhe, Ġking, Ġfather, Ġdoctor, Ġworld, Ġguard, Ġcaptain, ĠHe, Ġmother, ĠKing, Ġreader, Ġchild, Ġmind, Ġcrew, Ġone, Ġfamily, Ġteam, Ġhost, Ġlady, Ġqueen, Ġspeaker, Ġeye, Ġcat, Ġdog, Ġnarrator, ĠDoctor, Ġcrowd, Ġplayer, Ġband, Ġshe, Ġleader, Ġprince, Ġprofessor, Ġteacher, Ġdriver, ĠMaster, Ġviewer, Ġdragon, ĠQueen, Ġmaster, ĠCaptain, ĠShe, Ġson, Ġlistener, Ġmagician, Ġparty, Ġcharacter, Ġbody, Ġfriend, Ġauthor, Ġcreature, Ġgeneral, Ġcamera, Ġandroid, Ġstaff, Ġwizard, Ġbird, Ġheart, Ġsinger, Ġartist, Ġgang, Ġspirit, Ġperson, Ġcouple, Ġpriest, Ġowner, Ġwife, Ġenemy, Ġstudent, Ġarmy, Ġlatter, Ġbrother, Ġdaughter, Ġpilot, Ġship, Ġsoldier, Ġnurse, Ġlad, ĠGuardian, Ġbear, ĠProfessor, Ġand, Ġclass, Ġannouncer, Ġwriter, Ġambassador, Ġface, Ġreporter, Ġcompany, ĠLord, Ġcouncil, a, Ġmouth, ĠColonel, Ġschool, Ġlord, Ġchief]
+      "[subj]": [Ġnews, Ġrevelation, Ġcomment, Ġinterruption, Ġincident, Ġsituation, Ġstatement, Ġscene, Ġsight, Ġevent, Ġmemory, Ġannouncement, Ġnoise, Ġwords, Ġopportunity, Ġinformation, Ġaction, Ġprospect, Ġexchange, Ġquestion, Ġgesture, Ġevents, Ġsilence, Ġidea, Ġintrusion, Ġstory, Ġspectacle, Ġoutcome, Ġappearance, Ġremark, Ġresults, Ġchallenge, Ġencounter, Ġoffer, Ġconversation, Ġmention, Ġimage, Ġmessage, Ġsound, Ġfact, Ġdisplay, Ġinvitation, Ġsuggestion, Ġletter, Ġreception, Ġanswer, Ġreport, Ġmeeting, Ġbeauty, Ġresponse, Ġarrival, Ġoutburst, Ġvisit, Ġcompliment, Ġchange, Ġshock, Ġview, Ġtruth, Ġthought, Ġproposal, Ġsurprise, Ġmusic, Ġtransformation, Ġperformance, Ġcall, Ġattack, Ġrequest, Ġceremony, Ġspeech, Ġexperience, Ġpraise, Ġapplause, Ġmoment, Ġlecture, Ġreaction, Ġmovement, Ġdiscovery, Ġwarning, Ġresult, Ġdemonstration, Ġgift, Ġaccident, Ġdeclaration, Ġdescription, Ġirony, Ġexpression, Ġnewcomer, Ġdeception, Ġpresentation, Ġdelay, Ġimplications, Ġdistraction, Ġjoke, Ġloss, Ġintroduction, Ġlook, Ġstation, Ġbroadcast, Ġtale, Ġnotion]
+  frighten:
+    active:
+      "[subj]": [Ġdarkness, Ġfear, Ġsun, Ġlight, Ġcurse, Ġthought, Ġvoice, Ġnoise, Ġwitch, Ġcold, Ġsight, Ġdream, Ġtruth, Ġaction, Ġfire, Ġstorm, Ġevil, Ġfright, Ġidea, Ġdeath, Ġlaughter, Ġsickness, Ġkiss, Ġpain, Ġpresence, Ġpoison, Ġattack, Ġact, Ġworst, Ġmonster, Ġblow, Ġmemory, Ġsword, Ġsilence, Ġrain, Ġnews, Ġplague, Ġlamp, Ġexperience, Ġterror, Ġdanger, Ġwarning, Ġnightmare, Ġincident, Ġscream, Ġdark, Ġcruelty, Ġbook, Ġghost, Ġsmell, Ġstory, Ġmagic, Ġfever, Ġexplosion, Ġsound, Ġknife, Ġwar, Ġhorror, Ġheat, Ġsunlight, Ġsmile, Ġpunishment, Ġanger, Ġword, Ġname, Ġcloak, Ġmagician, ĠDevil, Ġsituation, Ġtale, Ġmusic, Ġsmoke, Ġdragon, Ġdemon, Ġforest, Ġspell, Ġvampire, Ġmadness, Ġsecret, Ġfight, Ġbed, Ġend, Ġweather, Ġwhip, Ġmirror, Ġpower, Ġatmosphere, Ġwater, Ġaccident, Ġrevelation, Ġbeating, Ġmurder, Ġlaugh, Ġnightmares, Ġmoon, Ġshadow, Ġguilt, Ġcrime, Ġmaid, Ġloss]
+      "[obj]": [Ġsoul, Ġothers, Ġfamily, Ġpeople, Ġmen, Ġboys, Ġkids, Ġheart, Ġlad, Ġcrowd, Ġyouth, Ġaudience, Ġgirls, Ġpoor, Ġcrew, Ġwomen, Ġmind, Ġyoung, Ġstudents, Ġcity, Ġenemy, Ġsick, Ġguard, Ġanimals, Ġspirits, ĠKing, Ġeye, Ġinnocent, Ġvillagers, Ġearth, Ġreader, Ġvillage, Ġmost, Ġblind, Ġsheep, Ġbeast, Ġtown, Ġladies, Ġmood, Ġprince, Ġlady, Ġuniverse, Ġhumans, Ġprisoners, Ġfool, Ġguards, Ġwhole, Ġcountry, Ġelders, Ġrest, ĠQueen, Ġsoldiers, Ġguests, Ġbirds, Ġschool, Ġcommunity, Ġkid, Ġbrothers, Ġdogs, Ġhousehold, Ġdeaf, Ġgroup, Ġeyes, Ġsenses, Ġson, Ġcompany, Ġyoungsters, Ġlistener, Ġmasses, Ġmaster, Ġlovers, Ġbody, Ġservants, Ġnation, Ġcamp, Ġhorses, Ġarmy, Ġpublic, Ġplanet, ĠEarth, Ġcreatures, Ġwolf, Ġpatient, Ġgods, Ġperson, ĠGods, Ġship, Ġother, Ġair, Ġfuture, ĠChildren, Ġfolk, Ġbrain, Ġchurch, Ġprincess, Ġhuman, Ġslaves, Ġsouls, Ġweak, Ġfriends]
+    passive:
+      "[obj]": [Ġmind, Ġmother, Ġking, Ġlad, Ġfather, Ġlady, Ġaudience, Ġeye, Ġheart, Ġson, Ġsoul, Ġhe, Ġmaster, Ġguard, Ġfamily, Ġbody, Ġprince, Ġone, Ġqueen, Ġenemy, Ġreader, Ġbird, ĠMaster, Ġdoctor, ĠDoctor, Ġperson, ĠHe, Ġspeaker, Ġhost, Ġwife, Ġlistener, Ġhorse, Ġcaptain, Ġteacher, Ġdragon, Ġpatient, Ġdaughter, Ġshe, Ġplayer, Ġstudent, Ġfox, Ġbear, Ġdriver, Ġlord, Ġhuman, Ġwolf, Ġwitch, Ġowl, Ġlion, Ġface, ĠCaptain, Ġcharacter, Ġgroup, Ġnarrator, Ġviewer, Ġhusband, Ġpriest, Ġkid, Ġsoldier, Ġbrother, Ġship, Ġgeneral, Ġchief, Ġhead, Ġservant, Ġsky, Ġpoet, Ġsinger, Ġother, Ġwarrior, Ġdemon, Ġarmy, Ġleader, Ġlatter, Ġowner, Ġhero, Ġfriend, ĠShe, Ġbrain, Ġauthor, ĠDuke, Ġyoungster, Ġcrew, Ġmouth, Ġthief, ĠWitch, Ġprisoner, Ġmagician, Ġrider, Ġfellow, Ġparty, Ġcoach, Ġvillage, Ġwizard, Ġfarmer, ĠDevil, ĠLady, Ġpupil, Ġdevil, ĠPrince]
+      "[subj]": [Ġnoise, Ġnews, Ġdanger, Ġsituation, Ġtruth, Ġdarkness, Ġlight, Ġidea, Ġsight, Ġconsequences, Ġthought, Ġevents, Ġcold, Ġpain, Ġrain, Ġsound, Ġaction, Ġanimals, Ġincident, Ġfire, Ġmemory, Ġmoment, Ġwords, Ġcircumstances, Ġaccident, Ġattack, Ġweather, Ġstorm, Ġfear, Ġexperience, Ġintrusion, Ġshock, Ġdream, Ġnight, Ġloss, Ġforest, Ġheat, Ġrevelation, Ġcreatures, Ġthreat, Ġcruelty, Ġbeasts, Ġpast, Ġfright, Ġcall, Ġevent, Ġothers, Ġbeauty, Ġguards, Ġcurse, Ġmovement, Ġwater, Ġshadows, Ġtears, Ġquestion, Ġsilence, Ġdeception, Ġmen, Ġgirls, Ġstory, Ġact, Ġnotion, Ġwarning, Ġnightmare, Ġvision, Ġdeath, Ġchange, Ġfact, Ġstars, Ġmusic, Ġscene, Ġsmell, Ġencounter, Ġair, Ġtwins, Ġhorror, Ġdark, Ġprospect, Ġblow, Ġpresence, Ġmatter, Ġopportunity, Ġinformation, Ġghost, Ġsounds, Ġtime, Ġghosts, Ġknowledge, Ġworst, Ġelements, Ġsea, Ġflood, Ġwinds, Ġfeeling, Ġpolice, Ġdogs, Ġsickness, Ġburden, Ġword, Ġimage]
+  discover:
+    active:
+      "[subj]": [Ġteam, Ġscientists, Ġcrew, Ġgroup, Ġmen, Ġpeople, Ġparty, Ġband, Ġsun, Ġpolice, Ġscientist, Ġothers, Ġaliens, Ġengineers, Ġresearchers, Ġenemy, Ġhad, Ġlight, Ġdoctor, Ġarmy, Ġcompany, Ġexplorers, Ġhunters, Ġengineer, Ġagents, Ġthey, Ġwind, Ġforce, Ġone, Ġpair, Ġhumans, Ġmagician, Ġexplosion, Ġminers, ĠThey, Ġstorm, Ġcreature, Ġpirates, Ġcaptain, Ġbrothers, Ġastronomers, Ġparents, Ġsoldiers, Ġtrio, Ġtwins, ĠDoctor, Ġtwo, Ġworkers, Ġlaser, Ġand, Ġagent, Ġstudents, Ġdragon, Ġwarriors, Ġgang, Ġfather, Ġplayer, Ġduo, Ġcreatures, Ġcouple, Ġnatives, Ġrobot, Ġpriest, Ġperson, Ġauthor, Ġspirit, Ġauthorities, Ġbird, Ġpilot, ĠDevil, Ġkiller, ĠCaptain, Ġboys, Ġstaff, ĠGods, Ġdemon, Ġfriends, Ġthieves, ĠRussians, Ġfirst, Ġthief, Ġother, Ġdivers, Ġbees, ĠOracle, Ġvillagers, Ġartist, Ġchildren, Ġwater, Ġfamily, Ġking, Ġstars, Ġgods, Ġwoman, Ġhunter, Ġrats, Ġexpedition, Ġmonster, ĠOne, Ġmother]
+      "[obj]": [Ġtruth, Ġcave, Ġhouse, Ġbook, Ġcar, Ġbomb, Ġcrystal, Ġgun, Ġbox, Ġplanet, Ġsite, Ġtunnel, Ġkey, Ġtreasure, Ġdiamond, Ġsecret, Ġearth, Ġartifact, Ġmanuscript, Ġtree, Ġskull, Ġmap, Ġbuilding, Ġletter, Ġcrystals, Ġpaper, Ġfragment, Ġwreckage, Ġjournal, Ġstone, Ġsource, Ġvessel, Ġdevice, Ġmine, Ġtelescope, Ġrock, Ġlamp, Ġlocation, Ġstory, Ġweapon, Ġgold, Ġcross, Ġcorpse, Ġstones, Ġobject, Ġcase, Ġchild, Ġfilm, Ġcaves, Ġskeleton, Ġfragments, Ġbridge, Ġstation, Ġwood, Ġruins, Ġnovel, Ġscene, Ġwall, Ġbodies, Ġpuzzle, Ġaccident, Ġtemple, Ġjar, Ġdoor, Ġphone, Ġdead, Ġball, Ġdisk, Ġhole, Ġroom, Ġalbum, Ġasteroid, Ġcompound, Ġculprit, Ġradio, Ġseal, Ġplane, Ġsword, Ġnest, Ġscreen, Ġuniverse, Ġpainting, Ġremains, Ġevidence, Ġartifacts, Ġrifle, Ġexplosives, Ġnote, Ġhammer, Ġcity, Ġvehicle, Ġdiary, Ġpapers, Ġnecklace, Ġplace, Ġname, Ġvillage, Ġhead, Ġtower, Ġkeys]
+    passive:
+      "[obj]": [Ġhouse, Ġplanet, Ġtown, Ġsite, Ġcity, Ġtree, Ġbook, Ġstation, Ġcar, Ġtemple, Ġisland, Ġplace, Ġlocation, Ġnest, Ġtower, Ġarea, Ġmine, Ġtunnel, Ġbuilding, Ġworld, Ġmap, Ġearth, Ġfilm, Ġbridge, ĠEarth, Ġchild, Ġland, Ġscene, Ġasteroid, Ġbomb, Ġtreasure, Ġmanuscript, Ġfarm, Ġalbum, Ġrock, Ġplane, Ġvehicle, Ġname, Ġcastle, Ġtomb, Ġmountain, Ġhead, Ġmonument, Ġcorpse, Ġegg, Ġvessel, Ġstar, Ġstatue, Ġcomet, Ġhome, Ġstone, Ġboy, Ġcase, Ġplant, Ġsky, Ġskull, Ġfort, Ġwall, Ġbird, Ġdam, Ġgirl, Ġcat, ĠMoon, Ġdiary, ĠCave, Ġman, Ġwreckage, Ġgrave, Ġfactory, Ġnovel, Ġbox, Ġlibrary, Ġcoast, Ġbaby, Ġpalace, Ġdog, Ġchurch, Ġfield, Ġvoice, Ġwreck, Ġgun, Ġscreen, Ġproperty, Ġbutterfly, Ġball, Ġlast, Ġtransmitter, Ġjournal, Ġpaper, Ġeye, Ġprison, Ġstory, Ġpark, Ġcross, Ġletter, Ġsign, Ġbase, Ġestate, Ġmonastery, Ġradio]
+      "[subj]": [Ġpolice, Ġscientists, Ġteam, Ġcrew, Ġstorm, Ġauthorities, Ġhunters, Ġaccident, Ġvillagers, Ġwater, Ġresearchers, Ġfishermen, ĠRussians, Ġlocals, Ġwind, ĠBritish, Ġexplosion, Ġdivers, Ġexpedition, Ġnatives, Ġearthquake, ĠGermans, ĠJapanese, Ġarmy, Ġenemy, Ġnight, Ġminers, Ġgroup, Ġinhabitants, Ġarchaeologists, Ġastronomers, Ġdoctor, Ġflood, Ġtsunami, Ġpirates, ĠQueen, Ġlightning, Ġmen, ĠSoviets, Ġaliens, Ġexplorers, Ġband, ĠChinese, Ġsearch, Ġinvestigators, Ġforce, Ġphotographer, Ġmilitary, Ġsoldiers, Ġpeople, ĠTurks, ĠSpanish, Ġdoctors, Ġhand, ĠKGB, Ġastronomer, Ġocean, Ġtime, Ġscientist, Ġstaff, Ġworkers, ĠPortuguese, ĠUFO, Ġhumans, Ġhunter, Ġgovernment, ĠObservatory, ĠRomans, ĠDevil, Ġuniversity, ĠDutch, Ġcompany, Ġavalanche, ĠPolice, Ġroadside, Ġrailway, ĠNavy, Ġengineers, ĠFBI, Ġmeteor, Ġrain, ĠGreeks, Ġbees, Ġbirds, ĠTaliban, Ġguards, Ġlight, ĠNazis, Ġlaboratory, Ġresidents, ĠFrench, Ġbats, Ġmachine, Ġagents, Ġrebels, Ġglacier, ĠEuropeans, Ġothers, ĠCaptain, Ġants]
+  find:
+    active:
+      "[subj]": [Ġteam, Ġmen, Ġthey, Ġothers, Ġcrew, Ġgroup, Ġone, Ġband, Ġparty, ĠThey, Ġpeople, Ġthief, Ġhad, ĠI, Ġeyes, Ġhunters, Ġsun, Ġfamily, Ġtwo, Ġpriest, ĠDoctor, Ġsoldiers, Ġand, Ġmother, Ġboys, Ġparents, Ġcreature, Ġhe, Ġfather, ĠOne, Ġhunter, Ġcaptain, Ġcouple, Ġchildren, Ġthieves, Ġpair, Ġvillagers, Ġstaff, Ġdogs, Ġdragon, ĠCaptain, Ġgirls, Ġguards, Ġwe, Ġfriends, Ġdriver, Ġarmy, Ġkids, Ġscientists, Ġguard, Ġenemy, Ġgang, Ġwind, Ġtwins, Ġbrothers, ĠHe, Ġtrio, Ġshe, Ġlast, Ġeye, Ġwitch, ĠWe, Ġbirds, Ġcats, Ġwarriors, Ġpilot, Ġsoldier, Ġagents, Ġthree, Ġservants, Ġdemon, ,, Ġother, Ġspider, Ġstorm, Ġplayer, Ġminers, Ġspirit, Ġmonster, ĠDevil, ĠShe, Ġrats, ĠMaster, Ġperson, ĠSun, ĠFire, Ġlady, Ġnurse, Ġangels, Ġking, Ġservant, Ġdoctors, Ġwomen, Ġwho, Ġagent, Ġpriests, Ġarrow, Ġbees, Ġscientist, Ġcops]
+      "[obj]": [Ġhouse, Ġbook, Ġbox, Ġgun, Ġcorpse, Ġmap, Ġcave, Ġletter, Ġtruth, Ġnote, Ġknife, Ġkey, Ġdiary, Ġdead, Ġgrave, Ġpaper, Ġroom, Ġcottage, Ġkeys, Ġdoor, Ġpistol, Ġstone, Ġrifle, Ġtreasure, Ġpapers, Ġwood, Ġstones, Ġbodies, Ġtree, Ġbooks, Ġfile, Ġbuilding, Ġjournal, Ġashes, Ġphone, Ġmanuscript, Ġnewspaper, Ġplace, Ġsword, Ġruins, Ġwreckage, Ġflowers, Ġpainting, Ġsign, Ġletters, Ġlamp, Ġevidence, Ġcoffin, Ġskeleton, Ġcase, Ġbaby, Ġwall, Ġjar, Ġtrail, Ġbag, Ġmachine, Ġvillage, Ġfarm, Ġground, Ġbones, Ġskull, Ġmurderer, Ġroad, Ġstory, Ġcabin, Ġhammer, Ġhome, Ġwater, Ġtemple, Ġball, Ġvan, Ġpicture, Ġdagger, Ġlibrary, Ġfootprints, Ġgold, Ġsite, Ġremains, Ġbomb, Ġmine, Ġmessage, Ġrock, Ġbottle, Ġrecorder, Ġsource, Ġnotebook, Ġalbum, Ġmirror, Ġhead, Ġcemetery, Ġland, Ġmoney, Ġattic, Ġscreen, Ġbike, Ġfiles, Ġcross, Ġriver, Ġguns, Ġfloor]
+    passive:
+      "[obj]": [Ġcorpse, Ġchild, Ġhead, Ġgrave, Ġskull, Ġbook, Ġbox, Ġstone, Ġname, Ġgun, Ġbaby, Ġstatue, Ġtreasure, Ġcoffin, Ġvoice, Ġcat, Ġmap, Ġlast, Ġletter, Ġgirl, Ġsword, Ġhorse, Ġboy, Ġdiary, Ġegg, Ġmummy, Ġtooth, Ġcamera, Ġbird, Ġtomb, Ġsite, Ġeye, Ġmonument, Ġlamp, Ġplace, Ġball, Ġarrow, Ġimage, Ġrock, Ġvehicle, Ġbomb, Ġone, Ġnote, Ġnest, Ġsign, Ġalbum, Ġmanuscript, Ġbell, Ġson, Ġcase, Ġskeleton, Ġweapon, Ġwood, Ġknife, Ġplane, Ġfather, Ġmoon, Ġdagger, Ġmurderer, Ġkey, Ġwoman, Ġvan, Ġfilm, Ġtower, Ġpistol, Ġpaper, Ġkiller, Ġlocation, Ġorgan, Ġhome, Ġmurder, Ġdead, Ġheart, Ġscene, Ġbuilding, Ġanimal, Ġremains, Ġperson, Ġface, Ġvictim, Ġobject, Ġoffice, Ġvessel, Ġphone, Ġdaughter, Ġsoul, ĠStone, Ġseal, Ġinscription, Ġbutterfly, Ġking, Ġsource, Ġfind, Ġoriginal, Ġstar, Ġpicture, Ġearth, Ġmother, Ġwreckage, Ġbus]
+      "[subj]": [Ġsea, Ġpolice, Ġriver, Ġroad, Ġlake, Ġvillagers, Ġwater, Ġroadside, Ġhunters, Ġstorm, Ġflood, Ġnight, Ġparty, Ġhand, Ġmen, Ġaccident, Ġarmy, Ġexplosion, Ġbeach, Ġsoldiers, Ġfishermen, Ġcemetery, Ġwind, Ġminers, Ġtrain, Ġauthorities, Ġlocals, Ġtrees, Ġpeople, Ġfarmer, Ġmill, ĠDevil, Ġhospital, Ġbank, Ġinhabitants, Ġrailway, Ġcreek, Ġcart, Ġmountain, Ġtime, Ġhunter, Ġcrew, ĠQueen, Ġcanal, Ġcrane, Ġrain, Ġwomen, Ġelders, Ġearthquake, ĠGermans, Ġway, Ġteam, Ġdoctors, Ġwitch, Ġnatives, Ġstream, Ġmines, Ġband, Ġcoroner, Ġguards, Ġschool, Ġbridge, Ġswamp, Ġrobbers, ĠIndians, Ġworkers, Ġfield, Ġwolves, ĠRomans, Ġwoods, Ġarchaeologists, Ġdogs, Ġstaff, Ġdam, Ġbirds, Ġshore, Ġspring, Ġrocks, Ġnuns, Ġcoast, Ġday, ĠChurch, Ġwell, Ġhorses, Ġthieves, Ġmuseum, Ġquarry, Ġlighthouse, Ġrains, Ġsheep, Ġexcavation, Ġmonks, Ġrailroad, Ġtribe, Ġlightning, Ġenemy, Ġpark, Ġlight, Ġsearch, Ġpond]
+  spot:
+    active:
+      "[subj]": [Ġeye, Ġeyes, Ġone, Ġgang, ĠHe, ĠThey, Ġowl, Ġkids, Ġagents, Ġscouts, Ġplayer, Ġhad, Ġhe, Ġpeople, Ġdogs, Ġthey, Ġkid, Ġmother, Ġalien, Ġand, Ġteacher, Ġfamily, Ġhead, ĠOne, Ġfather, Ġwizard, Ġstaff, Ġchief, Ġwarriors, ĠDragon, Ġcouple, Ġwolf, ĠColonel, Ġgiant, Ġfriends, Ġperson, Ġcompanions, Ġowner, Ġtwo, Ġleader, Ġlady, Ġscout, ĠI, ĠGuardian, Ġdrone, ĠKing, Ġparents, Ġbear, Ġoperator, Ġlad, Ġking, Ġmaster, Ġstar, Ġworld, Ġvillagers, Ġfox, Ġduo, ĠSheriff, Ġbirds, Ġdarkness, ĠRover, ĠSun, Ġmind, Ġelf, Ġsquad, Ġwarrior, Ġhunters, Ġsergeant, ĠMaster, Ġpoliceman, ĠAdmiral, Ġnurse, Ġhand, ĠEagle, Ġmonster, ĠReaper, Ġspider, Ġlieutenant, ĠEye, Ġforce, Ġpod, ĠLight, Ġlion, Ġqueen, Ġaliens, Ġwave, Ġhost, Ġrobot, Ġshadow, Ġ, Ġyouth, Ġcomputer, Ġdemon, ,, Ġaudience, ĠDragons, Ġriders, Ġfighter, Ġfriend, Ġpirate]
+      "[obj]": [Ġsign, Ġgun, Ġnews, Ġsound, Ġtarget, Ġbuilding, Ġtruck, Ġvehicle, Ġroad, Ġsignal, Ġscene, Ġmap, Ġcarriage, Ġtree, Ġtrain, Ġrifle, Ġcottage, Ġlights, Ġsource, Ġhelicopter, Ġstation, Ġattack, Ġtrail, Ġkey, Ġbike, Ġriver, Ġtrees, Ġmark, Ġbridge, Ġweapon, Ġwall, Ġpistol, Ġtower, Ġball, Ġplane, Ġschool, Ġjump, Ġexplosion, Ġnoise, Ġground, Ġring, Ġmovement, Ġengine, Ġstars, Ġforest, Ġphone, Ġghost, Ġclub, ĠSUV, Ġconvoy, Ġaircraft, Ġbomb, Ġbeacon, Ġtown, Ġfarm, Ġquarry, Ġcastle, Ġtransmission, Ġculprit, Ġexit, Ġwindow, Ġguns, Ġbank, Ġtunnel, Ġknife, Ġline, Ġalarm, Ġmessage, Ġview, Ġentrance, Ġdevice, Ġletter, Ġshop, Ġclock, Ġfield, Ġflash, Ġpath, Ġcorpse, Ġbox, Ġhorses, Ġstreet, Ġcraft, Ġsword, Ġtransmitter, Ġclearing, Ġthing, Ġrain, Ġlift, Ġreport, Ġtranslator, Ġwater, Ġwire, Ġpass, Ġsheriff, Ġfight, Ġlock, Ġattacker, Ġcave, Ġdanger, Ġtaxi]
+    passive:
+      "[obj]": [Ġboy, Ġgirl, Ġhorse, Ġchild, Ġbody, Ġvehicle, Ġplane, Ġcat, Ġcarriage, Ġbird, Ġowl, Ġplayer, Ġwoman, Ġhead, Ġprince, Ġgun, Ġsinger, Ġtransmitter, Ġkiller, Ġthief, Ġtower, Ġtown, Ġball, Ġbaby, Ġsign, Ġsoldier, Ġstudent, Ġagent, Ġlady, Ġking, Ġbomb, Ġcrow, Ġbell, Ġsubmarine, Ġsignal, Ġcouple, Ġrider, Ġstar, ĠKing, Ġvessel, Ġmill, Ġhe, Ġcastle, Ġfox, Ġperson, Ġbike, Ġbuilding, Ġalarm, Ġcoach, Ġdragon, Ġmachine, Ġanimal, Ġtrio, Ġwitch, Ġyacht, Ġsquadron, Ġvictim, Ġbear, Ġqueen, Ġface, Ġspider, Ġmoon, Ġalien, Ġfather, Ġscreen, Ġone, Ġmaster, Ġattack, Ġpistol, Ġmonster, Ġscene, Ġspeaker, Ġdrone, Ġflight, Ġtornado, Ġowner, Ġghost, Ġsound, Ġphone, Ġson, Ġmap, Ġlad, Ġmother, Ġbomber, Ġattacker, Ġkid, Ġclock, Ġdaughter, Ġwolf, Ġwagon, Ġcity, Ġtarget, Ġpair, Ġpriest, Ġrabbit, Ġmotorcycle, Ġbride, Ġfilm, Ġring, ĠHe]
+      "[subj]": [Ġguards, Ġhunters, Ġvillagers, Ġscouts, Ġothers, Ġlocals, Ġmen, Ġsea, Ġauthorities, Ġpatrol, Ġsoldiers, Ġforest, Ġagents, Ġroadside, Ġofficers, Ġnight, Ġscout, Ġtrees, Ġgate, Ġmob, Ġneighbours, ĠPolice, Ġdark, Ġdogs, Ġmorning, Ġlighthouse, Ġsurf, Ġdarkness, Ġbushes, Ġnatives, ĠGermans, Ġwoods, Ġfog, Ġnews, Ġbeach, Ġcavalry, Ġfishermen, Ġlake, Ġbush, Ġphotographers, Ġcops, Ġpeople, Ġdawn, Ġtroops, Ġresidents, Ġinhabitants, Ġside, Ġradar, Ġrailway, Ġafternoon, ĠRAF, Ġescort, Ġwater, Ġmedia, Ġboys, Ġlookout, Ġairport, ĠSheriff, Ġbirds, Ġpolicemen, Ġsquad, Ġexplosion, Ġair, ĠBritish, Ġwolves, Ġpress, Ġevening, Ġheadlights, Ġtime, Ġtourists, ĠFBI, Ġminers, Ġmilitary, Ġcoast, Ġfield, ĠArmy, Ġsearch, ĠRangers, Ġway, Ġstudents, Ġsmugglers, Ġmaid, ĠSS, Ġpirates, Ġdivers, Ġbank, Ġhedge, Ġrain, Ġground, Ġattackers, Ġrebels, Ġcouncil, Ġshore, Ġhighway, Ġmilitia, Ġkeeper, Ġneighbors, ĠRussians, Ġworkers, Ġquarry]
+  forget:
+    active:
+      "[subj]": [ĠI, Ġbrain, Ġone, Ġchildren, Ġpeople, Ġgroup, Ġwoman, Ġuniverse, Ġbody, Ġgirls, Ġguy, Ġmother, Ġmind, ĠHe, Ġauthor, Ġfamily, Ġyou, Ġreader, Ġhe, ĠDoctor, Ġbird, Ġgang, Ġfriends, Ġplayer, Ġdoctor, Ġteacher, Ġcrew, Ġboys, Ġcreature, Ġperson, Ġdriver, Ġlady, Ġdragon, Ġwriter, Ġaudience, Ġeyes, Ġreaders, Ġuser, ĠLord, Ġdemon, Ġparents, Ġpolice, Ġteam, Ġalmost, Ġjust, Ġwe, Ġfather, Ġsubconscious, Ġhost, Ġmonster, Ġgods, ĠDog, Ġhero, Ġlistener, Ġkiller, Ġshe, ĠShe, Ġsoul, Ġrobot, Ġenemy, Ġthief, Ġmonkey, Ġguests, Ġboss, ,, Ġbitch, Ġfriend, Ġstaff, Ġdogs, Ġartist, Ġmen, Ġand, Ġmirror, Ġking, Ġsun, Ġ, Ġmaster, Ġstudents, ĠWe, Ġidiot, Ġstar, Ġbutterfly, Ġdoctors, Ġbastard, ĠDevil, Ġguys, Ġcops, Ġgod, ĠGods, Ġbirds, Ġspirit, Ġwife, Ġqueen, ĠDJ, Ġmagician, Ġeditor, Ġsinger, ĠKing, ĠEarth, ĠGod]
+      "[obj]": [Ġtruth, Ġwords, Ġstory, Ġmusic, Ġmessage, Ġtime, Ġdetails, Ġnews, Ġmoney, Ġrules, Ġletter, Ġkeys, Ġgame, Ġletters, Ġsong, Ġname, Ġkey, Ġpast, Ġbooks, Ġdiary, Ġradio, Ġengine, Ġidea, Ġword, Ġjoke, Ġpills, Ġtrick, Ġwine, Ġdrugs, Ġproblem, Ġcharm, Ġcurse, Ġjob, Ġfood, Ġpain, Ġrest, Ġplan, Ġmoment, Ġtitle, Ġday, Ġfacts, Ġlights, Ġbomb, Ġspell, Ġdream, Ġmovie, Ġnight, Ġtext, Ġlie, Ġwater, Ġmemories, Ġride, Ġbug, Ġbottle, Ġcake, Ġstars, Ġnote, Ġanswer, Ġcalendar, Ġaccident, Ġring, Ġdictionary, Ġcall, Ġdrill, Ġknife, Ġdoor, Ġlight, Ġstore, Ġscript, Ġinformation, Ġcode, Ġmap, Ġsecret, Ġmessages, Ġmovies, Ġcards, Ġkiss, Ġbusiness, Ġmagic, Ġvirus, Ġalbum, Ġrain, Ġpictures, Ġgun, Ġghost, Ġroad, Ġpart, Ġsigns, Ġbell, Ġdrug, Ġline, Ġthought, Ġpiano, Ġwheel, Ġstuff, Ġguitar, Ġflowers, Ġbox, Ġlies, Ġpieces]
+    passive:
+      "[obj]": [Ġname, Ġsong, Ġstory, Ġboy, Ġvoice, Ġscene, Ġtale, Ġmusic, Ġplace, Ġdiary, Ġthing, Ġdream, Ġimage, Ġship, Ġdog, Ġword, Ġgirl, Ġfilm, Ġgame, Ġjournal, Ġpaper, Ġalbum, Ġletter, Ġpoet, Ġcat, Ġland, Ġbody, Ġtitle, Ġfarm, Ġsky, Ġkingdom, Ġnovel, Ġprince, Ġbattle, Ġbaby, Ġtower, Ġstation, Ġhome, Ġfestival, Ġmovie, Ġplay, Ġhall, Ġpicture, Ġlife, Ġsecret, Ġpoem, Ġroom, Ġbird, Ġspell, Ġwork, Ġsight, Ġradio, Ġmill, Ġmeeting, Ġplan, Ġpalace, Ġsinger, Ġlegend, Ġaction, Ġline, Ġsituation, Ġincident, Ġshow, Ġmarriage, Ġcar, Ġspeech, Ġfather, Ġcase, Ġchapter, Ġcourse, Ġseries, Ġtree, Ġthunder, Ġmessage, Ġsilence, Ġmind, Ġview, Ġestate, Ġstar, Ġmatter, Ġtreasure, Ġring, Ġexistence, Ġsmile, Ġepisode, Ġface, Ġcharacter, Ġshop, Ġclub, Ġceremony, ĠHouse, Ġpeace, Ġinn, Ġdoor, Ġcottage, ĠCastle, Ġhost, Ġpainting, Ġthought, Ġmonastery]
+      "[subj]": [Ġpeople, Ġauthorities, Ġcrowd, Ġcouncil, Ġvillagers, Ġgods, Ġpolice, Ġcommunity, Ġmob, Ġothers, Ġdead, Ġwind, Ġinhabitants, Ġmasses, Ġstars, Ġcrowds, Ġflood, Ġpublic, Ġflames, ĠCouncil, ĠGods, Ġsea, Ġlight, Ġmen, Ġaccident, Ġevents, Ġservants, Ġsoldiers, Ġeyes, Ġtrees, Ġmonks, Ġwitches, Ġpress, Ġmedia, Ġelders, Ġmorning, Ġhunters, Ġgate, Ġmemories, Ġbeginning, Ġguards, Ġcitizens, Ġghosts, Ġelements, Ġstudents, Ġsociety, Ġimagination, Ġwitch, Ġdawn, Ġwizards, Ġtwins, Ġkids, Ġpriests, Ġcourt, Ġvampires, ĠLords, ĠChurch, Ġdoctors, Ġlocals, Ġroad, Ġnext, Ġgovernment, Ġpriest, Ġgenerations, Ġspirits, Ġaliens, Ġvisitors, Ġstate, Ġmachine, Ġsettlers, Ġresidents, Ġfaithful, Ġpopulace, Ġdark, Ġelves, Ġhumans, Ġprocess, Ġaudience, Ġangels, Ġmonster, Ġhour, Ġyears, Ġstaff, Ġrain, Ġmonsters, ĠInquisition, Ġbirds, Ġneighbours, Ġforce, Ġplague, Ġguests, Ġthousands, Ġbuilders, Ġafternoon, Ġeye, Ġwolves, Ġguard, ĠSun, ĠAbbey, ĠElves]
+  love:
+    active:
+      "[subj]": [Ġone, Ġmother, Ġfather, Ġhe, ĠHe, Ġgod, Ġshe, Ġdragon, Ġmaster, Ġdoctor, Ġcreature, Ġdemon, Ġteacher, Ġhusband, Ġmonster, Ġwitch, ĠGod, ĠShe, Ġbrother, Ġwolf, Ġauthor, Ġplayer, Ġlover, Ġmind, Ġangel, Ġlion, Ġwho, Ġperson, Ġmonkey, Ġgoddess, Ġbitch, Ġstar, Ġlad, ĠDoctor, Ġsister, Ġlord, ĠOne, Ġwarrior, Ġhuman, Ġartist, ĠSun, ĠMaster, Ġfriend, Ġheroine, Ġgrandmother, Ġkiller, Ġcharacter, Ġwriter, Ġnarrator, ĠGoddess, Ġand, Ġlatter, Ġcaptain, Ġghost, Ġleader, Ġpreacher, Ġowl, Ġvillain, Ġsage, Ġsinger, Ġband, Ġchief, Ġmale, Ġfairy, Ġknight, Ġarmy, Ġpriest, Ġtree, Ġthief, Ġeye, Ġbastard, ĠProphet, Ġsoldier, ĠPrince, Ġgrandfather, Ġbeloved, Ġbrain, Ġmagician, Ġreader, Ġemperor, Ġfarmer, Ġcrow, Ġstudent, Ġsaint, Ġhorse, ĠMoon, Ġex, ĠFather, Ġservant, Ġfemale, Ġprotagonist, ĠLamb, Ġevil, Ġhunter, Ġcurse, ĠBuddha, Ġhand, Ġgroup, Ġspider, Ġfool]
+      "[obj]": [Ġtruth, Ġdead, Ġpast, Ġkids, Ġbest, Ġmost, Ġsea, Ġair, Ġgame, Ġstars, Ġpain, Ġinnocent, Ġlight, Ġhouse, Ġword, Ġmusic, Ġyoung, Ġforest, Ġcompany, Ġsame, Ġanimals, Ġworst, Ġwar, Ġtime, Ġflesh, Ġlaw, Ġgood, Ġmoment, Ġrich, Ġfreedom, Ġbetter, Ġland, Ġpoor, Ġwomen, Ġpeace, Ġgods, Ġboys, Ġheavens, Ġmoney, Ġnews, Ġocean, Ġweak, Ġjob, Ġbooks, Ġlast, Ġend, Ġgirls, Ġsick, Ġothers, Ġlanguage, Ġmemory, Ġcamera, Ġwords, ĠBible, Ġbirds, Ġway, Ġbush, Ġdark, Ġguts, Ġcountry, Ġnight, Ġstory, Ġwater, Ġfire, Ġday, Ġsong, Ġsword, Ġbad, Ġarts, Ġpeople, Ġshow, Ġflowers, Ġblood, Ġkingdom, Ġplanet, Ġstage, Ġsheep, Ġwhole, Ġpiano, Ġplace, Ġhome, Ġschool, Ġfish, Ġgold, Ġwrong, Ġpresent, Ġsweet, Ġthrone, Ġliving, Ġviolin, Ġmen, ĠGods, Ġdisease, Ġart, Ġball, Ġimpossible, Ġsecret, Ġloss, Ġdogs, Ġroad]
+    passive:
+      "[obj]": [Ġbutterfly, Ġhe, Ġlad, ĠHe, Ġsinger, Ġvoice, Ġwho, Ġsong, Ġshe, Ġbrother, ĠOne, Ġstar, Ġland, Ġsister, Ġbook, ĠShe, ĠVirgin, Ġplace, Ġkid, Ġcow, Ġanimal, Ġcharacter, Ġmaiden, Ġfriend, Ġmusic, Ġmusician, Ġmoment, Ġhorse, Ġindividual, ĠMoon, Ġcat, Ġwolf, Ġvillage, Ġword, Ġand, Ġlatter, ĠDream, Ġhome, Ġformer, Ġplayer, Ġname, Ġvirgin, Ġprotagonist, Ġwidow, ĠDuke, Ġface, Ġcountry, Ġwriter, Ġplanet, Ġorphan, ĠUniverse, Ġfox, Ġstory, Ġwitch, Ġband, Ġsnake, Ġlife, Ġmale, ĠWorld, Ġdeceased, Ġleader, Ġbabe, ĠBible, Ġmonkey, Ġcity, ĠDay, ĠRose, Ġservant, Ġowl, Ġsoldier, Ġknight, ĠLove, Ġpain, Ġinfant, Ġlamb, Ġtreasure, Ġnarrator, Ġhunter, Ġtiger, Ġfemale, Ġmarriage, Ġdoll, Ġhead, Ġchildhood, Ġparty, ĠBride, Ġyoungster, ĠLion, Ġcurse, Ġdemon, ĠGarden, ĠPresident, Ġpuppy, Ġgeneration, Ġwar, Ġvalley, Ġwinner, Ġghost, Ġship, Ġfrog]
+      "[subj]": [Ġgods, ĠGods, Ġfaithful, Ġangels, Ġothers, Ġstars, Ġsaints, Ġrich, Ġkids, Ġmen, Ġheavens, Ġlovers, Ġmost, Ġanimals, Ġcrowd, Ġsick, Ġelders, Ġspirits, ĠDivine, Ġparents, Ġeyes, Ġancestors, Ġgirls, Ġhearts, Ġbirds, Ġneedy, Ġmasses, Ġvillagers, Ġorphans, Ġrest, Ġsisters, Ġflowers, Ġpublic, Ġservants, Ġrighteous, Ġblind, Ġsouls, Ġladies, Ġboys, Ġmillions, Ġocean, Ġkind, ĠKaiser, Ġoppressed, Ġtrees, Ġcouple, ĠIndians, Ġgrandchildren, Ġcreatures, Ġthousands, Ġguests, ĠEmpress, Ġall, Ġhumans, Ġtwins, Ġtears, Ġmaid, Ġimmortal, Ġstudents, Ġfairy, Ġfriends, Ġstate, Ġpriest, Ġstranger, Ġmany, Ġcrown, Ġbrothers, Ġdark, Ġwicked, Ġfans, Ġbeautiful, ĠAngels, Ġchurch, Ġdisciples, ĠWest, Ġwild, ĠChildren, Ġdevils, Ġbelievers, Ġmortal, Ġcold, Ġtwo, Ġevil, Ġloves, Ġcongregation, Ġprinces, Ġmultitude, Ġblood, Ġghosts, Ġwill, Ġdreams, Ġgreat, Ġsage, Ġnext, Ġtender, Ġgreatest, ĠSage, Ġgrave, Ġweak, Ġsoldiers]
+  believe:
+    active:
+      "[subj]": [Ġfamily, Ġgroup, Ġone, Ġleader, Ġaudience, Ġcommunity, Ġboy, Ġpublic, Ġfather, Ġband, Ġmother, Ġperson, Ġgirl, Ġplayer, Ġstudent, Ġspeaker, Ġchurch, Ġcourt, Ġvoice, ĠGuardian, Ġteacher, Ġteam, Ġwoman, Ġparty, Ġspirit, Ġdoctor, Ġnarrator, Ġwriter, Ġmind, Ġdog, Ġarmy, Ġpresident, Ġgeneral, Ġpeople, ĠPresident, Ġson, Ġchief, Ġmedia, Ġsociety, Ġscientist, Ġviewer, Ġqueen, Ġhero, Ġcrowd, Ġindividual, Ġjudge, ĠQueen, ĠCourt, Ġminister, Ġprofessor, Ġemperor, Ġeye, Ġguard, Ġmajority, Ġpress, Ġalien, Ġlistener, Ġowner, Ġwitch, Ġyouth, Ġkid, Ġstate, Ġheart, Ġgang, Ġghost, Ġbody, Ġdaughter, Ġelder, Ġhe, Ġprince, Ġagent, ĠOne, Ġuser, Ġprincipal, Ġbrain, Ġvictim, Ġsource, Ġprisoner, ĠLamb, Ġcharacter, ĠMaster, Ġscholar, Ġmilitary, Ġcouple, Ġmaster, ĠSociety, Ġchildren, Ġstar, Ġfan, Ġtemple, Ġartist, Ġvillage, Ġmagician, Ġsoul, ĠAcademy, Ġsoldier, Ġmirror, Ġacademy, Ġcaptain, ĠOracle]
+      "[obj]": [Ġstory, Ġlaw, Ġprophecy, Ġothers, Ġattack, Ġcase, Ġwill, Ġwar, Ġevents, Ġpast, Ġfacts, Ġplan, Ġcontrary, Ġconspiracy, Ġnews, Ġworst, Ġtest, Ġmurder, ĠTruth, Ġdead, Ġplot, Ġtheory, ĠHolocaust, ĠBible, Ġgame, Ġsupernatural, Ġcrime, Ġmurders, Ġevidence, ĠGospel, Ġsame, ĠTaliban, Ġsituation, Ġformer, Ġdeed, Ġlie, Ġkillings, Ġgods, Ġgenocide, Ġclaim, Ġparanormal, Ġkilling, Ġmatter, Ġmassacre, Ġevent, Ġapocalypse, Ġdanger, Ġnovel, Ġrules, Ġmessage, Ġrest, Ġrace, Ġelders, Ġcurse, Ġstatement, Ġcause, Ġaction, Ġassassination, Ġtale, Ġsearch, Ġrebellion, Ġmovie, Ġanswer, Ġpossibility, Ġdeception, Ġincident, Ġoutcome, Ġattacks, ĠShah, Ġrumors, Ġaffirmative, ĠCIA, Ġend, Ġcode, Ġthreat, Ġrebels, Ġletter, ĠAlmighty, Ġdecision, Ġinformation, Ġmission, ĠBuddha, Ġbattle, Ġrumours, Ġmeeting, Ġinvasion, Ġstories, Ġmost, ĠQuran, Ġgospel, ĠCreator, Ġfilm, Ġpoint, Ġdream, Ġsecret, Ġmurderer, Ġmyth, ĠProfessor, Ġbest, Ġword]
+    passive:
+      "[obj]": [Ġstory, Ġname, Ġtale, Ġchild, Ġsecret, Ġorigin, Ġdog, Ġword, Ġclaim, Ġdoctrine, ĠTruth, Ġfuture, Ġview, Ġfounder, Ġbelief, Ġstatement, Ġman, Ġtheory, Ġson, Ġevent, Ġexistence, Ġperson, Ġday, Ġcase, ĠGod, ĠBook, Ġcurse, Ġsame, Ġfather, Ġoriginal, Ġmyth, Ġdemon, Ġcause, Ġdeceased, Ġschool, Ġdeed, Ġhouse, Ġconspiracy, Ġbody, Ġother, Ġbirth, Ġwar, Ġtext, Ġlanguage, Ġfollowing, Ġmatter, Ġfact, Ġgod, Ġidea, Ġreason, Ġtitle, Ġsong, ĠLamb, Ġfaith, Ġdeity, Ġevidence, Ġboy, Ġthrone, Ġsun, Ġkingdom, Ġsacrifice, Ġend, ĠMessiah, Ġplot, Ġmother, Ġwho, Ġgirl, Ġcity, Ġanswer, Ġplan, Ġpoem, Ġdeath, Ġscripture, Ġvillage, Ġdaughter, Ġfalsehood, Ġsubject, Ġposition, ĠEmperor, Ġlast, Ġvoice, Ġorder, Ġsystem, Ġincarnation, Ġhypothesis, Ġidentity, Ġletter, ĠWord, Ġattack, Ġcreation, Ġtree, Ġgame, Ġtime, Ġaccount, Ġmessage, Ġcrime, Ġrace, Ġlineage, Ġplace, Ġproof]
+      "[subj]": [Ġpeople, ĠMuslims, ĠChinese, Ġgods, ĠInquisition, Ġelders, ĠHindus, ĠAlmighty, Ġmajority, ĠRomans, ĠMaya, Ġpriests, Ġothers, Ġauthorities, Ġmonks, Ġbelievers, Ġscriptures, ĠChristians, ĠGreeks, Ġscholars, Ġcontrary, Ġcourt, Ġclergy, ĠJews, ĠWest, Ġdevil, Ġancestors, ĠArabs, Ġauthors, ĠPriest, ĠCouncil, ĠBritish, ĠHindu, Ġnatives, Ġsupernatural, ĠScriptures, Ġsaints, Ġsources, Ġwitnesses, Ġfaithful, ĠIndians, Ġdisciples, Ġpolice, Ġhistorians, Ġpublic, Ġangels, ĠGods, Ġabove, ĠPortuguese, ĠKings, Ġreader, Ġwitches, Ġfollowers, ĠWitnesses, Ġspirits, ĠEgyptians, Ġlegends, Ġfolk, ĠApostles, ĠImam, Ġsage, Ġvillagers, ĠMasters, Ġchildren, ĠPeople, Ġhistorian, Ġlocals, ĠShah, Ġignorant, ĠMaster, Ġwriter, Ġoccult, ĠFather, ĠQueen, Ġspeaker, Ġskeptics, ĠCreator, Ġpopulation, Ġhumans, ĠTurks, Ġsurvivors, Ġmedia, ĠNorse, Ġrebels, Ġpress, Ġblind, Ġmagician, Ġwriters, ĠElder, ĠOracle, ĠEnglish, Ġinhabitants, ĠGuru, ĠBaptist, ĠCrown, ĠSpirit, ĠFlood, Ġstate, Ġmind, ĠTorah]
+
+miniberta_3:
+  wash:
+    active:
+      "[subj]": [Ġwind, Ġmaid, Ġdoctor, Ġdragon, Ġflood, Ġgoddess, Ġstorm, Ġmen, Ġwitch, Ġlady, Ġwash, Ġmoon, Ġvet, Ġangel, Ġnurse, Ġpriest, Ġgods, Ġrains, Ġdevil, Ġcook, Ġhealer, Ġcat, Ġvillagers, Ġfishermen, ĠLord, Ġfarmer, Ġboys, Ġcold, Ġqueen, Ġboy, ĠGoddess, Ġlord, Ġheat, Ġbreeze, Ġweather, Ġking, Ġlight, Ġnurses, Ġdoctors, Ġbird, Ġsunlight, Ġowner, Ġsurgeon, Ġhurricane, Ġflames, ĠDevil, Ġwaves, Ġmonk, Ġartist, Ġwaterfall, ĠQueen, Ġwinds, Ġcreature, Ġcaptain, Ġsaint, Ġfloods, Ġtwo, Ġspring, Ġtide, Ġmaster, Ġbirds, Ġfountain, Ġwolf, Ġsoldiers, Ġdemon, Ġearthquake, Ġdogs, Ġsailors, Ġgiant, Ġmachine, Ġservants, Ġnuns, Ġfisherman, Ġcrew, Ġpriests, ĠCreator, Ġshower, Ġtree, ĠWater, Ġwashing, ĠLady, Ġforest, Ġcleaner, Ġteam, Ġmother, Ġshaman, ĠCaptain, Ġkettle, Ġtwins, Ġsnake, Ġgod, Ġparamedics, Ġsunrise, Ġmonks, Ġlandlord, Ġwitches, ĠSun, Ġchef, Ġhunter, Ġservant]
+      "[obj]": [Ġfloor, Ġground, Ġdishes, Ġroom, Ġdirt, Ġarea, Ġtiles, Ġsurface, Ġplace, Ġcarpet, Ġyard, Ġgrass, Ġsoil, Ġbody, Ġtable, Ġbed, Ġlawn, Ġbay, Ġrug, Ġsheets, Ġway, Ġmess, Ġwound, Ġslate, Ġmud, Ġland, Ġblood, Ġdeck, Ġpond, Ġroof, Ġcanal, Ġbridge, Ġnight, Ġdamage, Ġfloors, Ġwall, Ġstreets, Ġstone, Ġflowers, Ġwaters, Ġstreet, Ġwalls, Ġpaper, Ġbuilding, Ġplates, Ġeggs, Ġisland, Ġroad, Ġasphalt, Ġtile, Ġdebris, Ġdrain, Ġbottom, Ġcloth, Ġwounds, Ġdoor, Ġlaundry, Ġfood, Ġstones, Ġair, Ġwood, Ġsponge, Ġbodies, Ġcottage, Ġwindows, Ġtrees, Ġbar, Ġrocks, Ġface, Ġstain, Ġboard, Ġbricks, Ġbackyard, Ġscene, Ġpavement, Ġbedroom, Ġlandscape, Ġwindow, Ġhome, Ġice, Ġtowel, Ġashes, Ġsteam, Ġcanvas, Ġglass, Ġfront, Ġbank, Ġdistance, Ġcar, Ġgrounds, Ġtables, Ġmarble, Ġskin, Ġgravel, Ġrag, Ġbarn, Ġleaves, Ġtub, Ġseas, Ġflat]
+    passive:
+      "[obj]": [Ġfloor, Ġroom, Ġbed, Ġearth, Ġarea, Ġroof, Ġsurface, Ġblood, Ġstone, Ġyard, Ġmud, Ġplace, Ġbuilding, Ġisland, Ġsite, Ġball, Ġpit, Ġtop, Ġgrave, Ġpaper, Ġdirt, Ġcave, Ġslate, Ġwound, Ġtub, Ġtoilet, Ġswamp, Ġcemetery, Ġsky, Ġscene, Ġstain, Ġtrail, Ġwood, Ġcorpse, Ġfront, Ġdeck, Ġwhole, Ġline, Ġsponge, Ġday, Ġbowl, Ġfoundation, Ġhole, Ġchapel, Ġmess, Ġhead, Ġboy, Ġbaby, Ġlawn, Ġface, Ġcoffin, Ġcloth, Ġtable, Ġgrass, Ġtunnel, Ġlast, Ġcup, Ġdoor, Ġdebris, Ġrug, Ġrainbow, Ġvictim, Ġcarpet, Ġtank, Ġlaundry, Ġnight, Ġtrench, Ġpath, Ġwell, Ġmemorial, Ġchamber, Ġmound, Ġhall, Ġsoil, Ġcastle, Ġpark, Ġbasement, Ġpavement, Ġland, Ġbar, Ġevent, Ġbackyard, Ġfood, Ġskin, Ġflower, Ġtowel, Ġboard, Ġtile, Ġdamage, Ġmarble, Ġbarn, Ġceiling, Ġmoon, Ġrock, Ġbell, Ġair, Ġglass, Ġforest, Ġworld, Ġcoal]
+      "[subj]": [Ġtide, Ġfishermen, Ġwind, Ġmen, Ġlocals, Ġdoctor, Ġcrane, Ġmaid, Ġcrew, Ġboats, Ġhand, Ġhorses, Ġside, Ġroadside, Ġworkers, Ġwomen, Ġpeople, ĠWater, Ġteam, Ġmachine, Ġtruck, Ġvan, Ġwaves, Ġvolunteers, Ġlady, Ġfisherman, Ġsailors, ĠCaptain, ĠQueen, Ġferry, Ġdoctors, Ġpier, Ġtrain, Ġvillagers, Ġchildren, Ġdragon, Ġsoldiers, Ġtractor, Ġboys, Ġpriest, Ġbreeze, Ġresidents, Ġparamedics, Ġsurf, Ġcaptain, Ġgirls, Ġhands, Ġlight, Ġtrough, Ġhelicopter, Ġowner, Ġcompany, ĠLady, Ġdriver, Ġdivers, Ġmonks, Ġfirefighters, Ġfloods, Ġsailor, Ġauthorities, Ġrailway, Ġnuns, Ġheat, Ġpump, Ġparty, Ġpolice, Ġrains, Ġdogs, Ġtree, Ġcart, Ġcrowd, Ġboiler, Ġfarmer, Ġladies, Ġpumps, Ġbodies, Ġservants, ĠSun, Ġmaster, Ġarmy, Ġflooding, Ġking, ĠDoctor, Ġcook, Ġdock, Ġwinds, ĠThames, Ġrivers, Ġbirds, Ġbank, Ġqueen, Ġengine, Ġrunners, Ġtornado, Ġmother, Ġsurgeon, Ġweather, Ġcoach, Ġambulance, ĠChurch]
+  fix:
+    active:
+      "[subj]": [Ġgoddess, Ġangel, Ġwoman, Ġman, Ġwho, Ġqueen, Ġlord, Ġboy, Ġgod, Ġgods, Ġone, Ġgirl, Ġchild, Ġbird, Ġpriest, Ġdevil, Ġmaster, Ġmen, Ġgiant, Ġdragon, Ġwitch, ĠI, Ġdog, Ġcreature, Ġeagle, ĠLord, Ġfather, Ġtwo, ĠQueen, ĠGod, Ġfirst, Ġmother, Ġartist, Ġperson, Ġteacher, Ġdemon, Ġchief, Ġangels, Ġarchitect, Ġcat, Ġknight, Ġserpent, Ġdeity, Ġdoctor, ĠKing, Ġbeast, ĠGoddess, ,, Ġruler, Ġlady, Ġand, Ġheavens, Ġpeople, a, Ġmaid, Ġother, Ġspirit, Ġchildren, Ġguardian, Ġrider, Ġwolf, Ġcreator, Ġmodel, Ġowner, th, Ġwomen, Ġwizard, Ġdriver, Ġowl, Ġbishop, Ġleader, Ġsecond, Ġprince, Ġwinds, Ġcaptain, Ġbuilder, Ġjudge, Ġguard, Ġfigure, Ġprincipal, Ġprofessor, Ġwitches, Ġend, Ġrobot, Ġwood, Ġelephant, Ġfarmer, Ġmonster, Ġthat, Ġengineer, Ġmagician, Ġhero, Ġthree, Ġshe, Ġbaby, ĠCreator, Ġmechanic, Ġassistant, Ġhe, Ġpriests]
+      "[obj]": [Ġtable, Ġfloor, Ġroom, Ġboard, Ġgrid, Ġbridge, Ġground, Ġlock, Ġroof, Ġceiling, Ġcompass, Ġbed, Ġkey, Ġline, Ġsky, Ġchair, Ġdoors, Ġfence, Ġroad, Ġcar, Ġplace, Ġbar, Ġbuilding, Ġcircle, Ġlamp, Ġgate, Ġflag, Ġtower, Ġbalance, Ġposition, Ġmap, Ġrope, Ġwindow, Ġsign, Ġshield, Ġwalls, Ġlights, Ġwheels, Ġbell, Ġleft, Ġball, Ġseat, Ġsquare, Ġbank, Ġmast, Ġtop, Ġbox, Ġwatch, Ġdesk, Ġcamera, Ġtables, Ġscreen, Ġtime, Ġstairs, Ġoffice, Ġpanel, Ġletter, Ġboat, Ġladder, Ġweather, Ġfire, Ġright, Ġthrone, Ġsystem, Ġbottom, Ġtriangle, Ġwater, Ġfront, Ġring, Ġstage, Ġplate, Ġchurch, Ġbook, Ġschool, Ġdeck, Ġaltar, Ġdate, Ġstation, Ġheart, Ġdam, Ġcell, Ġanchor, Ġgates, Ġnumber, Ġplane, Ġblock, Ġtemperature, Ġspace, Ġpoles, Ġcabinet, Ġstaff, Ġfeet, Ġbow, Ġarea, Ġproblem, Ġcalendar, Ġchairs, Ġknot, Ġpost, Ġtelephone]
+    passive:
+      "[obj]": [Ġbalance, Ġposition, Ġshield, Ġbook, Ġflag, Ġkey, Ġseat, Ġweight, Ġstructure, Ġcompass, Ġsign, Ġplate, Ġfurniture, Ġdeck, Ġspace, Ġletter, Ġbar, Ġplace, Ġplan, Ġarea, Ġring, Ġframe, Ġboundary, Ġcircle, Ġsite, Ġseal, Ġmap, Ġcentre, Ġanchor, Ġsky, Ġfoundation, Ġsurface, Ġmast, Ġtemperature, Ġdesk, Ġproblem, Ġdate, Ġcell, Ġproperty, Ġdesign, Ġlamp, Ġnumber, Ġtelephone, Ġstake, Ġbase, Ġprinciple, Ġbill, Ġland, Ġthrone, Ġrod, Ġhole, Ġobject, Ġpoint, Ġcalendar, Ġladder, Ġlocation, Ġfield, Ġwhole, Ġpaper, Ġstage, Ġpost, Ġmechanism, Ġend, Ġcontract, Ġgate, Ġcabin, Ġmattress, Ġwindow, Ġaltar, Ġbox, Ġmodel, Ġblock, Ġrest, Ġhinge, Ġvessel, Ġdevice, Ġcarriage, Ġelectricity, Ġdome, Ġnet, Ġheart, Ġphone, Ġmoney, Ġday, Ġsofa, Ġresult, Ġaxle, Ġfront, Ġplatform, Ġplane, Ġcastle, Ġlever, Ġtail, Ġorder, Ġback, Ġlatter, Ġdrawing, Ġperimeter, Ġcandle, Ġmirror]
+      "[subj]": [Ġcouncil, Ġowner, Ġqueen, Ġmaster, ĠQueen, Ġgovernor, Ġmayor, Ġuser, ĠCouncil, Ġdoctor, Ġarchitect, ĠKing, ĠChurch, Ġman, Ġruler, Ġcompany, Ġwoman, Ġdriver, Ġpeople, Ġstate, Ġmen, Ġbishop, Ġgods, ĠSun, Ġlandlord, Ġartist, Ġcaptain, Ġriver, Ġperson, Ġlord, ĠCrown, Ġowners, Ġcrew, Ġparty, Ġfarmer, Ġfamily, Ġcrane, Ġmonarch, ĠMaster, Ġoperator, Ġbuilder, Ġpriest, Ġothers, ĠLord, Ġjudge, Ġminister, Ġwomen, Ġgovernment, Ġfireplace, Ġcommittee, Ġunion, Ġhands, Ġclerk, Ġsea, Ġpatient, Ġhorses, Ġrider, Ġspring, Ġengineer, Ġkeeper, ĠPope, ĠHouse, ĠGovernor, Ġpresident, Ġdog, ĠGoddess, Ġpolice, Ġdoctors, Ġwife, Ġcontractor, Ġdirector, Ġplayer, ĠCaptain, Ġteam, ĠCreator, Ġfirst, Ġgoddess, Ġcity, Ġmanufacturer, Ġair, Ġstandard, Ġclub, Ġhost, Ġfirm, Ġchild, Ġmanager, Ġguard, Ġangel, Ġworkers, Ġtrustees, Ġreferee, Ġdonor, Ġschool, Ġcouple, Ġside, Ġstation, Ġhusband, Ġtwo, Ġfather, Ġlast]
+  surprise:
+    active:
+      "[subj]": [Ġstory, Ġdream, Ġfuture, Ġplace, Ġbook, Ġevent, Ġgame, Ġsong, Ġaction, Ġend, Ġhunt, Ġtruth, Ġfight, Ġsecret, Ġjourney, Ġexperience, Ġchallenge, Ġshow, Ġidea, Ġnovel, Ġplay, Ġmovie, Ġadventure, Ġunexpected, Ġfinale, Ġclimax, Ġsurprise, Ġquestion, Ġsearch, Ġdrama, Ġdoor, Ġwhat, Ġtitle, Ġbattle, Ġthing, Ġsmile, Ġbeauty, Ġepisode, Ġmusic, Ġmystery, Ġbeginning, Ġexcitement, Ġdance, Ġpast, Ġcastle, Ġthought, Ġmoon, Ġlove, Ġdarkness, Ġanswer, Ġfestival, Ġvisit, Ġpoem, Ġintroduction, Ġnews, Ġencounter, Ġsituation, Ġname, Ġforest, Ġprize, Ġchase, Ġfact, Ġconcept, Ġpleasure, Ġsun, Ġquest, Ġvictory, Ġdiscovery, Ġending, Ġfilm, Ġcompetition, Ġthat, Ġtale, Ġfun, Ġmission, Ġsight, Ġchange, Ġworst, Ġcall, Ġmagic, Ġball, Ġring, Ġword, Ġaddition, Ġwork, Ġwinner, Ġreality, Ġattack, Ġrevelation, Ġlatest, Ġway, Ġperformance, Ġeffect, Ġattraction, Ġlegend, Ġjoy, Ġlook, Ġhope, Ġstorm, Ġpicture]
+      "[obj]": [Ġreader, Ġgirls, Ġfamily, Ġboys, Ġcrowd, Ġpublic, Ġkids, Ġmost, Ġladies, Ġaudience, Ġchildren, Ġyoung, Ġguests, Ġlocals, Ġpeople, Ġowner, Ġgroup, Ġstudents, Ġmasses, Ġvillagers, Ġfans, Ġguard, Ġhost, Ġmen, Ġviewer, Ġwomen, Ġvisitors, Ġyouth, Ġauthor, Ġfan, Ġtwins, Ġband, Ġyoungsters, Ġsoul, Ġkid, Ġbride, Ġvisitor, Ġclass, Ġlistener, ĠKing, Ġothers, Ġlady, Ġviewers, Ġcouple, Ġplayer, Ġhunter, Ġhunters, Ġguys, Ġlovers, Ġcourt, Ġnewcomers, Ġcrew, Ġguy, Ġyoungster, Ġreaders, Ġeye, Ġcurious, Ġguards, ĠLord, Ġmale, Ġelite, Ġprofessor, Ġcaptain, Ġgods, Ġjudge, Ġpack, Ġteacher, Ġmore, Ġmaid, Ġpolice, Ġgang, Ġteam, Ġcompany, Ġadults, Ġspectators, Ġparents, Ġsenses, Ġcollector, Ġinnocent, Ġcollege, Ġlion, Ġboss, Ġbaby, Ġfemale, Ġenemy, Ġstars, Ġchoir, Ġbrothers, Ġcommunity, Ġtrio, Ġstudent, Ġsisters, Ġgeneral, Ġthief, Ġstaff, Ġgoddess, Ġtourists, Ġpair, Ġheart, Ġmob]
+    passive:
+      "[obj]": [Ġreader, Ġking, Ġdoctor, Ġaudience, Ġqueen, Ġpriest, Ġlady, ĠQueen, Ġprofessor, Ġcaptain, ĠKing, ĠDoctor, Ġmaid, Ġgroup, Ġnarrator, Ġmayor, Ġchild, Ġguard, Ġviewer, Ġauthor, Ġprince, Ġprincess, Ġcat, Ġbride, Ġvisitor, Ġteacher, Ġwitch, Ġdog, Ġhost, ĠCaptain, Ġdragon, Ġmaster, Ġowner, Ġplayer, Ġfamily, Ġvillage, Ġgovernor, Ġcrew, Ġparty, Ġartist, ĠProfessor, Ġdirector, ĠMaster, Ġemperor, Ġhero, Ġgoddess, Ġwizard, Ġsinger, Ġcook, Ġdevil, Ġreporter, Ġworld, Ġmonk, Ġjudge, Ġangel, Ġvampire, Ġpatient, Ġcreature, Ġscientist, Ġleader, Ġstaff, Ġone, Ġminister, Ġpublic, Ġchief, Ġprincipal, Ġchurch, Ġclerk, Ġinspector, Ġcouple, Ġgeneral, Ġcommander, ĠLady, ĠGuardian, Ġfarmer, Ġshaman, Ġdemon, Ġhealer, Ġknight, Ġteam, Ġhuman, Ġroom, Ġstudent, ĠDevil, Ġschool, Ġofficer, Ġstranger, ĠBishop, Ġbishop, Ġband, ĠWarden, Ġcolonel, Ġtrio, Ġfairy, Ġnurse, Ġtown, Ġmale, Ġdriver, Ġgiant, ĠLord]
+      "[subj]": [Ġbeauty, Ġsight, Ġnews, Ġsound, Ġnoise, Ġappearance, Ġdisplay, Ġaction, Ġgesture, Ġdiscovery, Ġresult, Ġstory, Ġview, Ġlight, Ġtransformation, Ġevent, Ġsurprise, Ġcompliment, Ġchallenge, Ġresults, Ġfact, Ġexperience, Ġresemblance, Ġquestion, Ġchange, Ġanswer, Ġentrance, Ġattention, Ġsong, Ġvisit, Ġdemonstration, Ġperformance, Ġname, Ġresponse, Ġgift, Ġlift, Ġsilence, Ġspectacle, Ġsize, Ġinterruption, Ġsituation, Ġcall, Ġrevelation, Ġdetail, Ġidea, Ġmusic, Ġnote, Ġvictory, Ġscenery, Ġpraise, Ġintrusion, Ġintroduction, Ġlook, Ġencounter, Ġsmile, Ġimage, Ġopportunity, Ġwords, Ġatmosphere, Ġbook, Ġvoice, Ġdarkness, Ġmotion, Ġbrightness, Ġscene, Ġeffect, Ġreception, Ġcomment, Ġsmell, Ġpicture, Ġincident, Ġshow, Ġpresence, Ġattack, Ġheat, Ġeffort, Ġexcitement, Ġevents, Ġwalk, Ġannouncement, Ġinvitation, Ġdistance, Ġpainting, Ġmatch, Ġarrival, Ġmovement, Ġmiracle, Ġentry, Ġdescription, Ġapplause, Ġsuccess, Ġmemory, Ġdistraction, Ġweather, Ġinformation, Ġspeech, Ġtitle, Ġoffer, Ġsun, Ġreaction]
+  frighten:
+    active:
+      "[subj]": [Ġdream, Ġdarkness, Ġword, Ġfear, Ġthought, ĠDevil, Ġsong, Ġvoice, Ġterror, Ġnoise, Ġcold, Ġaction, Ġtruth, Ġmonster, Ġsun, Ġstory, Ġone, Ġstorm, Ġnightmare, Ġthing, Ġsound, Ġidea, Ġforest, Ġend, Ġthat, Ġwarning, Ġscream, Ġevil, Ġlight, Ġfight, Ġdemon, Ġway, Ġfox, Ġwhat, Ġpain, Ġrain, Ġmoon, Ġscene, Ġwho, Ġwhisper, Ġsnake, ĠLord, Ġchase, Ġfire, Ġbird, Ġdanger, Ġbeginning, Ġwhich, Ġsame, Ġriver, Ġquestion, Ġfright, Ġsmell, Ġdeath, Ġpresence, Ġdreams, Ġbeauty, Ġclimax, Ġthreat, Ġdragon, Ġexperience, Ġsight, Ġattack, Ġname, Ġmist, Ġsky, Ġdance, Ġsituation, Ġbattle, Ġanimal, Ġtemptation, Ġkiss, Ġair, Ġwords, Ġbook, Ġsword, Ġmusic, Ġhunt, Ġtale, Ġscreams, Ġmadness, Ġscreaming, Ġpassion, Ġdoor, Ġpast, Ġghost, Ġpart, ĠQueen, Ġdread, Ġand, Ġlightning, Ġlove, Ġroar, Ġcall, Ġpoem, Ġmale, Ġsmoke, Ġhorror, Ġheat, Ġfemale]
+      "[obj]": [Ġchildren, Ġgirls, Ġreader, Ġboys, Ġyoung, Ġinnocent, Ġvillagers, Ġpeople, Ġothers, Ġwomen, Ġcrowd, Ġheart, Ġsoul, Ġyoungsters, Ġaudience, Ġblind, Ġguards, Ġspectators, Ġmen, Ġenemy, Ġmother, Ġladies, Ġkids, Ġking, Ġanimals, Ġviewer, Ġhorses, Ġmind, Ġlad, Ġvillage, Ġpeasants, Ġmasses, Ġstudents, Ġprince, Ġlovers, Ġfool, Ġpolice, Ġbirds, Ġbeasts, Ġfamily, Ġpresent, Ġtraveller, Ġpublic, Ġwicked, Ġrest, Ġdogs, Ġweak, Ġworse, Ġservants, Ġadults, Ġmaid, Ġsenses, Ġmore, Ġthief, Ġsick, Ġguard, Ġmob, Ġparty, Ġwild, Ġslaves, Ġfools, Ġpoor, Ġcourt, Ġyoungster, Ġpassengers, Ġgeneral, ĠKing, Ġlocals, Ġdemons, Ġhumans, Ġhorse, Ġwolves, Ġteacher, Ġmost, Ġguests, Ġmorning, Ġfuture, Ġhunter, Ġeye, Ġjudge, Ġdeaf, Ġprincess, Ġhunters, Ġheroine, Ġother, Ġspectator, Ġvillain, Ġtwins, Ġinsane, Ġmad, Ġprey, Ġtiger, Ġpatient, Ġtown, Ġdead, Ġbride, Ġparents, Ġlistener, Ġsoldiers, Ġcamp]
+    passive:
+      "[obj]": [Ġqueen, Ġlady, Ġking, Ġmaid, Ġwitch, Ġpriest, ĠQueen, Ġaudience, Ġreader, Ġbride, Ġdoctor, Ġpatient, Ġmother, Ġdevil, Ġprince, Ġprincess, Ġangel, ĠKing, Ġdragon, Ġwolf, Ġnarrator, Ġviewer, Ġteacher, Ġprofessor, Ġfemale, Ġguard, Ġfox, Ġhero, Ġgoddess, Ġspeaker, Ġvillage, Ġhuman, Ġmaster, ĠLady, Ġhead, Ġbird, Ġgroup, Ġspectator, Ġlion, Ġheroine, ĠDoctor, Ġmale, Ġservant, Ġvillain, Ġfairy, Ġfamily, ĠDevil, Ġcaptain, Ġwife, Ġfather, ĠWitch, Ġroom, Ġsinger, Ġother, Ġprotagonist, Ġwizard, Ġspirit, Ġmouse, Ġhost, Ġhealer, Ġyouth, Ġvampire, Ġdaughter, Ġplayer, Ġowl, Ġmoon, Ġbody, Ġone, Ġwomen, Ġshaman, ĠMaster, Ġrest, Ġminister, Ġvisitor, Ġchief, Ġstudent, ĠDuchess, Ġeye, Ġperson, Ġchurch, Ġleader, Ġmayor, Ġfarmer, Ġlad, Ġvictim, Ġcouple, Ġtown, Ġlatter, Ġmonk, ĠCat, Ġnurse, Ġgiant, ĠFather, Ġprisoner, Ġkitten, Ġsoul, ĠLord, ĠCaptain, Ġenemy, Ġemperor]
+      "[subj]": [Ġnoise, Ġwind, Ġdarkness, Ġsound, Ġrain, Ġheat, Ġcold, Ġscreams, Ġsmell, Ġmusic, Ġdanger, Ġfear, Ġattack, Ġpain, Ġsituation, Ġsight, Ġwater, Ġnews, Ġaction, Ġstorm, Ġsounds, Ġfire, Ġintrusion, Ġidea, Ġsong, Ġlight, Ġdark, Ġpanic, Ġscreaming, Ġmovement, Ġscream, Ġvoices, Ġmist, Ġwords, Ġforest, Ġweather, Ġscene, Ġsea, Ġair, Ġnight, Ġflames, Ġmen, Ġbirds, Ġthought, Ġriver, Ġoutside, Ġexplosion, Ġsmoke, Ġviolence, Ġterror, Ġearthquake, Ġpolice, Ġspell, Ġcreatures, Ġpresence, Ġhorses, Ġanimals, Ġdogs, Ġgirls, Ġsunlight, Ġword, Ġdream, Ġquestion, Ġothers, Ġevents, Ġfight, Ġsilence, Ġmagic, Ġkiss, Ġshadows, Ġdistance, Ġguards, Ġcall, Ġcar, Ġatmosphere, Ġwoods, Ġtrain, Ġwarning, Ġwinds, Ġcrowds, Ġfright, Ġdisturbance, Ġview, Ġlights, Ġpresent, Ġboys, Ġracket, Ġsnow, Ġdoor, Ġnoises, Ġtears, Ġbeauty, Ġstrain, Ġincident, Ġmemory, Ġstory, Ġanger, Ġmotion, Ġwolves, Ġattention]
+  discover:
+    active:
+      "[subj]": [Ġteam, Ġpolice, Ġscientist, Ġboys, Ġhunter, Ġangel, Ġchildren, Ġscientists, Ġhero, Ġking, Ġdevil, Ġcrew, ĠDevil, Ġmen, Ġtwins, Ġhunters, Ġartist, Ġstudents, Ġgoddess, Ġwitches, Ġprince, Ġvampire, Ġbrothers, Ġpeople, Ġprofessor, Ġvillagers, Ġsun, Ġplayer, Ġreader, Ġtwo, ĠQueen, Ġpriest, Ġangels, Ġwomen, Ġauthor, Ġmagician, Ġgods, Ġmaid, Ġfirst, Ġowner, Ġone, Ġdemon, Ġcaptain, Ġspirit, Ġcat, Ġguard, Ġcouple, Ġdoctor, ĠGreeks, Ġaliens, Ġwho, Ġarchaeologists, ĠKing, Ġresearchers, Ġsisters, Ġday, Ġthieves, Ġpair, Ġqueen, Ġgang, Ġdog, ĠDoctor, Ġfather, Ġothers, Ġfounders, Ġtrio, Ġuniversity, Ġdetective, Ġeagle, Ġstudent, Ġheroes, ĠGuardian, Ġleader, Ġwolf, Ġnight, Ġinvestigators, Ġwizard, Ġexplorers, Ġteacher, ĠGods, Ġnovel, Ġvampires, Ġhumans, Ġsorcerer, ĠFounders, Ġcollege, Ġgiant, Ġthree, Ġcreators, ĠRomans, Ġreporter, Ġstranger, Ġfox, Ġinventor, Ġbeast, Ġauthorities, Ġlion, Ġexplorer, Ġvillain, Ġarchitect]
+      "[obj]": [Ġtruth, Ġtreasure, Ġhouse, Ġsecret, Ġcave, Ġbody, Ġplace, Ġisland, Ġbuilding, Ġtunnel, Ġsite, Ġmap, Ġcemetery, Ġlocation, Ġkey, Ġring, Ġnest, Ġlake, Ġcastle, Ġtree, Ġmansion, Ġbridge, Ġnecklace, Ġbank, Ġtrail, Ġhotel, Ġboat, Ġlibrary, Ġportal, Ġmissing, Ġcottage, Ġarea, Ġball, Ġdiamond, Ġbasement, Ġcrypt, Ġgarden, Ġstone, Ġgame, Ġwaterfall, Ġproperty, Ġartifact, Ġbaby, Ġgrave, Ġletter, Ġfarm, Ġgold, Ġchurch, Ġclue, Ġland, Ġtomb, Ġdead, Ġattic, Ġpark, Ġcase, Ġcomplex, Ġjournal, Ġtemple, Ġbeach, Ġquarry, Ġbar, Ġmanuscript, Ġdiscovery, Ġroom, Ġnote, Ġname, Ġmountain, Ġpast, Ġhole, Ġvault, Ġbox, Ġstation, Ġcaves, Ġpaper, Ġlegend, Ġlab, Ġskeleton, Ġfire, Ġtime, Ġbutterfly, Ġriver, Ġwoods, Ġdoor, Ġlighthouse, Ġidentity, Ġpyramid, Ġestate, Ġpalace, Ġcar, Ġlabyrinth, Ġcanal, Ġhome, Ġwarehouse, Ġfort, Ġwell, Ġcrystal, Ġdiary, Ġgraveyard, Ġproblem, Ġfile]
+    passive:
+      "[obj]": [Ġsite, Ġhouse, Ġbody, Ġbuilding, Ġcemetery, Ġisland, Ġtunnel, Ġtreasure, Ġbridge, Ġbook, Ġtrail, Ġpark, Ġplace, Ġlake, Ġstory, Ġrock, Ġmap, Ġforest, Ġtree, Ġgarden, Ġtemple, Ġstone, Ġtomb, Ġarea, Ġmonument, Ġball, Ġskeleton, Ġartifact, Ġhole, Ġboy, Ġcastle, Ġcreature, Ġcottage, Ġtruth, Ġpainting, Ġstructure, Ġgrave, Ġnovel, Ġbeach, Ġsecret, Ġmansion, Ġstatue, Ġobject, Ġproperty, Ġwreckage, Ġspider, Ġmountain, Ġpond, Ġmemorial, Ġlocation, Ġtop, Ġhotel, Ġground, Ġwoman, Ġstation, Ġmonster, Ġjournal, Ġletter, Ġnest, Ġportal, Ġring, Ġmanuscript, Ġroad, Ġdig, Ġsettlement, Ġvessel, Ġman, Ġmoon, Ġbase, Ġwreck, Ġfarm, Ġwaterfall, Ġgraveyard, Ġtower, Ġgame, Ġevent, Ġcase, Ġcavern, Ġbutterfly, Ġbird, Ġskull, Ġhut, Ġlighthouse, Ġlibrary, Ġcomplex, Ġmound, Ġcorpse, Ġpaper, Ġestate, Ġpyramid, Ġlegend, Ġpalace, Ġfilm, Ġtip, Ġoriginal, Ġdream, Ġprison, Ġchapel, Ġswamp, Ġcomet]
+      "[subj]": [Ġpolice, Ġlocals, Ġarchaeologists, Ġauthorities, ĠFBI, Ġvillagers, ĠBritish, Ġexplorers, ĠFrench, ĠGermans, ĠSoviets, Ġteam, Ġtourists, Ġpublic, Ġresearchers, ĠRussians, ĠUN, ĠIndians, Ġresidents, ĠChinese, ĠKGB, Ġscientists, Ġgovernment, Ġnatives, Ġcrew, Ġuniversity, ĠTaliban, ĠDutch, ĠAmericans, ĠNazis, Ġhunters, Ġmilitary, Ġstudents, Ġinvestigators, ĠJapanese, Ġminers, ĠIRA, Ġsearch, Ġarmy, ĠDevil, ĠRCMP, Ġpress, Ġfishermen, ĠQueen, Ġsea, ĠCIA, ĠSun, ĠArmy, Ġmedia, Ġexpedition, ĠGPS, ĠEuropeans, Ġstate, ĠRomans, Ġphotographer, ĠUS, ĠRAF, Ġpeople, Ġauthor, Ġworkers, ĠPolice, ĠUFO, Ġowner, ĠSpanish, Ġearthquake, Ġinhabitants, ĠAustralians, Ġfamily, Ġclimbers, Ġvisitors, ĠNSA, Ġhikers, Ġdevil, Ġband, Ġboys, ĠCrown, Ġcompany, Ġbrothers, ĠBBC, Ġscientist, Ġsun, Ġhelicopter, Ġterrorists, Ġbirds, Ġhunter, Ġcolonists, ĠNorse, Ġhumans, Ġchildren, ĠGreeks, ĠNavy, ĠCree, Ġcommunity, Ġwomen, Ġexplorer, ĠAllies, Ġunknown, Ġpirates, Ġsoldiers, Ġdead]
+  find:
+    active:
+      "[subj]": [Ġhunter, Ġboys, Ġgroup, Ġteam, Ġhunters, Ġmen, Ġangel, Ġcreature, Ġmaid, Ġsun, Ġvillagers, Ġpriest, Ġdevil, ĠDevil, Ġdragon, Ġguard, Ġwomen, Ġdemon, ĠDoctor, Ġtwins, Ġwitches, Ġothers, Ġking, Ġtwo, Ġcrew, Ġhero, Ġwolf, Ġpeople, Ġvampire, Ġfarmer, Ġmonster, Ġone, Ġbeast, Ġcaptain, Ġkids, Ġbrothers, Ġreader, Ġangels, Ġspirit, Ġprofessor, Ġgoddess, Ġbirds, Ġgang, ĠQueen, Ġend, Ġsisters, Ġdriver, Ġthieves, Ġscientist, Ġteacher, Ġdogs, Ġdream, Ġfox, Ġstudents, Ġlady, Ġday, Ġcouple, Ġgods, Ġservants, Ġfather, Ġpair, Ġqueen, Ġparents, Ġchief, ĠKing, ĠMaster, Ġpriests, Ġplayer, Ġwolves, Ġmaster, Ġguards, Ġshaman, Ġworld, Ġstranger, Ġdetective, ĠCaptain, Ġghost, Ġmagician, Ġmorning, Ġfirst, Ġowl, Ġthree, Ġeagle, Ġleader, Ġvampires, ĠLord, Ġtrio, Ġanimals, Ġscientists, Ġcook, Ġprince, Ġartist, Ġwho, Ġprincess, Ġsoldiers, Ġstorm, Ġfisherman, Ġwind, Ġgiant, Ġspirits]
+      "[obj]": [Ġtreasure, Ġkey, Ġnote, Ġmap, Ġletter, Ġbox, Ġtruth, Ġnecklace, Ġdoor, Ġplace, Ġtrail, Ġpaper, Ġknife, Ġkeys, Ġcottage, Ġcorpse, Ġdead, Ġstone, Ġphone, Ġball, Ġjournal, Ġring, Ġgrave, Ġfire, Ġcemetery, Ġhome, Ġaddress, Ġbank, Ġmoney, Ġgold, Ġlake, Ġgun, Ġlight, Ġsword, Ġflowers, Ġflower, Ġclue, Ġdiary, Ġnest, Ġbuilding, Ġfarm, Ġhole, Ġskeleton, Ġmark, Ġbar, Ġmessage, Ġwater, Ġnewspaper, Ġsecret, Ġtrain, Ġculprit, Ġbeach, Ġfile, Ġlocation, Ġbodies, Ġhammer, Ġisland, Ġgarden, Ġtunnel, Ġsite, Ġroom, Ġroad, Ġcross, Ġfloor, Ġway, Ġsame, Ġmissing, Ġrock, Ġlead, Ġbed, Ġdagger, Ġfish, Ġcup, Ġstory, Ġground, Ġvictim, Ġbag, Ġbottle, Ġbridge, Ġanswer, Ġfood, Ġbathroom, Ġhotel, Ġspot, Ġstones, Ġvan, Ġbarn, Ġshovel, Ġcabin, Ġjar, Ġname, Ġshop, Ġtruck, Ġwell, Ġtrace, Ġhospital, Ġrifle, Ġoffice, Ġland, Ġheart]
+    passive:
+      "[obj]": [Ġhead, Ġletter, Ġskeleton, Ġbook, Ġnecklace, Ġskull, Ġbox, Ġball, Ġstone, Ġtreasure, Ġsword, Ġbaby, Ġobject, Ġknife, Ġrock, Ġnote, Ġstatue, Ġgrave, Ġring, Ġcoffin, Ġpaper, Ġbird, Ġflower, Ġjar, Ġcross, Ġpainting, Ġjournal, Ġpicture, Ġaxe, Ġtip, Ġhorse, Ġwolf, Ġtrail, Ġstake, Ġdoor, Ġbed, Ġmonster, Ġhole, Ġmap, Ġheart, Ġkey, Ġfragment, Ġspider, Ġtrunk, Ġblade, Ġcup, Ġhammer, Ġdagger, Ġstory, Ġanimal, Ġmanuscript, Ġculprit, Ġoriginal, Ġlight, Ġimage, Ġchest, Ġmessage, Ġgun, Ġdiary, Ġspirit, Ġweapon, Ġtruth, Ġtablet, Ġsite, Ġdemon, Ġnewspaper, Ġmark, Ġbottle, Ġbutterfly, Ġegg, Ġbell, Ġevidence, Ġtop, Ġartifact, Ġfigure, Ġend, Ġwreckage, Ġamulet, Ġghost, Ġphone, Ġtext, Ġbottom, Ġbomb, Ġbag, Ġcell, Ġpiece, Ġhuman, Ġbuilding, Ġsculpture, Ġfox, Ġcottage, Ġmachine, Ġname, Ġitem, Ġblood, Ġcrystal, Ġbeast, Ġbat, Ġnest, Ġface]
+      "[subj]": [Ġpolice, Ġauthorities, Ġvillagers, Ġdoctor, Ġowner, Ġlocals, Ġcoroner, Ġriver, Ġhunters, Ġfamily, Ġmaid, Ġfarmer, Ġwomen, Ġchildren, Ġhunter, Ġroadside, Ġgirls, Ġmen, Ġboys, ĠDevil, Ġchurch, Ġvillage, Ġpriest, Ġgroup, Ġdriver, Ġfisherman, Ġteam, Ġguard, Ġroad, Ġfishermen, Ġmother, Ġinvestigators, Ġguards, Ġschool, Ġthief, Ġnuns, Ġtourists, Ġdogs, Ġcrew, Ġsoldiers, ĠQueen, Ġpeople, Ġdevil, Ġworkers, Ġsheriff, Ġarchaeologists, Ġking, Ġwater, Ġresidents, Ġdoctors, Ġcaptain, Ġcouple, Ġresearchers, Ġsearch, Ġhospital, Ġparents, Ġrobbers, Ġlake, Ġminers, Ġstudents, ĠCaptain, Ġsun, Ġparamedics, Ġsea, Ġprofessor, Ġothers, Ġvisitors, Ġclub, Ġarmy, Ġphotographer, Ġmuseum, Ġshore, Ġbeach, Ġmonks, Ġassailants, Ġservants, Ġneighbor, Ġthieves, Ġbodies, Ġbirds, Ġforest, Ġcemetery, Ġofficers, Ġcity, Ġowners, Ġwidow, Ġvan, Ġstream, Ġauthor, Ġbrothers, Ġband, Ġdeceased, Ġwife, Ġcrane, Ġcops, Ġsisters, Ġmurderer, Ġattackers, ĠIndians, Ġvictims]
+  spot:
+    active:
+      "[subj]": [Ġpilot, Ġprofessor, Ġdoctor, Ġothers, Ġrider, Ġcrew, Ġdetective, ĠCaptain, Ġtwins, Ġhunters, Ġreporter, Ġfarmer, Ġchildren, Ġscout, Ġvisitor, Ġplayer, Ġteacher, Ġhero, Ġassassin, Ġprince, Ġeagle, ĠGuardian, Ġguards, Ġchief, Ġwind, Ġking, Ġvillagers, Ġtwo, Ġphotographer, Ġowner, Ġprincess, Ġdemon, ĠKing, Ġwitch, Ġmessenger, Ġblonde, Ġstudents, Ġgiant, Ġmayor, Ġcommander, Ġscouts, Ġhead, ĠDevil, Ġkids, Ġsoldiers, Ġbrothers, Ġranger, Ġcrowd, Ġmaid, Ġunicorn, Ġwolves, Ġdevil, Ġfairy, Ġvet, Ġkid, Ġcolonel, Ġfirst, Ġinspector, Ġwomen, ĠDoctor, Ġsoldier, Ġscientist, ĠColonel, Ġmonitor, ĠProfessor, Ġshooter, Ġduo, Ġalien, Ġqueen, Ġstudent, Ġworld, Ġlady, Ġother, Ġcrow, Ġpriest, Ġwizard, ĠEagle, Ġfather, Ġcomputer, Ġday, Ġsergeant, Ġobserver, ĠHawk, Ġofficers, Ġvisitors, Ġlieutenant, Ġsniper, ĠChief, Ġviewer, Ġmachine, Ġeye, Ġshaman, Ġone, Ġrobot, Ġhuman, Ġfamily, Ġgoddess, Ġyouth, Ġmother, ĠDragon]
+      "[obj]": [Ġhouse, Ġmap, Ġsign, Ġroad, Ġbuilding, Ġtrain, Ġbridge, Ġbus, Ġtruck, Ġtree, Ġbody, Ġlake, Ġvehicle, Ġdoor, Ġplane, Ġhotel, Ġtrail, Ġradio, Ġclub, Ġdeer, Ġquarry, Ġsignal, Ġring, Ġfarm, Ġnote, Ġphone, Ġlighthouse, Ġstation, Ġbeach, Ġbank, Ġcity, Ġriver, Ġisland, Ġcross, Ġcave, Ġlights, Ġtown, Ġbeacon, Ġcottage, Ġscene, Ġstreet, Ġhighway, Ġball, Ġmountain, Ġplace, Ġchurch, Ġculprit, Ġwatch, Ġgun, Ġstream, Ġtrees, Ġpass, Ġmessage, Ġrock, Ġnews, Ġgreen, Ġname, Ġspider, Ġattack, Ġmark, Ġdark, Ġgate, Ġairport, Ġconvoy, Ġcastle, Ġsquirrel, Ġrifle, ĠUFO, Ġfort, Ġentrance, Ġghost, Ġcall, Ġrunner, Ġcrest, Ġsearch, Ġanimal, Ġflight, Ġbear, Ġfish, Ġletter, Ġpicture, Ġtrack, Ġnoise, Ġsunset, Ġfire, Ġknife, Ġthing, Ġwater, Ġhome, Ġbar, Ġtarget, Ġenemy, Ġarea, Ġtracks, Ġwoods, Ġridge, Ġsound, Ġpainting, Ġcabin, Ġmansion]
+    passive:
+      "[obj]": [Ġcreature, Ġbird, Ġhorse, Ġbody, Ġwolf, Ġhouse, Ġfox, Ġspider, Ġmonster, Ġball, Ġbuilding, Ġbeast, Ġtree, ĠUFO, Ġleader, Ġcat, Ġsnake, Ġtiger, Ġtop, Ġanimal, Ġisland, Ġowl, Ġplayer, Ġvictim, Ġhead, Ġghost, Ġchurch, Ġsubmarine, Ġmap, Ġrobot, Ġbike, Ġculprit, Ġrock, Ġtarget, Ġchild, Ġtrail, Ġassassin, Ġdragon, Ġstatue, Ġhotel, Ġdeer, Ġtrack, Ġrocket, Ġnight, Ġmonitor, Ġcave, Ġtracker, Ġsuspect, Ġmountain, Ġsite, Ġbear, Ġfarm, Ġelephant, Ġvessel, Ġrogue, Ġcarrier, Ġthief, Ġdemon, Ġcaravan, Ġphone, Ġshooter, Ġcarriage, Ġlion, Ġobject, Ġtram, Ġcraft, Ġcomet, Ġrace, Ġplace, Ġcorpse, Ġgun, Ġaircraft, Ġvisitor, ĠRover, Ġdoor, Ġsignal, Ġangel, Ġscene, Ġdevil, Ġwitch, Ġsign, Ġday, Ġattack, Ġring, Ġhighway, Ġspeaker, Ġperpetrator, Ġbat, Ġpole, Ġletter, Ġcabin, Ġvampire, Ġpaper, Ġbeach, Ġlighthouse, Ġbomber, Ġtank, Ġeagle, Ġgoat, Ġfilm]
+      "[subj]": [Ġpolice, Ġguards, Ġvillagers, Ġlocals, Ġhunters, Ġauthorities, Ġmedia, Ġsoldiers, Ġcrowd, Ġmen, Ġofficers, ĠFBI, Ġpatrol, Ġsheriff, Ġenemy, Ġothers, Ġboys, Ġdogs, Ġtourists, Ġarmy, Ġpolicemen, Ġcops, ĠPolice, Ġresidents, Ġofficer, Ġagents, Ġphotographer, Ġstudents, Ġgirls, Ġlookout, Ġmayor, ĠGermans, Ġmilitary, Ġmob, Ġdoctor, Ġpress, Ġfishermen, Ġphotographers, Ġgunman, ĠVC, ĠTaliban, Ġattackers, Ġassailants, ĠGuardian, Ġcavalry, Ġpoliceman, Ġreporter, Ġscouts, Ġnatives, Ġdark, ĠBritish, Ġneighbours, Ġforce, Ġtroopers, Ġfarmer, Ġwind, ĠIndians, Ġpublic, Ġmilitia, Ġsmugglers, Ġvisitors, Ġpeople, ĠChinese, Ġriver, Ġterrorists, ĠSheriff, ĠRCMP, Ġwolves, ĠRussians, ĠColonel, Ġheadlights, Ġwomen, Ġbirds, ĠRAF, Ġchildren, Ġroadside, Ġpirates, Ġduo, ĠRangers, Ġdetectives, Ġparamedics, Ġpassengers, Ġinvestigators, Ġhikers, Ġambulance, Ġneighbors, Ġriders, Ġcompany, Ġdrivers, Ġair, Ġairport, Ġbrothers, ĠJaguar, Ġtwo, ĠArmy, Ġminers, ĠFrench, Ġworkers, Ġcrane, Ġfirefighters]
+  forget:
+    active:
+      "[subj]": [Ġgoddess, Ġdevil, Ġdemon, Ġgods, Ġdragon, Ġking, Ġangel, Ġhero, Ġqueen, Ġmonster, Ġvampire, Ġcreature, Ġwitch, Ġbeast, Ġreader, ĠDevil, Ġbird, ĠQueen, Ġfairy, Ġprincess, Ġprince, ĠKing, Ġwolf, Ġspirit, Ġgod, ĠI, ĠLord, Ġsun, Ġpeople, Ġmaid, Ġgiant, Ġwitches, ĠGoddess, Ġpriest, Ġhuman, Ġplayer, Ġauthor, Ġboys, Ġlion, ĠGods, Ġvillage, Ġfox, Ġbride, Ġangels, Ġuniverse, Ġkiller, Ġgroup, Ġmother, Ġprofessor, Ġstranger, Ġvillain, Ġhunter, Ġteacher, Ġtwo, Ġdemons, Ġmaster, Ġcity, Ġend, Ġmagician, Ġartist, Ġforest, Ġtwins, Ġmen, Ġowl, Ġthief, Ġheroine, ĠOne, Ġwho, Ġghost, Ġperson, Ġguy, Ġnarrator, Ġdoctor, Ġowner, Ġserpent, Ġlord, Ġsoul, Ġfirst, Ġbirds, Ġchurch, Ġwriter, Ġvampires, Ġhorse, Ġhost, Ġkid, ĠGod, Ġwizard, Ġsaint, ĠCat, Ġeagle, Ġemperor, ĠDoctor, ĠCreator, Ġfather, Ġheavens, ĠMaster, Ġfrog, Ġcouple, Ġknight, Ġrobot]
+      "[obj]": [Ġtime, Ġkiss, Ġtruth, Ġname, Ġkey, Ġwords, Ġpast, Ġcar, Ġsong, Ġgame, Ġword, Ġknife, Ġring, Ġmoment, Ġroom, Ġphone, Ġletter, Ġbathroom, Ġtrick, Ġfood, Ġdance, Ġnecklace, Ġtitle, Ġpresent, Ġmirror, Ġball, Ġbeginning, Ġmoney, Ġmemory, Ġplan, Ġdate, Ġsword, Ġmemories, Ġmusic, Ġfight, Ġsecret, Ġway, Ġmap, Ġcurse, Ġwater, Ġsame, Ġrules, Ġbooks, Ġwall, Ġlove, Ġproblem, Ġaddress, Ġbed, Ġfire, Ġtable, Ġkeys, Ġcup, Ġgun, Ġquestion, Ġlanguage, Ġtrain, Ġnote, Ġmark, Ġrest, Ġdress, Ġstairs, Ġboat, Ġspell, Ġpaper, Ġjob, Ġcave, Ġbridge, Ġsex, Ġmessage, Ġpicture, Ġroad, Ġtoilet, Ġwedding, Ġpain, Ġdetails, Ġwar, Ġlesson, Ġbar, Ġclub, Ġanswer, Ġpassword, Ġmorning, Ġfloor, Ġclock, Ġbox, Ġhome, Ġmachine, Ġbeach, Ġsea, Ġflight, Ġconversation, Ġflowers, Ġbedroom, Ġdiary, Ġcake, Ġhotel, Ġsmile, Ġtree, Ġtest, Ġdreams]
+    passive:
+      "[obj]": [Ġevent, Ġsong, Ġstory, Ġdream, Ġplace, Ġbook, Ġpoem, Ġscene, Ġname, Ġplay, Ġdance, Ġpainting, Ġgame, Ġincident, Ġmusic, Ġball, Ġmoment, Ġimage, Ġforest, Ġpicture, Ġbattle, Ġghost, Ġgarden, Ġceremony, Ġbutterfly, Ġpast, Ġdog, Ġtale, Ġnovel, Ġpaper, Ġcemetery, Ġbaby, Ġroom, Ġbird, Ġconversation, Ġrace, Ġritual, Ġbuilding, Ġpark, Ġmeeting, Ġfilm, Ġplot, Ġwork, Ġdate, Ġsite, Ġwhole, Ġlegend, Ġfestival, Ġpuzzle, Ġsound, Ġtitle, Ġfight, Ġmessage, Ġcreature, Ġaction, Ġcave, Ġisland, Ġletter, Ġspirit, Ġshow, Ġbeach, Ġdrama, Ġmovie, Ġfuneral, Ġmatter, Ġmess, Ġtree, Ġaffair, Ġspeech, Ġnote, Ġcastle, Ġline, Ġthing, Ġtragedy, Ġfeast, Ġword, Ġbeauty, Ġjournal, Ġpiece, Ġtruth, Ġpage, Ġnoise, Ġlesson, Ġfountain, Ġlake, Ġlight, Ġidea, Ġmystery, Ġbody, Ġmonster, Ġmemorial, Ġfeeling, Ġhotel, Ġmelody, Ġaddress, Ġplan, Ġsecret, Ġpond, Ġring, Ġtext]
+      "[subj]": [Ġchildren, Ġvillagers, Ġpeople, Ġcrowd, Ġstudents, Ġothers, Ġlocals, Ġboys, Ġpublic, Ġkids, Ġgirls, Ġvisitors, Ġpolice, Ġcommunity, Ġcrew, Ġresidents, Ġauthorities, Ġyoungsters, Ġguests, Ġmen, Ġwind, Ġservants, Ġdoctors, Ġteam, Ġcouple, Ġend, Ġtime, Ġking, Ġgods, Ġworkers, Ġsoldiers, Ġstaff, Ġcrowds, Ġtourists, Ġowner, Ġmusicians, Ġwomen, Ġinhabitants, Ġfriends, Ġbrothers, Ġlovers, Ġcouncil, Ġbirds, Ġtwins, ĠQueen, Ġhunters, Ġsun, Ġpress, Ġmonks, Ġladies, Ġdead, Ġdoctor, Ġparents, Ġmedia, Ġreader, Ġprofessor, ĠCaptain, Ġpassengers, Ġqueen, Ġneighbors, Ġdogs, Ġcaptain, Ġsea, ĠKing, Ġaudience, Ġpoet, Ġsisters, Ġguards, Ġspectators, Ġmaid, Ġcourt, Ġnuns, Ġfans, Ġghosts, Ġpriest, Ġowners, Ġteachers, Ġcats, Ġstrangers, Ġhumans, Ġadults, Ġchurch, Ġyouth, Ġpresent, Ġprince, ĠCouncil, Ġtravelers, Ġteacher, ĠDoctor, Ġlast, Ġpriests, Ġnewcomers, Ġtrio, Ġanimals, Ġclock, Ġcitizens, Ġarmy, Ġcompany, Ġofficers, Ġmob]
+  love:
+    active:
+      "[subj]": [Ġone, Ġgoddess, ĠQueen, Ġangel, Ġcat, Ġheroine, Ġwolf, Ġwitch, ĠDevil, Ġvampire, ĠGoddess, Ġauthor, Ġspirit, Ġreader, Ġdragon, Ġgod, ĠOne, Ġfairy, Ġmother, ĠGod, Ġbride, Ġpoet, Ġprince, Ġprincess, Ġdemon, Ġhuman, Ġartist, Ġcreature, Ġwho, Ġwarrior, Ġhunter, Ġmonster, Ġknight, Ġfox, Ġteacher, Ġnarrator, Ġsaint, Ġperson, Ġpriest, Ġsnake, Ġimmortal, Ġmaster, ĠCreator, Ġprotagonist, ĠFather, Ġguy, Ġmale, Ġlord, Ġowl, ĠAlmighty, Ġlion, Ġfather, ĠLady, Ġvillain, Ġkiller, Ġbutterfly, Ġwriter, Ġgods, Ġhorse, ĠWitch, Ġmaid, ĠCat, Ġplayer, Ġleader, ĠPope, ĠMan, ĠMaster, Ġprofessor, Ġemperor, Ġcharacter, Ġgrandmother, Ġfool, Ġwizard, ĠKnight, Ġstranger, ĠVirgin, ĠDivine, Ġpreacher, Ġeagle, Ġgiant, Ġwind, Ġmortal, a, Ġsavage, Ġserpent, ĠGods, Ġsage, Ġfemale, Ġdoctor, ĠBard, ĠPrince, ĠBeast, ĠMother, Ġmagician, ĠSaint, e, Ġalpha, Ġbear, Ġwicked, ĠWolf]
+      "[obj]": [Ġmusic, Ġplace, Ġsong, Ġgame, Ġhouse, Ġchildren, Ġnight, Ġwomen, Ġdark, Ġstory, Ġbest, Ġcountry, Ġplay, Ġflowers, Ġmoment, Ġhome, Ġday, Ġdance, Ġtruth, Ġland, Ġjob, Ġair, Ġball, Ġstars, Ġword, Ġtown, Ġarts, Ġwater, Ġbirds, Ġpeople, Ġkids, Ġbeach, Ġwoods, Ġoutdoors, Ġbooks, Ġroses, Ġcar, Ġdead, Ġriver, Ġocean, Ġrain, Ġsword, Ġyoung, Ġgirls, Ġhorses, Ġpiano, Ġshow, Ġboys, Ġwar, Ġgarden, Ġtime, Ġblues, Ġart, Ġlight, ĠSouth, Ġrich, Ġliving, Ġladies, Ġroad, Ġold, Ġtheater, Ġsame, Ġmoney, Ġkiss, Ġsweet, ĠEarth, Ġquiet, Ġfun, Ġfood, Ġsongs, Ġhills, Ġtheatre, Ġanimals, Ġparty, Ġdogs, Ġweather, Ġboat, Ġmountains, Ġpresent, Ġwilderness, Ġsound, Ġdesert, Ġbush, Ġguitar, Ġdream, Ġcold, Ġwine, Ġtrees, Ġsky, Ġtitle, Ġsunset, Ġflower, Ġblue, ĠWest, Ġfight, Ġcompany, Ġcountryside, Ġpeace, Ġring, Ġcastle]
+    passive:
+      "[obj]": [Ġplace, Ġstory, Ġsong, Ġbook, Ġpoem, Ġplay, Ġhouse, Ġmountain, Ġball, Ġisland, Ġtree, Ġgarden, Ġbutterfly, Ġbird, Ġdream, Ġcastle, Ġtruth, Ġcreature, Ġnovel, Ġwitch, Ġheroine, Ġsnake, Ġhome, Ġgame, Ġrace, Ġflower, Ġbeauty, Ġpast, ĠEarth, Ġpoet, Ġwolf, ĠMoon, Ġbeast, ĠSong, Ġbattle, Ġmemory, Ġmorning, Ġfuture, Ġmusic, Ġwho, Ġtitle, Ġand, Ġtale, ĠOne, Ġwarrior, Ġevent, Ġfairy, Ġpark, Ġhorse, Ġbody, Ġstar, Ġmonster, Ġfox, Ġwinner, ĠRose, Ġbabe, Ġhuman, Ġkingdom, Ġdaughter, Ġroom, Ġstone, Ġfilm, Ġrainbow, Ġvirgin, Ġmoment, Ġwife, Ġroad, Ġsecret, Ġevening, Ġcharacter, Ġprize, Ġcave, Ġbear, Ġson, Ġthing, Ġmale, Ġtemple, Ġdance, Ġresult, ĠNorth, Ġprotagonist, Ġship, ĠEarl, Ġperson, Ġwar, ĠDuke, Ġmovie, Ġlake, Ġpainting, Ġcemetery, Ġline, Ġchapel, Ġhill, Ġdemon, Ġrain, Ġname, Ġgod, Ġlight, Ġseries, Ġsinger]
+      "[subj]": [Ġvillagers, Ġpeople, Ġfaithful, Ġgirls, Ġboys, Ġgods, Ġlovers, Ġwomen, Ġkids, Ġcrowd, Ġangels, Ġstars, Ġmen, Ġothers, Ġsaints, Ġsisters, Ġladies, Ġstudents, Ġlocals, ĠGods, Ġpublic, Ġaudience, Ġrich, Ġparents, Ġpoor, Ġbrothers, Ġreader, Ġelders, Ġtwins, Ġmasses, Ġbirds, Ġservants, Ġhumans, Ġorphans, Ġresidents, Ġanimals, Ġheroes, Ġwitches, Ġnobility, Ġpresent, Ġimmortal, Ġguests, Ġdogs, Ġyoungsters, Ġblessed, Ġtwo, ĠPeople, Ġsoldiers, Ġfriends, ĠSun, Ġnation, Ġnuns, Ġmost, Ġband, Ġcharacters, Ġchoir, Ġinhabitants, Ġcrew, Ġpriests, Ġflock, Ġvisitors, Ġheavens, Ġgenerations, Ġinnocent, Ġsheep, ĠChildren, ĠDivine, Ġadults, Ġstaff, Ġall, Ġstranger, Ġtribe, Ġold, Ġfans, Ġwolves, Ġcongregation, Ġdying, ĠPope, Ġteachers, Ġcourt, Ġtrees, Ġgood, Ġcitizens, Ġneighbours, ĠWest, ĠAngels, ĠFather, Ġwarriors, ĠGod, Ġmany, Ġneighbors, Ġcouncil, Ġdaughters, Ġviewers, Ġliving, Ġenemy, Ġreaders, Ġprinces, Ġbrave, Ġbeautiful]
+  believe:
+    active:
+      "[subj]": [Ġnarrator, ĠOne, Ġaudience, Ġcat, Ġvillage, Ġgroup, Ġdragon, Ġplayer, Ġmoon, Ġvampire, Ġteacher, Ġwolf, Ġvillain, Ġdoctor, Ġdog, ĠGuardian, Ġshaman, Ġprotagonist, Ġbride, Ġmonster, Ġprofessor, Ġheroine, Ġspeaker, Ġbird, Ġguard, ĠFather, Ġcrowd, Ġpublic, Ġparty, Ġhuman, Ġpreacher, Ġschool, Ġlady, Ġsnake, Ġperson, Ġmother, ĠOracle, ĠPresident, Ġviewer, Ġhunter, Ġend, Ġwarrior, Ġmagician, ĠCouncil, Ġcouncil, ĠWitch, Ġenemy, Ġprincipal, Ġhost, Ġcity, ĠLady, Ġscientist, Ġpresident, Ġprincess, Ġmaid, Ġchief, ĠDivine, Ġfairy, Ġemperor, Ġmayor, Ġhead, Ġmaster, Ġartist, ĠAuthor, ĠCat, ĠDruid, Ġantagonist, Ġcommunity, Ġclass, a, Ġearth, Ġhealer, Ġwizard, Ġtown, Ġknight, ĠProphet, Ġcaptain, Ġpatient, Ġfox, Ġphilosopher, Ġmale, Ġlion, Ġmonk, Ġminister, Ġcourt, ĠMan, Ġtemple, Ġlast, ĠMoon, Ġfirst, ĠDeity, Ġcharacter, Ġfemale, Ġwhole, ĠEmperor, Ġpoet, Ġpsychic, ĠEmpress, ĠProfessor, ĠSun]
+      "[obj]": [Ġtruth, Ġdead, Ġsame, Ġword, Ġlaw, Ġother, Ġlegend, Ġdream, Ġlie, Ġangels, Ġtale, Ġanswer, Ġwords, ĠTruth, Ġbest, Ġsecret, Ġmyth, Ġimpossible, ĠChrist, Ġidea, Ġothers, Ġpast, Ġworst, Ġscripture, Ġlies, Ġobvious, Ġprayer, Ġdarkness, Ġfacts, Ġplan, Ġgospel, Ġdark, Ġparanormal, ĠTrinity, Ġsaints, Ġcurse, Ġvoice, Ġmen, Ġdeed, Ġscriptures, Ġliar, Ġrumors, ĠQuran, Ġmessage, Ġtheory, Ġgame, Ġnews, Ġbible, Ġoccult, Ġdevils, Ġlegends, Ġrumours, Ġstories, Ġsong, Ġanswers, Ġghosts, Ġfact, Ġprayers, Ġevil, Ġevidence, Ġright, Ġwill, ĠGospel, Ġfool, Ġletter, Ġthing, Ġinnocent, ĠScriptures, Ġreligion, Ġbetter, Ġnovel, Ġreason, Ġheavens, Ġstars, ĠAngel, Ġmagic, Ġway, Ġplay, ĠPrince, Ġelders, Ġdemons, Ġdanger, Ġtraitor, Ġstone, Ġlove, ĠJews, ĠColonel, Ġwar, Ġreality, Ġsaying, Ġafterlife, Ġreal, Ġoath, Ġpolice, Ġthief, Ġlight, Ġprophets, Ġwomen, ĠReaper, Ġmajority]
+    passive:
+      "[obj]": [Ġstory, Ġlegend, Ġprophecy, Ġmyth, Ġsame, Ġprayer, Ġbelief, Ġbook, Ġtale, Ġtheory, Ġevent, Ġfollowing, Ġsecret, Ġdream, Ġword, Ġsaying, Ġmessage, Ġtree, Ġcross, Ġritual, Ġconcept, Ġpoem, Ġnovel, Ġidea, Ġafterlife, Ġfact, Ġexistence, Ġgospel, Ġdoctrine, Ġsacrifice, Ġname, Ġcreation, Ġmiracle, ĠTruth, Ġsong, Ġanswer, Ġreason, Ġvictory, Ġlaw, Ġspirit, Ġsign, Ġcurse, Ġtest, Ġplay, Ġdeath, Ġnight, Ġwitch, Ġmoon, Ġceremony, Ġsun, Ġresurrection, Ġtext, Ġdawn, Ġprinciple, Ġsky, Ġevidence, Ġexplanation, Ġhypothesis, Ġplace, Ġrace, ĠDharma, Ġmagic, Ġknowledge, Ġstone, ĠGospel, Ġoath, Ġfuture, Ġproof, Ġconclusion, Ġthat, Ġday, Ġorigin, Ġcontrary, Ġgame, Ġpassage, Ġformula, Ġpast, Ġbattle, Ġdiscovery, Ġbible, Ġdemon, Ġvision, Ġbaptism, Ġaction, Ġhealing, Ġfoundation, Ġthought, Ġquestion, Ġdeed, ĠMoon, Ġletter, Ġkey, Ġway, Ġphrase, Ġmantra, Ġapocalypse, Ġidol, Ġhouse, Ġtradition, Ġbody]
+      "[subj]": [Ġgods, Ġpeople, Ġbelievers, ĠChurch, Ġcommunity, Ġwitches, ĠAlmighty, ĠGods, Ġsaints, Ġpriest, ĠChristians, ĠHindus, Ġvillagers, Ġpriests, Ġlocals, Ġancestors, Ġhumans, Ġbeliever, ĠMuslims, Ġwomen, Ġelders, Ġpublic, ĠSun, ĠGreeks, Ġchildren, Ġdevout, Ġangels, Ġmonks, Ġmajority, ĠJews, Ġspirits, Ġprophets, ĠWest, ĠProphet, Ġfollowers, ĠKing, ĠChinese, ĠPope, Ġfaithful, Ġscriptures, Ġreader, Ġmen, Ġdisciples, ĠCreator, ĠRomans, ĠAngels, Ġelite, Ġparanormal, Ġcrowd, ĠWitnesses, Ġnuns, Ġstudents, Ġgroup, Ġparticipants, Ġmasses, Ġaudience, Ġprophet, Ġpresent, ĠDeity, Ġpopulace, Ġpious, Ġnatives, ĠMaya, Ġdeities, Ġnarrator, Ġatheists, Ġwitnesses, Ġfamily, Ġauthor, Ġauthorities, ĠPeople, Ġelderly, ĠShia, Ġscholars, Ġblind, ĠApostles, Ġinhabitants, Ġpopulation, Ġothers, Ġsaint, ĠIndians, Ġignorant, Ġdemons, Ġwise, Ġelves, ĠImam, Ġclergy, Ġskeptics, Ġsoul, Ġnobility, ĠChristian, Ġfolk, Ġdeceased, ĠDead, Ġold, ĠHindu, ĠCorinthians, ĠCatholics, Ġhunters, Ġphilosophers]
+
+group_1:
+  wash:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [car, dog]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [car, dog]
+  fix:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [computer, car]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [computer, car]
+  surprise:
+    active:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
+    passive:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
+  frighten:
+    active:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
+    passive:
+      '[subj]': [noise, jolt]
+      '[obj]' : [boy, girl]
+  discover:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]  
+  find:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [secret, source]
+  spot:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, tree]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, tree]
+  forget:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, goal]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [ball, goal]
+  love:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [game, food]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [game, food]
+  believe:
+    active:
+      '[subj]': [boy, girl]
+      '[obj]' : [truth, lie]
+    passive:
+      '[subj]': [boy, girl]
+      '[obj]' : [truth, lie]
+
+data:
+  - The [subj] washed the [obj].
+  - The [obj] was washed by the [subj].
+  - The [subj] fixed the [obj].
+  - The [obj] was fixed by the [subj].
+  - The [subj] surprises the [obj].
+  - The [obj] is surprised by the [subj].
+  - The [subj] frightens the [obj].
+  - The [obj] is frightened by the [subj].
+  - The [subj] discovered the [obj].
+  - The [obj] was discovered by the [subj].
+  - The [subj] found the [obj].
+  - The [obj] was found by the [subj].
+  - The [subj] spotted the [obj].
+  - The [obj] was spotted by the [subj].
+  - The [subj] forgot the [obj].
+  - The [obj] was forgotten by the [subj].
+  - The [subj] loves the [obj].
+  - The [obj] is loved by the [subj].
+  - The [subj] believes the [obj].
+  - The [obj] is believed by the [subj].

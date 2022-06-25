@@ -2,6 +2,7 @@
 #
 # check stats for candidate arguments for use in new verb experiments using a dataset which
 # have strings that are tokenized as single words in all of the model types in conf/model
+import re
 import hydra
 import torch
 
@@ -95,11 +96,24 @@ def get_topk_predictions(
 			other_gf_indices = {k: v for k, v in gf_indices.items() if not k == gf}
 			to_filter = set([x for _, other_index in other_gf_indices.items() for x in tokenizer.convert_ids_to_tokens(torch.topk(prob[other_index], k=cfg.num_args).indices)])
 			topk = tokenizer.convert_ids_to_tokens(torch.topk(prob[index], k=cfg.num_args, sorted=True).indices)
+			
+			# filter out partial tokens
+			if 'roberta' in cfg.model.string_id:
+				to_filter = to_filter.union({token for token in topk if not token.startswith(chr(288))})
+			else:
+				to_filter = to_filter.union({token for token in topk if token.startswith('##') or token.endswith('##')})
+			
 			more = 0
 			while any(k in to_filter for k in topk) or not len(topk) == cfg.num_args:
 				more += 1
 				to_filter = set([x for _, other_index in other_gf_indices.items() for x in tokenizer.convert_ids_to_tokens(torch.topk(prob[other_index], k=cfg.num_args+more).indices)])
 				topk = [k for k in tokenizer.convert_ids_to_tokens(torch.topk(prob[index], k=cfg.num_args+more, sorted=True).indices) if not k in to_filter][:cfg.num_args]
+				
+				# filter out partial tokens
+				if 'roberta' in cfg.model.string_id:
+					to_filter = to_filter.union({token for token in topk if not token.startswith(chr(288))})
+				else:
+					to_filter = to_filter.union({token for token in topk if token.startswith('##')})
 			
 			predictions.append({
 				'model': cfg.model.string_id.replace('google/', '').replace('-seed', '').replace('nyu-mll/', '').replace('-base-', '_'),
